@@ -16,7 +16,7 @@ export default function AcademicBackgrounds() {
     {
       course: "English",
       degree: "Curso de Idiomas",
-      institution: "Celin - Centro Estadual de Línguas",
+      institution: "Celin - Centro Estadual de Línguas da Paraíba",
       year: "2024 - Em conclusão",
     },
     {
@@ -44,7 +44,7 @@ export default function AcademicBackgrounds() {
         {academicBackgrounds.map((background, index) => (
           <li
             key={index}
-            className={`flex flex-col items-center xl:flex-row xl:even:flex-row-reverse xl:odd:-translate-x-56 xl:even:translate-x-[218px]`}
+            className={`flex flex-col items-center xl:flex-row xl:even:flex-row-reverse xl:odd:-translate-x-[211px] xl:even:translate-x-[205px]`}
           >
             <div
               className={`w-[280px] bg-gradient-to-br from-light-pink-200 to-light-pink-100 flex flex-col gap-1.5 shadow px-8 py-6 rounded-4xl xl:w-max`}
@@ -56,7 +56,7 @@ export default function AcademicBackgrounds() {
               </h3>
 
               <span
-                className={`text-gray text-base text-shadow-2xs xl:text-xl`}
+                className={`text-gray text-base text-shadow-2xs xl:w-[320px] xl:text-xl`}
               >
                 {background.institution}
               </span>
@@ -76,7 +76,7 @@ export default function AcademicBackgrounds() {
       </ul>
 
       <div
-        className={`hidden absolute bottom-[75.5px] left-[580px] w-0.5 h-[410.5px] rounded bg-dark-pink-100 xl:block`}
+        className={`hidden absolute bottom-[90px] left-[580px] w-0.5 h-[466px] rounded bg-dark-pink-100 xl:block`}
       /> {/* Vertical line of the list */}
     </section>
   );

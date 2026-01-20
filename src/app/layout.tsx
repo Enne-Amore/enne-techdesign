@@ -1,14 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const quicksand = Quicksand({
   subsets: ["latin"],
-  weight: "400",
+  variable: "--font-quicksand",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const viewport: Viewport = {
@@ -94,7 +94,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className={`scroll-smooth`} suppressHydrationWarning>
-      <body className={`${poppins.variable} antialiased`}>
+      <body className={`${quicksand.variable} antialiased`}>
         <ThemeProvider
           attribute={"class"}
           defaultTheme="system"

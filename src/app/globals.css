@@ -11,18 +11,18 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "geometos-rounded";
+  src: url(../fonts/cnbpb/geometos-rounded/geometos-rounded.ttf) format(truetype);
+  font-display: swap;
+}
+@font-face {
   font-family: "open-dyslexic";
-  src: url(../fonts/home-page/open_dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
+  src: url(../fonts/cnbpb/open_dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
   font-display: swap;
 }
 @font-face {
   font-family: "open-dyslexic-bold";
-  src: url(../fonts/home-page/open_dyslexic/OpenDyslexicAlta-Bold.otf) format(opentype);
-  font-display: swap;
-}
-@font-face {
-  font-family: "geometos-rounded";
-  src: url(../fonts/cnbpb/geometos-rounded/geometos-rounded.ttf) format(truetype);
+  src: url(../fonts/cnbpb/open_dyslexic/OpenDyslexicAlta-Bold.otf) format(opentype);
   font-display: swap;
 }
 @font-face {
@@ -40,12 +40,12 @@
   --color-dark-purple: #5E239D;
   --color-light-purple: #863DD4;
   --color-dark-pink-100: #FB3CA5;
-  --color-dark-pink-200: #F20587;
+  --color-dark-pink-200: #F229AC;
   --color-light-pink-100: #FFD1E9;
   --color-light-pink-200: #FFC2E2;
   --font-lexia-readable: "lexia-readable";
   --font-open-dyslexic: "open-dyslexic";
-  --font-poppins: var(--font-poppins);
+  --font-quicksand: var(--font-quicksand);
   --font-geometos-rounded: "geometos-rounded";
   --font-open-sans: sans-serif;
   --font-bitter: "bitter";
@@ -75,7 +75,7 @@
 }
 
 body {
-  @apply bg-light-pink-100 font-poppins text-white-100 animate-[fade_0.5s_ease-in-out];
+  @apply bg-light-pink-100 font-quicksand text-white-100 animate-[fade_0.5s_ease-in-out];
 }
 
 /* Dark mode */
@@ -100,8 +100,8 @@ body {
 }
 
 /* Texts */
-.font-open-dyslexic strong {
-  font-family: "open-dyslexic-bold", sans-serif;
+#sobre strong,
+#rodape strong {
   background: linear-gradient(
     96deg,
     var(--color-light-pink-200) 0%,

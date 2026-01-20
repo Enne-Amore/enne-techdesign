@@ -45,7 +45,7 @@ export default function NavItems(props: { clickLinkMobile?: () => void }) {
             className={`text-xl text-shadow-2xs py-3.5 rounded-4xl transition xl:text-2xl ${
               link.isMain
                 ? "bg-dark-pink-100 px-7 mt-3.5 font-bold shadow hover:bg-dark-pink-200 focus-visible:bg-dark-pink-200 active:bg-white-300 active:text-dark-pink-200 xl:mt-0 xl:ml-5"
-                : "font-medium px-5 hover:text-dark-pink-100 focus-visible:text-dark-pink-100 active:text-dark-pink-200"
+                : "font-medium px-5 hover:text-light-pink-100 focus-visible:text-light-pink-100 active:text-light-pink-200"
             }`}
           >
             {link.label}
