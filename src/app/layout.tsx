@@ -8,7 +8,7 @@ import "./globals.css";
 const quicksand = Quicksand({
   subsets: ["latin"],
   variable: "--font-quicksand",
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const viewport: Viewport = {

@@ -1,3 +1,5 @@
+import SectionTitle from "@/components/sectionTitle";
+
 interface AcademicBackgroundsInterface {
   course: string;
   degree: string;
@@ -30,13 +32,12 @@ export default function AcademicBackgrounds() {
   return (
     <section
       id="formacoes"
-      className={`relative w-[320px] flex flex-col items-center gap-12 xl:w-[1078px] xl:px-0`}
+      className={`relative w-[320px] flex flex-col items-center gap-16 xl:w-[1078px] xl:gap-70px xl:px-0`}
     >
-      <h2
-        className={`w-full font-lexia-readable text-28px text-shadow-2xs shadow bg-gradient-to-br from-dark-purple to-light-purple px-9 pt-3.5 pb-3 rounded-full xl:pb-4`}
-      >
-        Formações
-      </h2>
+      <SectionTitle
+        label={`Formações acadêmicas nas quais carrego comigo em minha jornada`}
+        style={`bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple dark:text-light-purple text-32px leading-11 xl:w-[683px] xl:text-4xl xl:leading-12`}
+      />
 
       <ul
         className={`flex flex-col justify-center items-center xl:items-end xl:gap-12`}
@@ -50,7 +51,7 @@ export default function AcademicBackgrounds() {
               className={`w-[280px] bg-gradient-to-br from-light-pink-200 to-light-pink-100 flex flex-col gap-1.5 shadow px-8 py-6 rounded-4xl xl:w-max`}
             >
               <h3
-                className={`font-lexia-readable text-black text-xl text-shadow-2xs xl:text-2xl`}
+                className={`font-lexia-readable bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple text-xl text-shadow-2xs xl:text-2xl`}
               >
                 {background.course} - {background.degree}
               </h3>
@@ -62,7 +63,7 @@ export default function AcademicBackgrounds() {
               </span>
 
               <span
-                className={`font-thin text-gray text-xs text-right text-shadow-2xs mt-2.5 xl:text-base`}
+                className={`font-light text-gray text-xs text-right text-shadow-2xs mt-2.5 xl:text-base`}
               >
                 {background.year}
               </span>
