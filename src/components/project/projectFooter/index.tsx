@@ -100,8 +100,7 @@ export default function ProjectFooter() {
       <p
         className={`w-[235px] font-open-dyslexic text-[#FFFFFD] text-xs text-center text-shadow-2xs leading-5 xl:w-max xl:text-base`}
       >
-        <span lang="en">Copyright</span> © 2025 <strong>Enne Jim Pessoa</strong>
-        . Todos os direitos reservados.
+        <strong>Enne TechDesign</strong> © 2026 | Vamos criar um site incrível!
       </p>
     </footer>
   );
