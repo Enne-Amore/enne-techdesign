@@ -6,7 +6,7 @@ import { FaMoon, FaSun } from "react-icons/fa6";
 
 export default function ColorTheme() {
   const { resolvedTheme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState<boolean>(false);
 
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;

@@ -32,11 +32,11 @@ export default function AcademicBackgrounds() {
   return (
     <section
       id="formacoes"
-      className={`relative w-[320px] flex flex-col items-center gap-16 xl:w-[1078px] xl:gap-70px xl:px-0`}
+      className={`relative w-[320px] flex flex-col items-center gap-12 xl:w-[1078px] xl:gap-70px`}
     >
       <SectionTitle
         label={`Formações acadêmicas nas quais carrego comigo em minha jornada`}
-        style={`bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple dark:text-light-purple text-32px leading-11 xl:w-[683px] xl:text-4xl xl:leading-12`}
+        style={`bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple dark:text-light-purple xl:w-[683px]`}
       />
 
       <ul

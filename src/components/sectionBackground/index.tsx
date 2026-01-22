@@ -4,6 +4,7 @@ interface SectionBackgroundInterface {
   src: string;
   mobileHeight: number;
   desktopHeight: number;
+  noShadow?: boolean;
 }
 
 export default function SectionBackground(props: SectionBackgroundInterface) {
@@ -24,7 +25,7 @@ export default function SectionBackground(props: SectionBackgroundInterface) {
         width={375}
         height={props.mobileHeight}
         aria-hidden="true"
-        className={`w-full h-full filter drop-shadow`}
+        className={`w-full h-full ${props.noShadow ? '' : 'filter drop-shadow'}`}
       />
     </picture>
   );

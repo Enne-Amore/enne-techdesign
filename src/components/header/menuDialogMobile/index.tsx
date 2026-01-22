@@ -13,10 +13,10 @@ import Image from "next/image";
 
 export default function MenuDialogMobile() {
   // State to control the dialog visibility
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   // Button movement when clicked
-  const [btn, setBtn] = useState(`rotate-0 border-none`);
+  const [btn, setBtn] = useState<string>(`rotate-0 border-none`);
 
   return (
     <nav className={`relative h-[54px] xl:hidden`}>

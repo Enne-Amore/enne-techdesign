@@ -2,6 +2,8 @@ import { ProjectsType } from "@/types/projectsType";
 import { projects } from "@/data/projects";
 import Link from "next/link";
 import Image from "next/image";
+import SectionTitle from "@/components/sectionTitle";
+import SectionBackground from "@/components/sectionBackground";
 
 export default function Projects() {
   const cards: ProjectsType["card"][] = projects.map((project) => project.card);
@@ -9,15 +11,23 @@ export default function Projects() {
   return (
     <section
       id="projetos"
-      className={`w-[320px] flex flex-col items-center gap-12 xl:w-[1078px] xl:px-0`}
+      className={`relative w-full flex flex-col items-center gap-12 px-14 pt-14 pb-24 mt-5 -mb-20 xl:gap-70px xl:pt-20 xl:pb-32 xl:-mb-32`}
     >
-      <h2
-        className={`w-full font-lexia-readable text-28px text-shadow-2xs shadow bg-gradient-to-br from-dark-purple to-light-purple px-9 pt-3.5 pb-3 rounded-full xl:pb-4`}
-      >
-        Projetos
-      </h2>
+      {/* background */}
+      <SectionBackground
+        src={`projects`}
+        mobileHeight={2037}
+        desktopHeight={1182}
+        noShadow
+      />
 
-      <ul className={`flex flex-col gap-10 xl:flex-row xl:flex-wrap`}>
+      {/* content */}
+      <SectionTitle
+        label={`Projetos em que tive o maior prazer do mundo em desenvolver`}
+        style={`relative bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple dark:text-light-purple xl:w-[723px]`}
+      />
+
+      <ul className={`w-[280px] flex flex-col gap-10 xl:w-[1090px] xl:flex-row xl:flex-wrap xl:gap-7`}>
         {cards.map((card, index) => (
           <li key={index}>
             <Link
@@ -27,14 +37,14 @@ export default function Projects() {
               className={`rounded-4xl`}
             >
               <figure
-                className={`relative w-[280px] border-2 border-light-pink-100 rounded-4xl shadow overflow-hidden transition duration-300 hover:border-light-pink-200 in-focus:border-light-pink-200 xl:w-[449px]`}
+                className={`relative w-[280px] border-2 border-light-pink-100 rounded-4xl shadow overflow-hidden transition duration-300 hover:border-light-pink-200 in-focus:border-light-pink-200 xl:w-[530px]`}
               >
                 <picture>
                   <source
                     media="(min-width: 1280px)"
                     srcSet={`assets/${card.imgDesktop}`}
-                    width={449}
-                    height={281}
+                    width={530}
+                    height={330}
                     type="image/avif"
                   />
 
@@ -49,11 +59,11 @@ export default function Projects() {
 
                 {/* Color overlay */}
                 <div
-                  className={`absolute inset-0 h-[400px] bg-gradient-to-b from-light-pink-100/10 to-light-pink-100 opacity-0 rounded-4xl z-10 transition duration-300 hover:opacity-20 in-focus:opacity-20 xl:h-[281px]`}
+                  className={`absolute inset-0 h-[400px] bg-gradient-to-b from-light-pink-100/10 to-light-pink-100 opacity-0 rounded-4xl z-10 transition duration-300 hover:opacity-20 in-focus:opacity-20 xl:h-[330px]`}
                 />
 
                 <figcaption
-                  className={`absolute bottom-4 w-full flex justify-center`}
+                  className={`absolute left-6 top-4 w-full flex`}
                 >
                   <span
                     className={`w-max text-gray text-xs text-shadow-2xs select-none bg-white/90 px-2.5 py-1 rounded-4xl`}

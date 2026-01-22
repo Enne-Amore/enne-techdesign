@@ -40,7 +40,7 @@ export default function About() {
       <article className={`relative space-y-3.5 xl:space-y-2 xl:w-[612px]`}>
         <SectionTitle
           label={`Sobre mim e minhas reflexões`}
-          style={`text-white-300 text-32px leading-11 xl:w-max xl:text-4xl`}
+          style={`text-white-300 xl:w-[613px]`}
         />
 
         <p className={`text-xl text-shadow-2xs leading-8 xl:text-2xl xl:leading-9`}>
