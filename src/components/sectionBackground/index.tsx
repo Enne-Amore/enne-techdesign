@@ -24,7 +24,7 @@ export default function SectionBackground(props: SectionBackgroundInterface) {
         width={375}
         height={props.mobileHeight}
         aria-hidden="true"
-        className={`w-full h-full`}
+        className={`w-full h-full filter drop-shadow`}
       />
     </picture>
   );

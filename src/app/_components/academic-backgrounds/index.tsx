@@ -48,7 +48,7 @@ export default function AcademicBackgrounds() {
             className={`flex flex-col items-center xl:flex-row xl:even:flex-row-reverse xl:odd:-translate-x-[211px] xl:even:translate-x-[205px]`}
           >
             <div
-              className={`w-[280px] bg-gradient-to-br from-light-pink-200 to-light-pink-100 flex flex-col gap-1.5 shadow px-8 py-6 rounded-4xl xl:w-max`}
+              className={`bg-gradient-to-br from-light-pink-200 to-light-pink-100 flex flex-col gap-1.5 shadow px-8 py-6 rounded-4xl`}
             >
               <h3
                 className={`font-lexia-readable bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple text-xl text-shadow-2xs xl:text-2xl`}

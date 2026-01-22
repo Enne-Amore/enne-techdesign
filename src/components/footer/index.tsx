@@ -17,8 +17,8 @@ export default function Footer() {
       {/* content */}
       <figure className={`flex items-center gap-2.5`}>
         <Image
-          src={"/favicon/logo.png"}
-          alt={"Logo do site com um coração rosa"}
+          src={`/favicon/logo.png`}
+          alt={`Logo do site com um coração rosa`}
           width={50}
           height={50}
           className={`filter drop-shadow xl:w-16`}

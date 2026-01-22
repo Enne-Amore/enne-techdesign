@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-@plugin "tailwindcss-animate";
 /* @import "tw-animate-css"; */
+@plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -114,22 +114,12 @@ body {
 }
 #problemn-cnbpb .font-open-dyslexic strong,
 #footer-cnbpb .font-open-dyslexic strong {
-  background: linear-gradient(
-    96deg,
-    #F2E530 0%,
-    #ECE35A 90%
-  );
-  background-clip: text;
+  color: #F2E530;
 }
 #solution-cnbpb .font-open-dyslexic strong,
 #style-guide-cnbpb .font-open-dyslexic strong,
 #technologies-cnbpb .font-open-dyslexic strong {
-  background: linear-gradient(
-    96deg,
-    #713CA6 0%,
-    #713CA6 90%
-  );
-  background-clip: text;
+  color: #713CA6;
 }
 
 /* Form's toach */

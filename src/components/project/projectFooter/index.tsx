@@ -22,8 +22,8 @@ export default function ProjectFooter() {
           >
             <figure className={`flex items-center gap-2.5`}>
               <Image
-                src={"/favicon/logo.png"}
-                alt={"Logo do site com um coração rosa"}
+                src={`/favicon/logo.png`}
+                alt={`Logo do site com um coração rosa`}
                 width={60}
                 height={60}
                 className={`filter drop-shadow xl:w-16`}

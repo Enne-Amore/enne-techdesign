@@ -22,26 +22,26 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Enne Jim Pessoa",
+  title: "Enne TechDesign",
   description:
     "Portfólio web sobre mim e meus trabalhos enquanto UI/UX designer e desenvolvedore front-end",
   authors: [
-    { name: "Enne Jim Pessoa", url: "https://enne-jim-pessoa.vercel.app" },
+    { name: "Enne Jim Pessoa", url: "https://ennetechdesign.vercel.app" },
   ],
   openGraph: {
     type: "website",
-    title: "Enne Jim Pessoa",
+    title: "Enne TechDesign",
     description:
       "Portfólio web sobre mim e meus trabalhos enquanto UI/UX designer e desenvolvedore front-end",
     images: "/favicon/logo.png",
-    url: "https://enne-jim-pessoa.vercel.app",
-    siteName: "Enne Jim Pessoa",
+    url: "https://ennetechdesign.vercel.app",
+    siteName: "Enne TechDesign",
     locale: "pt_BR",
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://enne-jim-pessoa.vercel.app",
-    title: "Enne Jim Pessoa",
+    site: "https://ennetechdesign.vercel.app",
+    title: "Enne TechDesign",
     description:
       "Portfólio web sobre mim e meus trabalhos enquanto UI/UX designer e desenvolvedore front-end",
     images: "/favicon/logo.png",

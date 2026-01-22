@@ -1,13 +1,13 @@
 <img src="public/favicon/apple-touch-icon.png" alt="Logo do site" width="60" height="60">
 
-# Enne Jim Pessoa
+# Enne TechDesign
 
  Portfólio web sobre mim e meus trabalhos enquanto UI/UX designer e desenvolvedore front-end
 
 
 ## 🌐 Aplicação Hospedada
 
- [Clique aqui para acessar o website](https://ennejimpessoa.vercel.app)
+ [Clique aqui para acessar o website](https://ennetechdesign.vercel.app)
 
 
 ## 🎞️ Pré-visualização

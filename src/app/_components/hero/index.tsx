@@ -39,7 +39,7 @@ export default function Hero() {
 
       <figure>
         <Image
-          src={"/assets/website-illustration.png"}
+          src={`/assets/website-illustration.png`}
           alt=""
           width={280}
           height={206}
