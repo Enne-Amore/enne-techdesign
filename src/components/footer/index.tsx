@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer
       id="rodape"
-      className={`relative bg-dark-pink-200 flex flex-col items-center gap-7 pt-6 pb-5 xl:bg-white xl:dark:bg-black xl:flex-row xl:pt-9 xl:pb-8 xl:pl-10`}
+      className={`relative bg-dark-pink-200 flex flex-col items-center gap-7 pt-8 pb-5 xl:bg-white xl:dark:bg-black xl:flex-row xl:pt-9 xl:pb-8 xl:pl-10`}
     >
       {/* background */}
       <SectionBackground

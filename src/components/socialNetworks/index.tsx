@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
+import { FaEnvelope, FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 
 interface SocialNetworkInterface {
   url: string;
@@ -23,6 +23,11 @@ export default function SocialNetworks(props: { socialNetworkStyle: string }) {
       url: "https://github.com/Enne-Amore",
       ariaLabel: "Ir ao meu perfil no GitHub",
       icon: <FaGithub className={`w-6 h-auto`} />,
+    },
+    {
+      url: "mailto:enne.pessoa@gmail.com",
+      ariaLabel: "Enviar email para mim",
+      icon: <FaEnvelope className={`w-6 h-auto`} />,
     },
   ];
 

@@ -122,11 +122,6 @@ body {
   color: #713CA6;
 }
 
-/* Form's toach */
-.notify-toastify {
-  @apply min-w-[290px] bg-[#00B09B] text-base rounded-4xl xl:w-max xl:text-xl xl:translate-x-full;
-}
-
 /* Academic backgrounds list */
 @media screen and (max-width: 1280px) {
   #formacoes ul li:last-of-type hr:last-child {
