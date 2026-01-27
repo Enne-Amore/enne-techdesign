@@ -36,7 +36,7 @@ export default function AcademicBackgrounds() {
     >
       <SectionTitle
         label={`Formações acadêmicas nas quais carrego comigo em minha jornada`}
-        style={`bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple dark:text-light-purple xl:w-[683px]`}
+        style={`bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple dark:from-dark-pink-200 dark:to-dark-pink-100 xl:w-[683px]`}
       />
 
       <ul

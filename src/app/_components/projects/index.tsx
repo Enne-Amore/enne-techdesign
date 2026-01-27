@@ -19,12 +19,13 @@ export default function Projects() {
         mobileHeight={2037}
         desktopHeight={1182}
         noShadow
+        darkMode
       />
 
       {/* content */}
       <SectionTitle
         label={`Projetos em que tive o maior prazer do mundo em desenvolver`}
-        style={`relative bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple dark:text-light-purple xl:w-[723px]`}
+        style={`relative bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple dark:from-dark-pink-200 dark:to-dark-pink-100 xl:w-[723px]`}
       />
 
       <ul className={`w-[280px] flex flex-col gap-10 xl:w-[1090px] xl:flex-row xl:flex-wrap xl:gap-7`}>

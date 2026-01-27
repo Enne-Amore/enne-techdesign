@@ -5,6 +5,7 @@ interface SectionBackgroundInterface {
   mobileHeight: number;
   desktopHeight: number;
   noShadow?: boolean;
+  darkMode?: boolean;
 }
 
 export default function SectionBackground(props: SectionBackgroundInterface) {
@@ -18,6 +19,24 @@ export default function SectionBackground(props: SectionBackgroundInterface) {
         width={1280}
         height={props.desktopHeight}
       />
+
+      {props.darkMode && (
+        <>
+          <source
+            media="(prefers-color-scheme: dark) and (min-width: 1280px)"
+            srcSet={`/assets/${props.src}-dark-background-desktop.png`}
+            width={1280}
+            height={props.desktopHeight}
+          />
+
+          <source
+            media="(prefers-color-scheme: dark)"
+            srcSet={`/assets/${props.src}-dark-background-mobile.png`}
+            width={375}
+            height={props.mobileHeight}
+          />
+        </>
+      )}
 
       <Image
         src={`/assets/${props.src}-background-mobile.png`}
