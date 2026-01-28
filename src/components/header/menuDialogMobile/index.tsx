@@ -16,7 +16,7 @@ export default function MenuDialogMobile() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   // Button movement when clicked
-  const [btn, setBtn] = useState<string>(`rotate-0 border-none`);
+  const [btn, setBtn] = useState<string>(`rotate-0`);
 
   return (
     <nav className={`relative h-[54px] xl:hidden`}>
@@ -33,7 +33,7 @@ export default function MenuDialogMobile() {
           alt={`Ícone de menu de navegação`}
           width={62}
           height={54}
-          className={`filter drop-shadow rounded-t-2xl rounded-b-4xl ${btn} border-light-pink-200 p-1 duration-1000`}
+          className={`filter drop-shadow rounded-t-2xl rounded-b-4xl ${btn} p-1 duration-1000`}
         />
       </button>
 
@@ -41,7 +41,7 @@ export default function MenuDialogMobile() {
         open={isOpen}
         onClose={() => {
           setIsOpen(false);
-          setBtn(`rotate-0 border-none`);
+          setBtn(`rotate-0`);
         }}
         className={`relative z-50`}
       >
@@ -69,7 +69,7 @@ export default function MenuDialogMobile() {
             <NavItems
               clickLinkMobile={() => {
                 setIsOpen(false);
-                setBtn(`rotate-0 border-none`);
+                setBtn(`rotate-0`);
               }}
             />
 

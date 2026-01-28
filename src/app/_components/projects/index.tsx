@@ -11,7 +11,7 @@ export default function Projects() {
   return (
     <section
       id="projetos"
-      className={`relative w-full flex flex-col items-center gap-12 px-14 pt-14 pb-24 mt-5 -mb-20 xl:gap-70px xl:pt-20 xl:pb-32 xl:-mb-32`}
+      className={`relative w-full flex flex-col items-center gap-12 px-14 pt-14 pb-24 mt-5 -mb-20 xl:gap-70px xl:pt-20 xl:pb-36 xl:-mb-32`}
     >
       {/* background */}
       <SectionBackground

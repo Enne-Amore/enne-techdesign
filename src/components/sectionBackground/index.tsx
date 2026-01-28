@@ -13,6 +13,15 @@ export default function SectionBackground(props: SectionBackgroundInterface) {
     <picture
       className={`absolute top-0 bottom-0 left-0 right-0 select-none pointer-events-none filter drop-shadow`}
     >
+      {props.darkMode && (
+        <source
+          media="(prefers-color-scheme: dark) and (min-width: 1280px)"
+          srcSet={`/assets/${props.src}-dark-background-desktop.png`}
+          width={1280}
+          height={props.desktopHeight}
+        />
+      )}
+
       <source
         media="(min-width: 1280px)"
         srcSet={`/assets/${props.src}-background-desktop.png`}
@@ -21,21 +30,12 @@ export default function SectionBackground(props: SectionBackgroundInterface) {
       />
 
       {props.darkMode && (
-        <>
-          <source
-            media="(prefers-color-scheme: dark) and (min-width: 1280px)"
-            srcSet={`/assets/${props.src}-dark-background-desktop.png`}
-            width={1280}
-            height={props.desktopHeight}
-          />
-
-          <source
-            media="(prefers-color-scheme: dark)"
-            srcSet={`/assets/${props.src}-dark-background-mobile.png`}
-            width={375}
-            height={props.mobileHeight}
-          />
-        </>
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcSet={`/assets/${props.src}-dark-background-mobile.png`}
+          width={375}
+          height={props.mobileHeight}
+        />
       )}
 
       <Image
