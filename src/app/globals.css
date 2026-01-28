@@ -79,27 +79,6 @@ body {
   @apply bg-light-pink-100 font-quicksand text-white-100 animate-[fade_0.5s_ease-in-out];
 }
 
-/* Dark mode */
-.dark ::-webkit-scrollbar-track {
-  @apply bg-gray;
-}
-.dark ::-webkit-scrollbar-thumb {
-  @apply bg-light-pink-100;
-}
-.dark ::-webkit-scrollbar-thumb:hover {
-  @apply bg-light-pink-200;
-}
-.dark #solution-cnbpb .font-open-dyslexic strong,
-.dark #style-guide-cnbpb .font-open-dyslexic strong,
-.dark #technologies-cnbpb .font-open-dyslexic strong {
-  background: linear-gradient(
-    96deg,
-    #F2E530 0%,
-    #ECE35A 90%
-  );
-  background-clip: text;
-}
-
 /* Texts */
 #sobre strong,
 #rodape strong {
@@ -121,6 +100,22 @@ body {
 #style-guide-cnbpb .font-open-dyslexic strong,
 #technologies-cnbpb .font-open-dyslexic strong {
   color: #713CA6;
+}
+
+/* Dark mode */
+.dark ::-webkit-scrollbar-track {
+  @apply bg-gray;
+}
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-light-pink-100;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-light-pink-200;
+}
+.dark #solution-cnbpb .font-open-dyslexic strong,
+.dark #style-guide-cnbpb .font-open-dyslexic strong,
+.dark #technologies-cnbpb .font-open-dyslexic strong {
+  @apply text-[#F2E530];
 }
 
 /* Academic backgrounds list */
