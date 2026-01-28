@@ -1,3 +1,6 @@
+"use client"
+
+import { useTheme } from "next-themes";
 import Image from "next/image";
 
 interface SectionBackgroundInterface {
@@ -9,37 +12,23 @@ interface SectionBackgroundInterface {
 }
 
 export default function SectionBackground(props: SectionBackgroundInterface) {
+  const { theme } = useTheme();
+  const isDark = props.darkMode && theme === "dark";
+
   return (
     <picture
-      className={`absolute top-0 bottom-0 left-0 right-0 select-none pointer-events-none filter drop-shadow`}
+      className={`absolute top-0 bottom-0 left-0 right-0 select-none pointer-events-none`}
     >
-      {props.darkMode && (
-        <source
-          media="(prefers-color-scheme: dark) and (min-width: 1280px)"
-          srcSet={`/assets/${props.src}-dark-background-desktop.png`}
-          width={1280}
-          height={props.desktopHeight}
-        />
-      )}
-
       <source
         media="(min-width: 1280px)"
-        srcSet={`/assets/${props.src}-background-desktop.png`}
+        srcSet={`/assets/${props.src}-${isDark ? 'dark-' : ''}background-desktop.png`}
         width={1280}
         height={props.desktopHeight}
+        className={``}
       />
 
-      {props.darkMode && (
-        <source
-          media="(prefers-color-scheme: dark)"
-          srcSet={`/assets/${props.src}-dark-background-mobile.png`}
-          width={375}
-          height={props.mobileHeight}
-        />
-      )}
-
       <Image
-        src={`/assets/${props.src}-background-mobile.png`}
+        src={`/assets/${props.src}-${isDark ? 'dark-' : ''}background-mobile.png`}
         alt={``}
         width={375}
         height={props.mobileHeight}
