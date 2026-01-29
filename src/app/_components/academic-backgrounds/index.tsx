@@ -1,3 +1,5 @@
+import SectionTitle from "@/components/sectionTitle";
+
 interface AcademicBackgroundsInterface {
   course: string;
   degree: string;
@@ -16,7 +18,7 @@ export default function AcademicBackgrounds() {
     {
       course: "English",
       degree: "Curso de Idiomas",
-      institution: "Celin - Centro Estadual de Línguas",
+      institution: "Celin - Centro Estadual de Línguas da Paraíba",
       year: "2024 - Em conclusão",
     },
     {
@@ -30,13 +32,12 @@ export default function AcademicBackgrounds() {
   return (
     <section
       id="formacoes"
-      className={`relative w-[320px] flex flex-col items-center gap-12 xl:w-[1078px] xl:px-0`}
+      className={`relative w-[320px] flex flex-col items-center gap-12 xl:w-[1078px] xl:gap-70px`}
     >
-      <h2
-        className={`w-full font-lexia-readable text-28px text-shadow-2xs shadow bg-gradient-to-br from-dark-purple to-light-purple px-9 pt-3.5 pb-3 rounded-full xl:pb-4`}
-      >
-        Formações
-      </h2>
+      <SectionTitle
+        label={`Formações acadêmicas nas quais carrego comigo em minha jornada`}
+        style={`bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple dark:from-dark-pink-200 dark:to-dark-pink-100 xl:w-[683px]`}
+      />
 
       <ul
         className={`flex flex-col justify-center items-center xl:items-end xl:gap-12`}
@@ -44,25 +45,25 @@ export default function AcademicBackgrounds() {
         {academicBackgrounds.map((background, index) => (
           <li
             key={index}
-            className={`flex flex-col items-center xl:flex-row xl:even:flex-row-reverse xl:odd:-translate-x-56 xl:even:translate-x-[218px]`}
+            className={`flex flex-col items-center xl:flex-row xl:even:flex-row-reverse xl:odd:-translate-x-[211px] xl:even:translate-x-[205px]`}
           >
             <div
-              className={`w-[280px] bg-gradient-to-br from-light-pink-200 to-light-pink-100 flex flex-col gap-1.5 shadow px-8 py-6 rounded-4xl xl:w-max`}
+              className={`bg-gradient-to-br from-light-pink-200 to-light-pink-100 flex flex-col gap-1.5 shadow px-8 py-6 rounded-4xl`}
             >
               <h3
-                className={`font-lexia-readable text-black text-xl text-shadow-2xs xl:text-2xl`}
+                className={`font-lexia-readable bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple text-xl text-shadow-2xs xl:text-2xl`}
               >
                 {background.course} - {background.degree}
               </h3>
 
               <span
-                className={`text-gray text-base text-shadow-2xs xl:text-xl`}
+                className={`text-gray text-base text-shadow-2xs xl:w-[320px] xl:text-xl`}
               >
                 {background.institution}
               </span>
 
               <span
-                className={`font-thin text-gray text-xs text-right text-shadow-2xs mt-2.5 xl:text-base`}
+                className={`font-light text-gray text-xs text-right text-shadow-2xs mt-2.5 xl:text-base`}
               >
                 {background.year}
               </span>
@@ -76,7 +77,7 @@ export default function AcademicBackgrounds() {
       </ul>
 
       <div
-        className={`hidden absolute bottom-[75.5px] left-[580px] w-0.5 h-[410.5px] rounded bg-dark-pink-100 xl:block`}
+        className={`hidden absolute bottom-[90px] left-[580px] w-0.5 h-[466px] rounded bg-dark-pink-100 xl:block`}
       /> {/* Vertical line of the list */}
     </section>
   );

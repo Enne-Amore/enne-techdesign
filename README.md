@@ -1,13 +1,13 @@
 <img src="public/favicon/apple-touch-icon.png" alt="Logo do site" width="60" height="60">
 
-# Enne Jim Pessoa
+# Enne TechDesign
 
  Portfólio web sobre mim e meus trabalhos enquanto UI/UX designer e desenvolvedore front-end
 
 
 ## 🌐 Aplicação Hospedada
 
- [Clique aqui para acessar o website](https://ennejimpessoa.vercel.app)
+ [Clique aqui para acessar o website](https://ennetechdesign.vercel.app)
 
 
 ## 🎞️ Pré-visualização
@@ -132,15 +132,15 @@
  - **Lexia Readable**  
    Exemplo de uso:  
    `font-family: "lexia-readable";` ou `font-lexia-readable`
- - **Open Dyslexic Alta**  
+ - **Quicksand**  
    Exemplo de uso:  
-   `font-family: "open-dyslexic";`, `font-family: "open-dyslexic-bold";` ou `font-open-dyslexic`
- - **Poppins**  
-   Exemplo de uso:  
-   `font-family: var(--font-poppins);` ou `font-poppins`
+   `font-family: var(--font-quicksand);` ou `font-quicksand`
  - **Geometos Rounded**  
    Exemplo de uso:  
    `font-family: "geometos-rounded";` ou `font-geometos-rounded`
+ - **Open Dyslexic Alta**  
+   Exemplo de uso:  
+   `font-family: "open-dyslexic";`, `font-family: "open-dyslexic-bold";` ou `font-open-dyslexic`
  - **Open Sans**  
    Exemplo de uso:  
    `font-family: sans-serif;` ou `font-open-sans`
@@ -155,7 +155,7 @@
  - [Ícones utilizados - Font Awesome](https://react-icons.github.io/react-icons/icons/fa6)
  - [Fonte de texto Lexia Readable - Dafont](https://www.dafont.com/pt/lexia-readable.font)
  - [Fonte de texto Open Dyslexic - Dafont](https://www.dafont.com/pt/open-dyslexic.font)
- - [Fonte de texto Poppins - Google Fonts](https://fonts.google.com/specimen/Poppins)
+ - [Fonte de texto Quicksand - Google Fonts](https://fonts.google.com/specimen/Quicksand)
  - [Fonte de texto Geometos Rounded - Dafont](https://www.dafont.com/pt/geometos-rounded.font)
  - [Fonte de texto Open Sans - Google Fonts](https://fonts.google.com/specimen/Open+Sans?query=sans+serif)
  - [Fonte de texto Bitter - Google Fonts](https://fonts.google.com/specimen/Bitter)

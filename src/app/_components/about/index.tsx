@@ -1,3 +1,5 @@
+import SectionBackground from "@/components/sectionBackground";
+import SectionTitle from "@/components/sectionTitle";
 import Image from "next/image";
 import { FaFileLines } from "react-icons/fa6";
 
@@ -11,12 +13,12 @@ export default function About() {
   // List of resumes data
   const resumes: ResumesInterface[] = [
     {
-      url: "https://docs.google.com/document/d/1IRv4gIQw279SAWeABoCGJwKWRT65rZhoKe_wsl-4e-g/edit?usp=sharing",
+      url: "https://1drv.ms/w/c/cdd7cec41e6f84fa/IQC0C8Z4uU4eTI9t6LI8PaiFAdllA2EsoOGTDK8NRLI_Fdc",
       ariaLabel: "Ir ao meu currículo de UI/UX Design",
       label: "UI/UX Design",
     },
     {
-      url: "https://docs.google.com/document/d/13DFtKuUwF7iAQbUlu_oN48wvKRb-vJw7jp6k37lqPWk/edit?usp=sharing",
+      url: "https://1drv.ms/w/c/cdd7cec41e6f84fa/IQDcdTwI5ey_QalLxw1pB4EGAeqanRl-agGL-mB8WEqDW44",
       ariaLabel: "Ir ao meu currículo de Front-end",
       label: "Front-end",
     },
@@ -25,21 +27,28 @@ export default function About() {
   return (
     <section
       id="sobre"
-      className={`w-full bg-gradient-to-b from-light-purple to-dark-purple px-9 pt-10 pb-16 flex flex-col items-center justify-center gap-12 shadow xl:flex-row xl:gap-100px xl:pt-14`}
+      className={`relative w-full px-9 pt-14 pb-24 flex flex-col justify-center items-center gap-14 xl:flex-row xl:gap-28 xl:py-20`}
     >
-      <article className={`xl:space-y-1 xl:w-[675px]`}>
-        <h2
-          className={`font-lexia-readable text-white-300 text-32px text-shadow-2xs`}
-        >
-          Sobre mim
-        </h2>
+      {/* background */}
+      <SectionBackground
+        src={`about`}
+        mobileHeight={1384}
+        desktopHeight={650}
+      />
 
-        <p className={`font-open-dyslexic text-xl text-shadow-2xs leading-8 xl:text-2xl xl:leading-9`}>
-          Trabalhar na interseção entre <strong>Tecnologia e <span lang="en">Design</span></strong> é onde posso unir lógica e sensibilidade para criar <strong>experiências digitais acessíveis e cheias de significado</strong>. Valorizo muito a <strong>comunicação contínua, o trabalho em equipe e o aprendizado compartilhado</strong>, pois sei que boas soluções nascem de pessoas diversas que colaboram com empatia e escuta ativa. Vejo nas minhas áreas não apenas uma ferramenta estética, mas uma forma de <strong>transformar o digital em um espaço mais humano e acolhedor</strong>.
+      {/* content */}
+      <article className={`relative space-y-3.5 xl:space-y-2 xl:w-[612px]`}>
+        <SectionTitle
+          label={`Sobre mim e minhas reflexões`}
+          style={`text-white-300 xl:w-[613px]`}
+        />
+
+        <p className={`text-xl text-shadow-2xs leading-8 xl:text-2xl xl:leading-9`}>
+          Trabalhar com <strong>Front-end</strong> e <strong>UI/UX Design</strong> é onde posso unir lógica e sensibilidade para criar <strong>experiências digitais acessíveis e cheias de significado</strong>. Valorizo muito a <strong>comunicação contínua</strong>, o <strong>trabalho em equipe</strong> e o <strong>aprendizado compartilhado</strong>, pois sei que boas soluções nascem de pessoas diversas que colaboram com empatia e escuta ativa. Vejo nas minhas vocações uma forma de <strong>transformar o digital em um espaço mais humano e acolhedor</strong>.
         </p>
 
         <ul
-          className={`flex flex-col items-center gap-5 mt-7 xl:flex-row xl:mt-5`}
+          className={`flex flex-col items-center gap-5 mt-7 xl:flex-row xl:mt-6`}
         >
           {resumes.map((resume, index) => (
             <li key={index}>
@@ -48,7 +57,7 @@ export default function About() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={resume.ariaLabel}
-                className={`flex gap-1.5 items-center font-bold text-base text-shadow-2xs bg-dark-pink-100/30 border-1 border-dark-pink-100 px-6 py-2.5 rounded-4xl shadow transition duration-300 hover:bg-dark-pink-100 focus-visible:bg-dark-pink-100 active:bg-dark-pink-200`}
+                className={`flex gap-1.5 items-center font-bold text-base text-shadow-2xs bg-dark-pink-100/30 border-1 border-dark-pink-100 px-6 py-2.5 rounded-4xl shadow transition duration-300 hover:bg-dark-pink-100 focus-visible:bg-dark-pink-100 active:bg-dark-pink-200 xl:text-lg`}
               >
                 <span>
                   <FaFileLines className={`w-5 h-auto`} />
@@ -63,16 +72,11 @@ export default function About() {
 
       <figure className={`relative flex flex-col items-center gap-5`}>
         <Image
-          src={"/assets/enne-jim-pessoa.png"}
+          src={`/assets/enne-jim-pessoa.png`}
           alt="Minha foto de perfil"
-          width={240}
-          height={240}
-          className={`border-2 border-light-pink-100 shadow rounded-full xl:w-[300px]`}
-        />
-
-        {/* Color overlay */}
-        <div
-          className={`absolute inset-0 h-[240px] bg-gradient-to-br from-light-pink-100/10 to-light-pink-100 opacity-20 rounded-full xl:h-[300px]`}
+          width={280}
+          height={280}
+          className={`filter drop-shadow xl:w-[360px]`}
         />
 
         <figcaption className={`flex flex-col items-center gap-2.5`}>

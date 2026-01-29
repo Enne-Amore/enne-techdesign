@@ -1,14 +1,24 @@
 import Image from "next/image";
+import SectionBackground from "../sectionBackground";
 
 export default function Footer() {
   return (
     <footer
-      className={`bg-gradient-to-b from-light-purple via-dark-purple to-gray flex flex-col items-center gap-7 pt-6 pb-5 xl:flex-row xl:py-8 xl:pl-10`}
+      id="rodape"
+      className={`relative bg-dark-pink-200 flex flex-col items-center gap-7 pt-8 pb-5 xl:bg-white-100 xl:dark:bg-gray xl:flex-row xl:pt-9 xl:pb-8 xl:pl-10`}
     >
+      {/* background */}
+      <SectionBackground
+        src={`footer`}
+        mobileHeight={168}
+        desktopHeight={124}
+      />
+
+      {/* content */}
       <figure className={`flex items-center gap-2.5`}>
         <Image
-          src={"/favicon/logo.png"}
-          alt={"Logo do site com um coração rosa"}
+          src={`/favicon/logo.png`}
+          alt={`Logo do site com um coração rosa`}
           width={50}
           height={50}
           className={`filter drop-shadow xl:w-16`}
@@ -16,10 +26,9 @@ export default function Footer() {
       </figure>
 
       <p
-        className={`w-[235px] font-open-dyslexic text-xs text-center text-shadow-2xs leading-5 xl:w-max xl:text-base xl:absolute xl:left-1/2 xl:-translate-x-1/2`}
+        className={`relative text-xs text-center text-shadow-2xs leading-5 xl:text-base xl:absolute xl:left-1/2 xl:-translate-x-1/2`}
       >
-        <span lang="en">Copyright</span> © 2025 <strong>Enne Jim Pessoa</strong>. Todos os direitos
-        reservados.
+        <strong>Enne TechDesign</strong> © 2026 | Vamos criar um site incrível!
       </p>
     </footer>
   );

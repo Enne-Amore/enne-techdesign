@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-@plugin "tailwindcss-animate";
 /* @import "tw-animate-css"; */
+@plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -11,18 +11,18 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "geometos-rounded";
+  src: url(../fonts/cnbpb/geometos-rounded/geometos-rounded.ttf) format(truetype);
+  font-display: swap;
+}
+@font-face {
   font-family: "open-dyslexic";
-  src: url(../fonts/home-page/open_dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
+  src: url(../fonts/cnbpb/open_dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
   font-display: swap;
 }
 @font-face {
   font-family: "open-dyslexic-bold";
-  src: url(../fonts/home-page/open_dyslexic/OpenDyslexicAlta-Bold.otf) format(opentype);
-  font-display: swap;
-}
-@font-face {
-  font-family: "geometos-rounded";
-  src: url(../fonts/cnbpb/geometos-rounded/geometos-rounded.ttf) format(truetype);
+  src: url(../fonts/cnbpb/open_dyslexic/OpenDyslexicAlta-Bold.otf) format(opentype);
   font-display: swap;
 }
 @font-face {
@@ -40,16 +40,17 @@
   --color-dark-purple: #5E239D;
   --color-light-purple: #863DD4;
   --color-dark-pink-100: #FB3CA5;
-  --color-dark-pink-200: #F20587;
+  --color-dark-pink-200: #F229AC;
   --color-light-pink-100: #FFD1E9;
   --color-light-pink-200: #FFC2E2;
   --font-lexia-readable: "lexia-readable";
   --font-open-dyslexic: "open-dyslexic";
-  --font-poppins: var(--font-poppins);
+  --font-quicksand: var(--font-quicksand);
   --font-geometos-rounded: "geometos-rounded";
   --font-open-sans: sans-serif;
   --font-bitter: "bitter";
   --text-44px: 44px;
+  --text-40px: 40px;
   --text-32px: 32px;
   --text-28px: 28px;
   --spacing-100px: 100px;
@@ -75,7 +76,30 @@
 }
 
 body {
-  @apply bg-light-pink-100 font-poppins text-white-100 animate-[fade_0.5s_ease-in-out];
+  @apply bg-light-pink-100 font-quicksand text-white-100 animate-[fade_0.5s_ease-in-out];
+}
+
+/* Texts */
+#sobre strong,
+#rodape strong {
+  background: linear-gradient(
+    96deg,
+    var(--color-light-pink-200) 0%,
+    var(--color-light-pink-100) 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 4px 4px 4px #2824260D, 4px 4px 4px #FFD1E908;
+}
+#problemn-cnbpb .font-open-dyslexic strong,
+#footer-cnbpb .font-open-dyslexic strong {
+  color: #F2E530;
+}
+#solution-cnbpb .font-open-dyslexic strong,
+#style-guide-cnbpb .font-open-dyslexic strong,
+#technologies-cnbpb .font-open-dyslexic strong {
+  color: #713CA6;
 }
 
 /* Dark mode */
@@ -91,50 +115,7 @@ body {
 .dark #solution-cnbpb .font-open-dyslexic strong,
 .dark #style-guide-cnbpb .font-open-dyslexic strong,
 .dark #technologies-cnbpb .font-open-dyslexic strong {
-  background: linear-gradient(
-    96deg,
-    #F2E530 0%,
-    #ECE35A 90%
-  );
-  background-clip: text;
-}
-
-/* Texts */
-.font-open-dyslexic strong {
-  font-family: "open-dyslexic-bold", sans-serif;
-  background: linear-gradient(
-    96deg,
-    var(--color-light-pink-200) 0%,
-    var(--color-light-pink-100) 90%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 4px 4px 4px #2824260D, 4px 4px 4px #FFD1E908;
-}
-#problemn-cnbpb .font-open-dyslexic strong,
-#footer-cnbpb .font-open-dyslexic strong {
-  background: linear-gradient(
-    96deg,
-    #F2E530 0%,
-    #ECE35A 90%
-  );
-  background-clip: text;
-}
-#solution-cnbpb .font-open-dyslexic strong,
-#style-guide-cnbpb .font-open-dyslexic strong,
-#technologies-cnbpb .font-open-dyslexic strong {
-  background: linear-gradient(
-    96deg,
-    #713CA6 0%,
-    #713CA6 90%
-  );
-  background-clip: text;
-}
-
-/* Form's toach */
-.notify-toastify {
-  @apply min-w-[290px] bg-[#00B09B] text-base rounded-4xl xl:w-max xl:text-xl xl:translate-x-full;
+  @apply text-[#F2E530];
 }
 
 /* Academic backgrounds list */

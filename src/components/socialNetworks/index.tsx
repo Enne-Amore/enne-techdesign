@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
+import { FaEnvelope, FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 
 interface SocialNetworkInterface {
   url: string;
@@ -10,19 +10,24 @@ export default function SocialNetworks(props: { socialNetworkStyle: string }) {
   // List of social networks data
   const socialNetworks: SocialNetworkInterface[] = [
     {
+      url: "https://wa.me/5583981448264?text=Olá,%20Enne!%20Tudo%20bem?%20É%20um%20prazer%20conhecer%20o%20seu%20trabalho%20e%20eu%20gostaria%20de%20saber%20mais%20sobre.%20S2",
+      ariaLabel: "Falar comigo no WhatsApp",
+      icon: <FaWhatsapp className={`w-6 h-auto`} />,
+    },
+    {
       url: "https://www.linkedin.com/in/enne-jim-pessoa",
       ariaLabel: "Ir ao meu perfil no LinkedIn",
       icon: <FaLinkedinIn className={`w-6 h-auto`} />,
     },
     {
-      url: "https://wa.me/+5583981448264",
-      ariaLabel: "Falar comigo no WhatsApp",
-      icon: <FaWhatsapp className={`w-6 h-auto`} />,
-    },
-    {
       url: "https://github.com/Enne-Amore",
       ariaLabel: "Ir ao meu perfil no GitHub",
       icon: <FaGithub className={`w-6 h-auto`} />,
+    },
+    {
+      url: "mailto:enne.pessoa@gmail.com",
+      ariaLabel: "Enviar email para mim",
+      icon: <FaEnvelope className={`w-6 h-auto`} />,
     },
   ];
 
