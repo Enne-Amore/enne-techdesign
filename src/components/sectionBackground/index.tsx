@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useTheme } from "next-themes";
 import Image from "next/image";
@@ -10,6 +10,7 @@ interface SectionBackgroundInterface {
   desktopHeight: number;
   noShadow?: boolean;
   darkMode?: boolean;
+  priority?: boolean;
 }
 
 export default function SectionBackground(props: SectionBackgroundInterface) {
@@ -28,19 +29,20 @@ export default function SectionBackground(props: SectionBackgroundInterface) {
     >
       <source
         media="(min-width: 1280px)"
-        srcSet={`/assets/${props.src}-${isDark ? 'dark-' : ''}background-desktop.png`}
+        srcSet={`/assets/${props.src}-${isDark ? "dark-" : ""}background-desktop.png`}
         width={1280}
         height={props.desktopHeight}
         className={``}
       />
 
       <Image
-        src={`/assets/${props.src}-${isDark ? 'dark-' : ''}background-mobile.png`}
+        src={`/assets/${props.src}-${isDark ? "dark-" : ""}background-mobile.png`}
         alt={``}
         width={375}
         height={props.mobileHeight}
         aria-hidden="true"
-        className={`w-full h-full ${props.noShadow ? '' : 'filter drop-shadow'}`}
+        className={`w-full h-full ${props.noShadow ? "" : "filter drop-shadow"}`}
+        {...(props.priority ? { priority: true, loading: "eager" } : {})}
       />
     </picture>
   );

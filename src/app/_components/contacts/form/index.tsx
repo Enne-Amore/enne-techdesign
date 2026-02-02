@@ -17,11 +17,11 @@ export default function Form() {
           id="QKEK3k3Z"
           size={90}
           hidden={{
-            foo: 'Foo Value',
-            bar: 'Bar Value',
+            foo: "Foo Value",
+            bar: "Bar Value",
           }}
           onReady={() => {
-            console.log('form ready')
+            console.log("form ready");
           }}
           enableSandbox
           transitiveSearchParams
@@ -32,7 +32,9 @@ export default function Form() {
           <span>Contate-me</span>
         </PopupButton>
 
-        <span className={`text-gray text-sm text-shadow-2xs xl:text-base`}>Leva de 1 a 3 minutos</span>
+        <span className={`text-gray text-sm text-shadow-2xs xl:text-base`}>
+          Leva de 1 a 3 minutos
+        </span>
       </div>
     </article>
   );

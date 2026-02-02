@@ -9,7 +9,12 @@ export default function Header() {
       className={`relative bg-white-100 p-5 flex justify-between items-center dark:bg-gray xl:py-7 xl:px-10 2xl:px-14`}
     >
       {/* background */}
-      <SectionBackground src={`header`} mobileHeight={95} desktopHeight={124} />
+      <SectionBackground
+        src={`header`}
+        mobileHeight={95}
+        desktopHeight={124}
+        priority
+      />
 
       {/* content */}
       <figure className={`relative flex items-center gap-2.5`}>

@@ -76,9 +76,10 @@ export default function AcademicBackgrounds() {
         ))}
       </ul>
 
+      {/* Vertical line of the list */}
       <div
         className={`hidden absolute bottom-[90px] left-[580px] w-0.5 h-[466px] rounded bg-dark-pink-100 xl:block`}
-      /> {/* Vertical line of the list */}
+      />
     </section>
   );
 }

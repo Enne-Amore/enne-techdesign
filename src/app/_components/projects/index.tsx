@@ -28,7 +28,9 @@ export default function Projects() {
         style={`relative bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple dark:from-dark-pink-200 dark:to-dark-pink-100 xl:w-[723px]`}
       />
 
-      <ul className={`w-[280px] flex flex-col gap-10 xl:w-[1090px] xl:flex-row xl:flex-wrap xl:gap-7`}>
+      <ul
+        className={`w-[280px] flex flex-col gap-10 xl:w-[1090px] xl:flex-row xl:flex-wrap xl:gap-7`}
+      >
         {cards.map((card, index) => (
           <li key={index}>
             <Link
@@ -63,9 +65,7 @@ export default function Projects() {
                   className={`absolute inset-0 h-[400px] bg-gradient-to-b from-light-pink-100/10 to-light-pink-100 opacity-0 rounded-4xl z-10 duration-300 group-hover:opacity-20 group-focus-within:opacity-20 group-active:opacity-30 xl:h-[330px]`}
                 />
 
-                <figcaption
-                  className={`absolute left-6 top-4 w-full flex`}
-                >
+                <figcaption className={`absolute left-6 top-4 w-full flex`}>
                   <span
                     className={`w-max text-gray text-xs text-shadow-2xs select-none bg-white/90 px-2.5 py-1 rounded-4xl`}
                   >
