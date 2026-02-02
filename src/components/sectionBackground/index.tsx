@@ -1,7 +1,8 @@
-"use client"
+"use client";
 
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 interface SectionBackgroundInterface {
   src: string;
@@ -9,10 +10,17 @@ interface SectionBackgroundInterface {
   desktopHeight: number;
   noShadow?: boolean;
   darkMode?: boolean;
+  priority?: boolean;
 }
 
 export default function SectionBackground(props: SectionBackgroundInterface) {
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
+
   const isDark = props.darkMode && theme === "dark";
 
   return (
@@ -21,19 +29,20 @@ export default function SectionBackground(props: SectionBackgroundInterface) {
     >
       <source
         media="(min-width: 1280px)"
-        srcSet={`/assets/${props.src}-${isDark ? 'dark-' : ''}background-desktop.png`}
+        srcSet={`/assets/${props.src}-${isDark ? "dark-" : ""}background-desktop.png`}
         width={1280}
         height={props.desktopHeight}
         className={``}
       />
 
       <Image
-        src={`/assets/${props.src}-${isDark ? 'dark-' : ''}background-mobile.png`}
+        src={`/assets/${props.src}-${isDark ? "dark-" : ""}background-mobile.png`}
         alt={``}
         width={375}
         height={props.mobileHeight}
         aria-hidden="true"
-        className={`w-full h-full ${props.noShadow ? '' : 'filter drop-shadow'}`}
+        className={`w-full h-full ${props.noShadow ? "" : "filter drop-shadow"}`}
+        {...(props.priority ? { priority: true, loading: "eager" } : {})}
       />
     </picture>
   );

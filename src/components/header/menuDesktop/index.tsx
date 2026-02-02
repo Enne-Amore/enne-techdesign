@@ -5,5 +5,5 @@ export default function MenuDesktop() {
     <nav className={`relative hidden xl:flex`}>
       <NavItems />
     </nav>
-  )
+  );
 }
