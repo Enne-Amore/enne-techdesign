@@ -36,4 +36,19 @@ export interface ProjectsType {
     urlMainStyle: string;
     urlSecondaryStyle?: string;
   };
+  technologies: {
+    id: string;
+    explanation: {
+      titleStyle: string;
+      text: string;
+      textStyle: string;
+      img: string;
+      alt: string;
+    };
+    functions: {
+      titleStyle: string;
+      list: string[];
+      listStyle: string;
+    };
+  };
 }

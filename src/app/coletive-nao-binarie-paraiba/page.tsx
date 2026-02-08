@@ -60,7 +60,11 @@ export default function ColetiveNaoBinarieParaiba() {
 
         <ProjectScreenPrototyping />
 
-        <ProjectTechnologies />
+        <ProjectTechnologies
+          id={data.technologies.id}
+          explanation={data.technologies.explanation}
+          functions={data.technologies.functions}
+        />
 
         <ProjectDemoVideo />
 

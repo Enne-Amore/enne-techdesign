@@ -2,6 +2,7 @@ import { ProjectsType } from "@/types/projectsType";
 import { projects } from "@/data/projects";
 import ProjectHeader from "@/components/project/projectHeader";
 import ProjectAccesses from "@/components/project/projectAccesses";
+import ProjectTechnologies from "@/components/project/projectTechnologies";
 
 export default function JanaiAmitafProducoes() {
   const data: ProjectsType = projects.find((project) => project.id === "2")!;
@@ -39,6 +40,12 @@ export default function JanaiAmitafProducoes() {
           ariaLabelGitHub={data.accesses.ariaLabelGitHub}
           urlMainStyle={data.accesses.urlMainStyle}
           urlSecondaryStyle={data.accesses.urlSecondaryStyle}
+        />
+
+        <ProjectTechnologies
+          id={data.technologies.id}
+          explanation={data.technologies.explanation}
+          functions={data.technologies.functions}
         />
       </main>
     </div>

@@ -10,7 +10,7 @@ export default function ProjectHeader(props: ProjectsType["header"]) {
     >
       <div className={`w-full flex justify-between xl:items-center`}>
         <Link
-          href="/"
+          href="/#projetos"
           aria-label="Voltar à página inicial"
           className={`text-[#FFFFFD] text-shadow-2xs xl:p-3 xl:rounded-full xl:transition xl:hover:bg-white/15 xl:hover:shadow xl:focus-visible:bg-white/15 xl:focus-visible:shadow xl:active:bg-white/30`}
           rel="previous"

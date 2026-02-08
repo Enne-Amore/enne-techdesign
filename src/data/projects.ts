@@ -41,6 +41,28 @@ export const projects = [
       urlSecondaryStyle:
         "bg-[#F2E530]/20 border-2 border-[#F2E530] text-[#040008] dark:text-[#FFFFFD] dark:hover:text-[#040008] dark:focus-visible:text-[#040008] hover:bg-[#F2E530] focus-visible:bg-[#F2E530] active:border-[#F2C029] active:bg-[#F2C029]",
     },
+    technologies: {
+      id: "technologies-cnbpb",
+      explanation: {
+        titleStyle: "font-geometos-rounded from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
+        text: "Como o site consiste em uma <strong>Landing Page simples e informativa</strong> de apenas uma página com algumas animações e funcionalidades essenciais, bastou somente utilizar a tríade básica das linguagens <strong>HTML5, CSS3 e Javascript</strong>.",
+        textStyle: "font-open-dyslexic xl:w-[487px]",
+        img: "/assets/cnbpb-technologies.png",
+        alt: "Logo de cada tecnologia utilizada: HTML5, CSS3 e Javascript",
+      },
+      functions:  {
+        titleStyle: "font-geometos-rounded text-[#FFFEF6] text-center bg-gradient-to-r from-[#713CA6]/0 via-[#713CA6] to-[#713CA6]/0 pt-6 pb-5 dark:text-[#040008] dark:from-[#F2C029]/0 dark:via-[#F2C029] dark:to-[#F2C029]/0",
+        list: [
+          "<strong>Menu de navegação</strong> abrível e fechável para mobile",
+          "<strong>Detecção e adaptação de tema de cores preferencial</strong> da pessoa usuária",
+          "<strong>Opções de escolher tema</strong> de cores entre <strong>escuro e claro</strong>",
+          "<strong>Botão</strong>, que aparace no final da página, <strong>de voltar ao topo</strong>",
+          "<strong>Scroll horizontal</strong>, nos carrosséis de imagem, <strong>arrastável através do mouse</strong>",
+          "<strong>Tela de carregamento</strong> inicial",
+        ],
+        listStyle: "font-open-dyslexic bg-gradient-to-br from-[#FFCE31] to-[#F2E530] dark:from-[#713CA6] dark:to-[#6A4EA6]"
+      }
+    },
   },
   {
     id: "2",
@@ -83,6 +105,26 @@ export const projects = [
         "bg-[#F2B705] text-[#05000C] hover:bg-[#DB9406] focus-visible:bg-[#DB9406] active:bg-[#F8F3FF] active:text-[#DB9406]",
       urlSecondaryStyle:
         "bg-[#F2B705]/20 border-2 border-[#F2B705] text-[#05000C] dark:text-[#FCFAFF] dark:hover:text-[#05000C] dark:focus-visible:text-[#05000C] hover:bg-[#F2B705] focus-visible:bg-[#F2B705] active:border-[#DB9406] active:bg-[#DB9406]",
+    },
+    technologies: {
+      id: "technologies-janai-amitaf",
+      explanation: {
+        titleStyle: "from-[#6C0CF2] to-[#8C00FF] dark:text-[#F2B705]",
+        text: "Como o site consiste em um <strong>portfólio</strong> artístico contendo <strong>várias páginas</strong> com algumas animações e funcionalidades essenciais, foi necessário utilizar a tríade avançada de <strong>Next.js, Tailwind CSS e Typescript</strong>.",
+
+        textStyle: "xl:w-[515px]",
+        img: "/assets/janai-amitaf-technologies.png",
+        alt: "Logo de cada tecnologia utilizada: Node.js, Tailwind CSS e Typescript",
+      },
+      functions:  {
+        titleStyle: "font-bold bg-gradient-to-r from-[#F1ACF2] to-[#F1ACF2]/0 px-10 py-5 rounded-full dark:from-[#C522F2] dark:to-[#C522F2]/0",
+        list: [
+          "<strong>Menu de informações</strong> extras abrível e fechável",
+          "<strong>Menu de navegação</strong> horizontal entre páginas",
+          "<strong>Armazenamento de informações</strong> sobre os projetos via <strong>banco de dados</strong> local",
+        ],
+        listStyle: "bg-gradient-to-br from-[#F2B705] to-[#DB9406] dark:from-[#8C00FF] dark:to-[#6C0CF2]"
+      }
     },
   },
 ];

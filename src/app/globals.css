@@ -101,6 +101,9 @@ body {
 #technologies-cnbpb .font-open-dyslexic strong {
   color: #713CA6;
 }
+#technologies-janai-amitaf strong {
+  color: #6C0CF2;
+}
 
 /* Dark mode */
 .dark ::-webkit-scrollbar-track {
@@ -116,6 +119,9 @@ body {
 .dark #style-guide-cnbpb .font-open-dyslexic strong,
 .dark #technologies-cnbpb .font-open-dyslexic strong {
   @apply text-[#F2E530];
+}
+.dark #technologies-janai-amitaf strong {
+  @apply text-[#F2B705];
 }
 
 /* Academic backgrounds list */
