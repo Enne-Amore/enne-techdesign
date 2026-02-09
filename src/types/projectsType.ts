@@ -36,6 +36,15 @@ export interface ProjectsType {
     urlMainStyle: string;
     urlSecondaryStyle?: string;
   };
+  prototyping: {
+    sectionStyle: string;
+    titleStyle: string;
+    imgs: {
+      id: string;
+      img: string;
+      alt: string;
+     }[];
+   };
   technologies: {
     id: string;
     explanation: {

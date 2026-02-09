@@ -58,7 +58,11 @@ export default function ColetiveNaoBinarieParaiba() {
 
         <ProjectStyleGuide />
 
-        <ProjectScreenPrototyping />
+        <ProjectScreenPrototyping
+          sectionStyle={data.prototyping.sectionStyle}
+          titleStyle={data.prototyping.titleStyle}
+          imgs={data.prototyping.imgs}
+        />
 
         <ProjectTechnologies
           id={data.technologies.id}

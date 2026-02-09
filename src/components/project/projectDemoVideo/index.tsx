@@ -6,7 +6,7 @@ export default function ProjectDemoVideo(props: ProjectsType["video"]) {
       className={`w-full bg-gradient-to-b ${props.sectionStyle} flex flex-col justify-center items-center gap-11 px-8 pt-12 pb-20 shadow xl:gap-16 xl:pt-70px xl:pb-100px`}
     >
       <h2
-        className={`w-[260px] font-bold ${props.titleStyle} bg-gradient-to-br text-transparent bg-clip-text text-28px text-center text-shadow-2xs -mb-5 xl:w-full xl:text-32px`}
+        className={`w-[260px] font-bold ${props.titleStyle} text-28px text-center text-shadow-2xs -mb-5 xl:w-full xl:text-32px`}
       >
         Demonstração de Uso
       </h2>

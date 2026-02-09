@@ -41,6 +41,14 @@ export const projects = [
       urlSecondaryStyle:
         "bg-[#F2E530]/20 border-2 border-[#F2E530] text-[#040008] dark:text-[#FFFFFD] dark:hover:text-[#040008] dark:focus-visible:text-[#040008] hover:bg-[#F2E530] focus-visible:bg-[#F2E530] active:border-[#F2C029] active:bg-[#F2C029]",
     },
+    prototyping: {
+      sectionStyle: "from-[#6A4EA6] to-[#713CA6]",
+      titleStyle: "font-geometos-rounded text-[#F2E530]",
+      imgs: [
+        { id: "1", img: "cnbpb-atividades.png", alt: "Pré-visualização da seção de atividades do site" },
+        { id: "2", img: "cnbpb-membres.png", alt: "Pré-visualização da seção de membres do site" },
+      ],
+    },
     technologies: {
       id: "technologies-cnbpb",
       explanation: {
@@ -65,7 +73,7 @@ export const projects = [
     },
     video: {
       sectionStyle: "from-[#F2E530] to-[#FFCE31] dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#F2E530,#FFCE31)]",
-      titleStyle: "font-geometos-rounded from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
+      titleStyle: "font-geometos-rounded bg-gradient-to-br text-transparent bg-clip-text from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
       src: "/assets/cnbpb-video.mp4",
     },
   },
@@ -111,6 +119,14 @@ export const projects = [
       urlSecondaryStyle:
         "bg-[#F2B705]/20 border-2 border-[#F2B705] text-[#05000C] dark:text-[#FCFAFF] dark:hover:text-[#05000C] dark:focus-visible:text-[#05000C] hover:bg-[#F2B705] focus-visible:bg-[#F2B705] active:border-[#DB9406] active:bg-[#DB9406]",
     },
+    prototyping: {
+      sectionStyle: "from-[#F2B705] to-[#DB9406] dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#F2B705,#DB9406)]",
+      titleStyle: "text-[#05000C] dark:text-[#F8F3FF]",
+      imgs: [
+        { id: "1", img: "janai-amitaf-projetos.png", alt: "Pré-visualização da página de projetos do site" },
+        { id: "2", img: "janai-amitaf-servicos.png", alt: "Pré-visualização da página de serviços do site" },
+      ],
+    },
     technologies: {
       id: "technologies-janai-amitaf",
       explanation: {
@@ -133,7 +149,7 @@ export const projects = [
     },
     video: {
       sectionStyle: "from-[#E057F2] to-[#C522F2] dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#E057F2,#C522F2)]",
-      titleStyle: "from-[#05000C] to-[#232027] dark:text-[#F8F3FF]",
+      titleStyle: "text-[#05000C] dark:text-[#F8F3FF]",
       src: "/assets/janai-amitaf-video.mp4",
     },
   },
