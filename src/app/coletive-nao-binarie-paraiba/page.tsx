@@ -66,7 +66,11 @@ export default function ColetiveNaoBinarieParaiba() {
           functions={data.technologies.functions}
         />
 
-        <ProjectDemoVideo />
+        <ProjectDemoVideo
+          sectionStyle={data.video.sectionStyle}
+          titleStyle={data.video.titleStyle}
+          src={data.video.src}
+        />
 
         <ProjectImpact />
       </main>

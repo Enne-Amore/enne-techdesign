@@ -51,4 +51,9 @@ export interface ProjectsType {
       listStyle: string;
     };
   };
+  video: {
+    sectionStyle: string;
+    titleStyle: string;
+    src: string;
+  }
 }

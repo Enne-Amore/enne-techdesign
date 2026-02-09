@@ -63,6 +63,11 @@ export const projects = [
         listStyle: "font-open-dyslexic bg-gradient-to-br from-[#FFCE31] to-[#F2E530] dark:from-[#713CA6] dark:to-[#6A4EA6]"
       }
     },
+    video: {
+      sectionStyle: "from-[#F2E530] to-[#FFCE31] dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#F2E530,#FFCE31)]",
+      titleStyle: "font-geometos-rounded from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
+      src: "/assets/cnbpb-video.mp4",
+    },
   },
   {
     id: "2",
@@ -117,7 +122,7 @@ export const projects = [
         alt: "Logo de cada tecnologia utilizada: Node.js, Tailwind CSS e Typescript",
       },
       functions:  {
-        titleStyle: "font-bold bg-gradient-to-r from-[#F1ACF2] to-[#F1ACF2]/0 px-10 py-5 rounded-full dark:from-[#C522F2] dark:to-[#C522F2]/0",
+        titleStyle: "font-bold text-[#05000C] bg-gradient-to-r from-[#F1ACF2] to-[#F1ACF2]/0 px-10 py-5 rounded-full dark:text-[#F8F3FF] dark:from-[#C522F2] dark:to-[#C522F2]/0",
         list: [
           "<strong>Menu de informações</strong> extras abrível e fechável",
           "<strong>Menu de navegação</strong> horizontal entre páginas",
@@ -125,6 +130,11 @@ export const projects = [
         ],
         listStyle: "bg-gradient-to-br from-[#F2B705] to-[#DB9406] dark:from-[#8C00FF] dark:to-[#6C0CF2]"
       }
+    },
+    video: {
+      sectionStyle: "from-[#E057F2] to-[#C522F2] dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#E057F2,#C522F2)]",
+      titleStyle: "from-[#05000C] to-[#232027] dark:text-[#F8F3FF]",
+      src: "/assets/janai-amitaf-video.mp4",
     },
   },
 ];

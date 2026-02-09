@@ -3,6 +3,7 @@ import { projects } from "@/data/projects";
 import ProjectHeader from "@/components/project/projectHeader";
 import ProjectAccesses from "@/components/project/projectAccesses";
 import ProjectTechnologies from "@/components/project/projectTechnologies";
+import ProjectDemoVideo from "@/components/project/projectDemoVideo";
 
 export default function JanaiAmitafProducoes() {
   const data: ProjectsType = projects.find((project) => project.id === "2")!;
@@ -46,6 +47,12 @@ export default function JanaiAmitafProducoes() {
           id={data.technologies.id}
           explanation={data.technologies.explanation}
           functions={data.technologies.functions}
+        />
+
+        <ProjectDemoVideo
+          sectionStyle={data.video.sectionStyle}
+          titleStyle={data.video.titleStyle}
+          src={data.video.src}
         />
       </main>
     </div>
