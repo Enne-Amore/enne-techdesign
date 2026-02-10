@@ -84,7 +84,13 @@ export default function ColetiveNaoBinarieParaiba() {
         <ProjectImpact />
       </main>
 
-      <ProjectFooter />
+      <ProjectFooter
+        id={data.footer.id}
+        footerStyle={data.footer.footerStyle}
+        socialNetworkStyle={data.footer.socialNetworkStyle}
+        researchSources={data.footer.researchSources}
+        copyrightStyle={data.footer.copyrightStyle}
+      />
     </div>
   );
 }

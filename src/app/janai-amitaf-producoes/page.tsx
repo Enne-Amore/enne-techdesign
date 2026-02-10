@@ -6,6 +6,7 @@ import ProjectStyleGuide from "@/components/project/projectStyleGuide";
 import ProjectScreenPrototyping from "@/components/project/projectScreenPrototyping";
 import ProjectTechnologies from "@/components/project/projectTechnologies";
 import ProjectDemoVideo from "@/components/project/projectDemoVideo";
+import ProjectFooter from "@/components/project/projectFooter";
 
 export default function JanaiAmitafProducoes() {
   const data: ProjectsType = projects.find((project) => project.id === "2")!;
@@ -29,7 +30,7 @@ export default function JanaiAmitafProducoes() {
 
       <main
         id="main"
-        className={`flex flex-col items-center gap-20 py-20 xl:gap-28 xl:py-28`}
+        className={`flex flex-col items-center gap-20 pt-20 xl:gap-28 xl:pt-28`}
       >
         <ProjectAccesses
           id={data.accesses.id}
@@ -70,6 +71,14 @@ export default function JanaiAmitafProducoes() {
           src={data.video.src}
         />
       </main>
+      
+      <ProjectFooter
+        id={data.footer.id}
+        footerStyle={data.footer.footerStyle}
+        socialNetworkStyle={data.footer.socialNetworkStyle}
+        researchSources={data.footer.researchSources}
+        copyrightStyle={data.footer.copyrightStyle}
+      />
     </div>
   );
 }

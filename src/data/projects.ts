@@ -254,6 +254,36 @@ export const projects = [
         "font-geometos-rounded bg-gradient-to-br text-transparent bg-clip-text from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
       src: "/assets/cnbpb-video.mp4",
     },
+    footer: {
+      id: "footer-cnbpb",
+      footerStyle: "from-[#6A4EA6] via-[#713CA6] to-[#242526]",
+      socialNetworkStyle: "bg-[#FFFCFE]/10 text-[#F2E530] border-[#F2E530] hover:bg-[#F2E530] hover:text-[#242325] focus-visible:bg-[#F2E530] focus-visible:text-[#242325] active:bg-[#FFCE31]",
+      researchSources: {
+        titleStyle: "font-geometos-rounded text-[#F2E530]",
+        links: [
+          {
+            id: "1",
+            label: "Coletive Não-Binárie da Paraíba - Fundo Brasil",
+            url: "https://www.fundobrasil.org.br/projeto/coletive-nao-binarie-da-paraiba",
+            ariaLabel: "Acesse a página sobre o Coletive Não-Binárie da Paraíba no site do Fundo Brasil",
+          },
+          {
+            id: "2",
+            label: "Guia para linguagem neutra - Ophelia Cassiano",
+            url: "https://medium.com/guia-para-linguagem-neutra-pt-br",
+            ariaLabel: "Acesse o artigo Guia para Linguagem Neutra de Ophelia Cassiano no Medium",
+          },
+          {
+            id: "3",
+            label: "Não-binárie - Orientando",
+            url: "https://orientando.org/listas/lista-de-generos/nao-binarie",
+            ariaLabel: "Acesse o artigo Não-binárie no site Orientando",
+          },
+        ],
+        linkStyle: "text-[#FFFFFD] hover:bg-[#FFFFFD]/15 active:bg-[#FFFFFD]/30",
+      },
+      copyrightStyle: "font-open-dyslexic text-[#FFFFFD]",
+    },
   },
   {
     id: "2",
@@ -314,7 +344,7 @@ export const projects = [
           lightContrast: "text-[#FCFAFF]",
         lists: {
           containerStyle:
-            "bg-[#F8F3FF]/30 border-[#05000C] dark:bg-[#252228]/30 dark:border-[#F8F3FF]",
+            "bg-[#F8F3FF]/30 border-[#05000C] dark:bg-[#090016]/10 dark:border-[#F8F3FF]",
           titleStyle: "from-[#6C0CF2] to-[#8C00FF] dark:text-[#F2B705]",
           mainColors: [
             {
@@ -482,6 +512,12 @@ export const projects = [
         "from-[#E057F2] to-[#C522F2] dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#E057F2,#C522F2)]",
       titleStyle: "text-[#05000C] dark:text-[#F8F3FF]",
       src: "/assets/janai-amitaf-video.mp4",
+    },
+    footer: {
+      id: "footer-janai-amitaf",
+      footerStyle: "from-[#8C00FF] via-[#6C0CF2] to-[#242325]",
+      socialNetworkStyle: "bg-[#FCFAFF]/10 text-[#F2B705] border-[#F2B705] hover:bg-[#F2B705] hover:text-[#242325] focus-visible:bg-[#F2B705] focus-visible:text-[#242325] active:bg-[#DB9406]",
+      copyrightStyle: "text-[#FCFAFF]",
     },
   },
 ];

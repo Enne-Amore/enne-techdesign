@@ -105,6 +105,9 @@ body {
 #technologies-janai-amitaf strong {
   color: #6C0CF2;
 }
+#footer-janai-amitaf strong {
+  color: #F2B705;
+}
 
 /* Dark mode */
 .dark ::-webkit-scrollbar-track {

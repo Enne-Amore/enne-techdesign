@@ -123,4 +123,20 @@ export interface ProjectsType {
     titleStyle: string;
     src: string;
   };
+  footer: {
+    id: string;
+    footerStyle: string;
+    socialNetworkStyle: string;
+    researchSources?: {
+      titleStyle: string;
+      links: {
+        id: string;
+        label: string;
+        url: string;
+        ariaLabel: string;
+      }[];
+      linkStyle: string;
+    };
+    copyrightStyle: string;
+  };
 }
