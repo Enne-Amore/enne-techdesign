@@ -35,14 +35,14 @@ export default function ProjectHeader(props: ProjectsType["header"]) {
         <picture>
           <source
             media="(min-width: 1280px)"
-            srcSet={props.img}
+            srcSet={`/assets/${props.img}-project-header.png`}
             width={Number(props.desktopWidth)}
             height={Number(props.desktopHeight)}
             type="image/png"
           />
 
           <Image
-            src={props.img}
+            src={`/assets/${props.img}-project-header.png`}
             alt={props.alt}
             width={Number(props.mobileWidth)}
             height={Number(props.mobileHeight)}

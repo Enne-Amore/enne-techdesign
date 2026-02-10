@@ -25,14 +25,14 @@ export default function ProjectExplanation(
         <picture>
           <source
             media="(min-width: 1280px)"
-            srcSet={props.img}
+            srcSet={`/assets/${props.img}-technologies.png`}
             width={450}
             height={216}
             type="image/png"
           />
 
           <Image
-            src={props.img}
+            src={`/assets/${props.img}-technologies.png`}
             alt={props.alt}
             width={300}
             height={104}

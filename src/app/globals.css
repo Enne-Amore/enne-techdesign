@@ -101,6 +101,7 @@ body {
 #technologies-cnbpb .font-open-dyslexic strong {
   color: #713CA6;
 }
+#style-guide-janai-amitaf strong,
 #technologies-janai-amitaf strong {
   color: #6C0CF2;
 }
@@ -120,6 +121,7 @@ body {
 .dark #technologies-cnbpb .font-open-dyslexic strong {
   @apply text-[#F2E530];
 }
+.dark #style-guide-janai-amitaf strong,
 .dark #technologies-janai-amitaf strong {
   @apply text-[#F2B705];
 }

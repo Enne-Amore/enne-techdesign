@@ -2,6 +2,7 @@ import { ProjectsType } from "@/types/projectsType";
 import { projects } from "@/data/projects";
 import ProjectHeader from "@/components/project/projectHeader";
 import ProjectAccesses from "@/components/project/projectAccesses";
+import ProjectStyleGuide from "@/components/project/projectStyleGuide";
 import ProjectScreenPrototyping from "@/components/project/projectScreenPrototyping";
 import ProjectTechnologies from "@/components/project/projectTechnologies";
 import ProjectDemoVideo from "@/components/project/projectDemoVideo";
@@ -42,6 +43,13 @@ export default function JanaiAmitafProducoes() {
           ariaLabelGitHub={data.accesses.ariaLabelGitHub}
           urlMainStyle={data.accesses.urlMainStyle}
           urlSecondaryStyle={data.accesses.urlSecondaryStyle}
+        />
+        
+        <ProjectStyleGuide
+          id={data.styleGuide.id}
+          explanation={data.styleGuide.explanation}
+          colors={data.styleGuide.colors}
+          typography={data.styleGuide.typography}
         />
         
         <ProjectScreenPrototyping

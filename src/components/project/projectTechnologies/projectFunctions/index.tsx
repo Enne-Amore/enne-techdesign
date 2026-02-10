@@ -6,7 +6,7 @@ export default function ProjectFunctions(
   return (
     <article className={`space-y-16 xl:space-y-70px`}>
       <h3
-        className={`${props.titleStyle} text-2xl text-shadow-2xs xl:text-28px`}
+        className={`font-bold ${props.titleStyle} text-2xl text-shadow-2xs xl:text-28px`}
       >
         Funcionalidades
       </h3>
