@@ -15,10 +15,10 @@ export interface ProjectsType {
     positionStyle: string;
     img: string;
     alt: string;
-    mobileWidth: string,
-    mobileHeight: string,
-    desktopWidth: string,
-    desktopHeight: string,
+    mobileWidth: string;
+    mobileHeight: string;
+    desktopWidth: string;
+    desktopHeight: string;
     caption: string;
     captionStyle: string;
     downStyle: string;
@@ -35,5 +35,108 @@ export interface ProjectsType {
     ariaLabelGitHub?: string;
     urlMainStyle: string;
     urlSecondaryStyle?: string;
+  };
+  styleGuide: {
+    id: string;
+    explanation: {
+      titleStyle: string;
+      text: string;
+      textStyle: string;
+      img: string;
+      alt: string;
+    };
+    colors: {
+      titleStyle: string;
+      darkContrast: string;
+      lightContrast: string;
+      lists: {
+        containerStyle: string;
+        titleStyle: string;
+        mainColors: {
+          id: string;
+          name: string;
+          hex: string;
+          isDarkContrast: boolean;
+        }[];
+        neutralColors: {
+          id: string;
+          name: string;
+          hex: string;
+          isDarkContrast: boolean;
+        }[];
+      };
+    };
+    typography: {
+      titleStyle: string;
+      fonts: {
+        list: {
+          id: string;
+          name: string;
+          role: string;
+          fontStyle?: string;
+        }[];
+        listStyle: string;
+        nameStyle: string;
+      };
+      proportions: {
+        containerStyle: string;
+        titleStyle: string;
+        iconStyle: string;
+        lists: {
+          id: string;
+          tag: string;
+          sizeDesktop: string;
+          sizeMobile: string;
+          weight: string;
+        }[];
+        listStyle: string;
+        tagStyle: string;
+      };
+    };
+  };
+  prototyping: {
+    sectionStyle: string;
+    titleStyle: string;
+    imgs: {
+      id: string;
+      img: string;
+      alt: string;
+    }[];
+  };
+  technologies: {
+    id: string;
+    explanation: {
+      titleStyle: string;
+      text: string;
+      textStyle: string;
+      img: string;
+      alt: string;
+    };
+    functions: {
+      titleStyle: string;
+      list: string[];
+      listStyle: string;
+    };
+  };
+  video: {
+    sectionStyle: string;
+    titleStyle: string;
+    src: string;
+  };
+  footer: {
+    id: string;
+    footerStyle: string;
+    socialNetworkStyle: string;
+    researchSources?: {
+      titleStyle: string;
+      links: {
+        id: string;
+        label: string;
+        url: string;
+        ariaLabel: string;
+      }[];
+      linkStyle: string;
+    };
+    copyrightStyle: string;
   };
 }

@@ -56,18 +56,41 @@ export default function ColetiveNaoBinarieParaiba() {
 
         <ProjectSolution />
 
-        <ProjectStyleGuide />
+        <ProjectStyleGuide
+          id={data.styleGuide.id}
+          explanation={data.styleGuide.explanation}
+          colors={data.styleGuide.colors}
+          typography={data.styleGuide.typography}
+        />
 
-        <ProjectScreenPrototyping />
+        <ProjectScreenPrototyping
+          sectionStyle={data.prototyping.sectionStyle}
+          titleStyle={data.prototyping.titleStyle}
+          imgs={data.prototyping.imgs}
+        />
 
-        <ProjectTechnologies />
+        <ProjectTechnologies
+          id={data.technologies.id}
+          explanation={data.technologies.explanation}
+          functions={data.technologies.functions}
+        />
 
-        <ProjectDemoVideo />
+        <ProjectDemoVideo
+          sectionStyle={data.video.sectionStyle}
+          titleStyle={data.video.titleStyle}
+          src={data.video.src}
+        />
 
         <ProjectImpact />
       </main>
 
-      <ProjectFooter />
+      <ProjectFooter
+        id={data.footer.id}
+        footerStyle={data.footer.footerStyle}
+        socialNetworkStyle={data.footer.socialNetworkStyle}
+        researchSources={data.footer.researchSources}
+        copyrightStyle={data.footer.copyrightStyle}
+      />
     </div>
   );
 }
