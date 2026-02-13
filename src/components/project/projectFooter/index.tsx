@@ -8,13 +8,13 @@ export default function ProjectFooter(props: ProjectsType["footer"]) {
   return (
     <footer
       id={props.id}
-      className={`bg-gradient-to-b ${props.footerStyle} flex flex-col items-center gap-12 p-8 pb-5 xl:px-12 xl:py-10`}
+      className={`bg-gradient-to-b ${props.footerStyle} flex flex-col items-center gap-12 p-8 pb-5 xl:gap-16 xl:px-12 xl:py-10`}
     >
       <div
-        className={`w-full flex flex-col items-center gap-12 xl:flex-row xl:justify-between xl:items-start`}
+        className={`w-full flex flex-col items-center gap-14 xl:flex-row xl:justify-between xl:items-start`}
       >
         <div
-          className={`w-full flex justify-between items-center ${props.researchSources ? `xl:flex-col xl:items-baseline` : ``} xl:gap-8`}
+          className={`w-full flex flex-col gap-6 justify-between items-center ${props.researchSources ? `xl:items-baseline` : ``} xl:gap-8`}
         >
           <Link
             href="/"
@@ -36,11 +36,11 @@ export default function ProjectFooter(props: ProjectsType["footer"]) {
         </div>
 
         {props.researchSources && (
-          <div className={`flex flex-col items-center gap-1.5 xl:items-end`}>
+          <div className={`flex flex-col items-center gap-1.5 xl:items-end xl:gap-2`}>
             <h3
-              className={`${props.researchSources.titleStyle} text-xl text-shadow-2xs flex items-center gap-2.5 xl:text-2xl xl:mr-2`}
+              className={`${props.researchSources.titleStyle} text-xl text-shadow-2xs flex items-center gap-2.5 xl:text-2xl xl:mr-4`}
             >
-              <span>Fontes de Pesquisa</span>
+              <span className={`-mb-1`}>Fontes de Pesquisa</span>
 
               <FaMagnifyingGlass />
             </h3>
@@ -53,9 +53,9 @@ export default function ProjectFooter(props: ProjectsType["footer"]) {
                     aria-label={link.ariaLabel}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`font-medium ${props.researchSources?.linkStyle} text-base text-shadow-2xs flex items-center gap-2 px-4 py-2 rounded-4xl transition duration-300 xl:text-xl`}
+                    className={`font-medium ${props.researchSources?.linkStyle} text-base text-shadow-2xs flex items-center gap-2.5 px-4 py-2 rounded-4xl transition duration-300 xl:text-xl`}
                   >
-                    <span className={`w-[175px] xl:w-max`}>{link.label}</span>
+                    <span className={`w-[190px] text-right xl:w-max`}>{link.label}</span>
 
                     <FaUpRightFromSquare className={`w-[18px] h-[23px]`} />
                   </a>

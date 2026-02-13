@@ -7,7 +7,7 @@ export default function ProjectScreenPrototyping(props: ProjectsType["prototypin
       className={`w-full bg-gradient-to-b ${props.sectionStyle} flex flex-col justify-center items-center gap-11 px-8 pt-12 pb-20 shadow xl:gap-16 xl:pt-70px xl:pb-100px`}
     >
       <h2
-        className={`w-[230px] font-bold ${props.titleStyle} text-28px text-center text-shadow-2xs -mb-5 xl:w-full xl:text-32px`}
+        className={`w-[230px] ${props.titleStyle} text-28px text-center text-shadow-2xs -mb-5 xl:w-full xl:text-32px`}
       >
         Prototipação de Tela
       </h2>

@@ -62,7 +62,7 @@ export default function ProjectHeader(props: ProjectsType["header"]) {
         aria-label="Embarque ao case do projeto"
         className={`${props.downStyle} text-shadow-2xs transition animate-btnDown`}
       >
-        <FaChevronDown className={`w-[70px] h-auto`} />
+        <FaChevronDown className={`w-16 h-auto xl:w-[70px]`} />
       </a>
     </header>
   );

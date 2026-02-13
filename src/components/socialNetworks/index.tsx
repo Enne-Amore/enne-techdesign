@@ -32,7 +32,7 @@ export default function SocialNetworks(props: { socialNetworkStyle: string }) {
   ];
 
   return (
-    <ul className={`flex gap-3`}>
+    <ul className={`flex gap-3.5`}>
       {socialNetworks.map((network, index) => (
         <li key={index}>
           <a
