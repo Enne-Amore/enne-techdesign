@@ -15,7 +15,7 @@ export default function SocialMedia() {
         <span>♡︎</span>
       </h3>
 
-      <SocialNetworks socialNetworkStyle={`bg-white-200 text-light-purple border-light-purple hover:bg-light-purple hover:text-white-200 focus-visible:bg-light-purple focus-visible:text-white-200 active:bg-dark-purple`} />
+      <SocialNetworks socialNetworkStyle={`bg-white-200 text-light-purple border-light-purple shadow-[0_0_2px] shadow-light-purple hover:bg-light-purple hover:text-white-200 hover:shadow-[0_0_5px] focus-visible:bg-light-purple focus-visible:text-white-200 focus-visible:shadow-[0_0_5px] active:bg-dark-purple active:shadow-dark-purple`} />
     </article>
   );
 }

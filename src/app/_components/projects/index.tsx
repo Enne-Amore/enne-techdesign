@@ -32,7 +32,7 @@ export default function Projects() {
         className={`w-[280px] flex flex-col gap-10 xl:w-[1090px] xl:flex-row xl:flex-wrap xl:gap-7`}
       >
         {cards.map((card, index) => (
-          <li key={index}>
+          <li key={index} className={`xl:even:mt-5`}>
             <Link
               href={card.url}
               aria-label={card.ariaLabel}
@@ -40,7 +40,7 @@ export default function Projects() {
               className={`rounded-4xl group`}
             >
               <figure
-                className={`relative w-[280px] border-2 border-light-pink-100 rounded-4xl shadow overflow-hidden duration-300 group-hover:border-light-pink-200 group-focus-within:border-light-pink-200 xl:w-[530px]`}
+                className={`relative w-[280px] border-2 border-light-pink-100 rounded-4xl shadow-[0_0_2px] shadow-light-pink-100 overflow-hidden duration-500 ease-in-out group-hover:border-light-pink-200 group-hover:shadow-[0_0_10px] group-hover:shadow-light-pink-200 group-focus-within:border-light-pink-200 group-focus-within:shadow-[0_0_10px] group-focus-within:shadow-light-pink-200 xl:w-[530px]`}
               >
                 <picture>
                   <source
@@ -56,13 +56,13 @@ export default function Projects() {
                     alt={card.alt}
                     width={280}
                     height={400}
-                    className={`rounded-4xl duration-300 group-hover:scale-110 group-focus-within:scale-110`}
+                    className={`rounded-4xl duration-500 ease-in-out group-hover:scale-110 group-focus-within:scale-110`}
                   />
                 </picture>
 
                 {/* Color overlay */}
                 <div
-                  className={`absolute inset-0 h-[400px] bg-gradient-to-b from-light-pink-100/10 to-light-pink-100 opacity-0 rounded-4xl z-10 duration-300 group-hover:opacity-20 group-focus-within:opacity-20 group-active:opacity-30 xl:h-[330px]`}
+                  className={`absolute inset-0 h-[400px] bg-gradient-to-b from-light-pink-100/10 to-light-pink-100 opacity-0 rounded-4xl z-10 duration-500 ease-in-out group-hover:opacity-20 group-focus-within:opacity-20 group-active:opacity-30 xl:h-[330px]`}
                 />
 
                 <figcaption className={`absolute left-6 top-4 w-full flex`}>

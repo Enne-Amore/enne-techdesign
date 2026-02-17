@@ -26,9 +26,10 @@ export default function Form() {
           enableSandbox
           transitiveSearchParams
           autoClose={10000}
-          className={`w-max bg-light-purple text-xl text-shadow-2xs font-bold flex items-center gap-2 px-8 py-3.5 rounded-4xl shadow cursor-pointer duration-200 hover:bg-dark-purple active:bg-white-300 active:text-dark-purple xl:text-2xl`}
+          className={`w-max bg-light-purple text-xl text-shadow-2xs font-bold flex items-center gap-2 px-8 py-3.5 rounded-4xl cursor-pointer shadow-[0_0_2px] shadow-light-purple transition duration-300 ease-in-out hover:bg-dark-purple hover:shadow-[0_0_5px] hover:shadow-dark-purple focus-visible:bg-dark-purple focus-visible:shadow-[0_0_5px] focus-visible:shadow-dark-purple active:bg-white-300 active:text-dark-purple active:shadow-white-300 xl:text-2xl`}
         >
           <FaWpforms className={`w-7 h-auto`} />
+
           <span>Contate-me</span>
         </PopupButton>
 

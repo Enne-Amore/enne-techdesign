@@ -14,7 +14,7 @@ export default function ProjectFooter(props: ProjectsType["footer"]) {
         className={`w-full flex flex-col items-center gap-14 xl:flex-row xl:justify-between xl:items-start`}
       >
         <div
-          className={`w-full flex flex-col gap-6 justify-between items-center ${props.researchSources ? `xl:items-baseline` : ``} xl:gap-8`}
+          className={`w-full flex flex-col gap-6 justify-between items-center ${props.researchSources ? `xl:items-baseline` : `xl:flex-row`} xl:gap-8`}
         >
           <Link
             href="/"
