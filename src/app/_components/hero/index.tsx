@@ -7,6 +7,7 @@ export default function Hero() {
       className={`flex flex-col-reverse items-center gap-12 xl:w-[1078px] xl:flex-row xl:justify-between`}
     >
       <div
+        data-aos="fade-right"
         className={`flex flex-col items-center gap-8 xl:gap-5 xl:-translate-x-8`}
       >
         <h2
@@ -30,7 +31,7 @@ export default function Hero() {
         </p>
       </div>
 
-      <figure>
+      <figure data-aos="fade-left">
         <Image
           src={`/assets/website-illustration.png`}
           alt=""

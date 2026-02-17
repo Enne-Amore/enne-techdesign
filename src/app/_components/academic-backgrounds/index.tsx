@@ -32,11 +32,12 @@ export default function AcademicBackgrounds() {
   return (
     <section
       id="formacoes"
-      className={`relative w-[320px] flex flex-col items-center gap-12 xl:w-[1078px] xl:gap-70px`}
+      className={`relative w-[320px] flex flex-col items-center gap-12 xl:w-[1078px] xl:gap-70px xl:scroll-mt-20`}
     >
       <SectionTitle
         label={`Formações acadêmicas nas quais carrego comigo em minha jornada`}
         style={`bg-clip-text text-transparent bg-gradient-to-br from-dark-purple to-light-purple dark:from-dark-pink-200 dark:to-dark-pink-100 xl:w-[683px]`}
+        animation
       />
 
       <ul
@@ -48,6 +49,8 @@ export default function AcademicBackgrounds() {
             className={`flex flex-col items-center xl:flex-row xl:even:flex-row-reverse xl:odd:-translate-x-[211px] xl:even:translate-x-[205px]`}
           >
             <div
+              data-aos="flip-down"
+              data-aos-offset="0"
               className={`bg-gradient-to-br from-light-pink-200 to-light-pink-100 flex flex-col gap-1.5 shadow px-8 py-6 rounded-4xl`}
             >
               <h3

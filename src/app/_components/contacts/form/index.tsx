@@ -6,7 +6,10 @@ import { FaWpforms } from "react-icons/fa6";
 
 export default function Form() {
   return (
-    <article className={`relative flex flex-col items-center gap-8`}>
+    <article
+      {...(window.innerWidth < 1280 ? { "data-aos": "fade-right" } : {})}
+      className={`relative flex flex-col items-center gap-8`}
+    >
       <SectionTitle
         label={`Será uma alegria enorme te ajudar com o que precisa!`}
         style={`text-black xl:w-[584px]`}

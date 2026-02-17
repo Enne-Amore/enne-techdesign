@@ -27,7 +27,7 @@ export default function About() {
   return (
     <section
       id="sobre"
-      className={`relative w-full px-9 pt-14 pb-24 flex flex-col justify-center items-center gap-14 xl:flex-row xl:gap-28 xl:py-20`}
+      className={`relative w-full px-9 pt-14 pb-24 flex flex-col justify-center items-center gap-14 scroll-mt-4 xl:flex-row xl:gap-28 xl:py-20 xl:scroll-mt-12`}
     >
       {/* background */}
       <SectionBackground
@@ -37,13 +37,18 @@ export default function About() {
       />
 
       {/* content */}
-      <article className={`relative space-y-3.5 xl:space-y-2 xl:w-[612px]`}>
+      <article
+        data-aos="fade-right"
+        className={`relative space-y-3.5 xl:space-y-2 xl:w-[612px]`}
+      >
         <SectionTitle
           label={`Sobre mim e minhas reflexões`}
           style={`text-white-300 xl:w-[613px]`}
         />
 
-        <p className={`text-xl text-shadow-2xs leading-8 xl:text-2xl xl:leading-9`}>
+        <p
+          className={`text-xl text-shadow-2xs leading-8 xl:text-2xl xl:leading-9`}
+        >
           Trabalhar com <strong>Front-end</strong> e <strong>UI/UX Design</strong> é onde posso unir lógica e sensibilidade para criar <strong>experiências digitais acessíveis e cheias de significado</strong>. Valorizo muito a <strong>comunicação contínua</strong>, o <strong>trabalho em equipe</strong> e o <strong>aprendizado compartilhado</strong>, pois sei que boas soluções nascem de pessoas diversas que colaboram com empatia e escuta ativa. Vejo nas minhas vocações uma forma de <strong>transformar o digital em um espaço mais humano e acolhedor</strong>.
         </p>
 
@@ -70,7 +75,11 @@ export default function About() {
         </ul>
       </article>
 
-      <figure className={`relative flex flex-col items-center gap-5`}>
+      <figure
+        data-aos="fade-left"
+        {...(window.innerWidth > 1280 ? { "data-aos-delay": "200" } : {})}
+        className={`relative flex flex-col items-center gap-5`}
+      >
         <Image
           src={`/assets/enne-jim-pessoa.png`}
           alt="Minha foto de perfil"
