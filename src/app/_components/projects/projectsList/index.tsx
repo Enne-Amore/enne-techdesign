@@ -14,7 +14,7 @@ export default function ProjectsList() {
       {cards.map((card, index) => (
         <li
           key={index}
-          // data-aos="zoom-in-up"
+          data-aos="zoom-in-up"
           className={`relative w-70 h-100 border-2 border-light-pink-100 shadow-[0_0_2px] shadow-light-pink-100 overflow-hidden rounded-4xl group duration-500 ease-in-out dark:shadow-light-pink-100/30 hover:shadow-[0_0_40px] hover:duration-200 focus-within:shadow-[0_0_40px] active:border-light-pink-200 active:shadow-[0_0_60px] active:shadow-light-pink-200 dark:active:shadow-light-pink-200/30 xl:w-132.5 xl:h-82.5 xl:even:mt-5`}
         >
           <Link href={card.url} aria-label={card.ariaLabel} rel="next">

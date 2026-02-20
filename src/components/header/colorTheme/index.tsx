@@ -27,7 +27,7 @@ export default function ColorTheme() {
           value="light"
           checked={resolvedTheme === "light"}
           onChange={() => setTheme("light")}
-          className={`absolute w-0 h-0`}
+          className={`sr-only`}
         />
 
         <label
@@ -36,6 +36,11 @@ export default function ColorTheme() {
           aria-label="Alterar tema de cores para claro"
           className={`flex content-center text-xl text-shadow-2xs pt-3 pb-3.5 pr-4 pl-5.5 rounded-l-4xl cursor-pointer duration-200 hover:bg-white-100/10`}
           tabIndex={0}
+          onKeyDown={(tecla) => {
+            if (tecla.key == "Enter") {
+              setTheme("light");
+            }
+          }}
         >
           <FaSun />
         </label>
@@ -51,7 +56,7 @@ export default function ColorTheme() {
           value="dark"
           checked={resolvedTheme === "dark"}
           onChange={() => setTheme("dark")}
-          className={`absolute w-0 h-0`}
+          className={`sr-only`}
         />
 
         <label
@@ -60,6 +65,11 @@ export default function ColorTheme() {
           aria-label="Alterar tema de cores para escuro"
           className={`flex content-center text-xl text-shadow-2xs pt-3 pb-3.5 pl-4 pr-5.5 rounded-r-4xl cursor-pointer duration-200 hover:bg-white-100/10`}
           tabIndex={0}
+          onKeyDown={(tecla) => {
+            if (tecla.key == "Enter") {
+              setTheme("dark");
+            }
+          }}
         >
           <FaMoon />
         </label>
