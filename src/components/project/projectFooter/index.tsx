@@ -8,7 +8,7 @@ export default function ProjectFooter(props: ProjectsType["footer"]) {
   return (
     <footer
       id={props.id}
-      className={`bg-gradient-to-b ${props.footerStyle} flex flex-col items-center gap-12 p-8 pb-5 xl:gap-16 xl:px-12 xl:py-10`}
+      className={`bg-linear-to-b ${props.footerStyle} flex flex-col items-center gap-12 p-8 pb-5 xl:gap-16 xl:px-12 xl:py-10`}
     >
       <div
         className={`w-full flex flex-col items-center gap-14 xl:flex-row xl:justify-between xl:items-start`}

@@ -245,14 +245,14 @@ export const projects = [
           "<strong>Tela de carregamento</strong> inicial",
         ],
         listStyle:
-          "font-open-dyslexic bg-gradient-to-br from-[#FFCE31] to-[#F2E530] dark:from-[#713CA6] dark:to-[#6A4EA6]",
+          "font-open-dyslexic bg-linear-to-br from-[#FFCE31] to-[#F2E530] dark:from-[#713CA6] dark:to-[#6A4EA6]",
       },
     },
     video: {
       sectionStyle:
         "from-[#F2E530] to-[#FFCE31] dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#F2E530,#FFCE31)]",
       titleStyle:
-        "font-geometos-rounded bg-gradient-to-br text-transparent bg-clip-text from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
+        "font-geometos-rounded bg-linear-to-br text-transparent bg-clip-text from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
       src: "/assets/cnbpb-video.mp4",
     },
     footer: {
@@ -298,7 +298,7 @@ export const projects = [
       caption: "Portfólio Web",
     },
     header: {
-      headerStyle: "bg-gradient-to-br from-[#8C00FF] to-[#6C0CF2]",
+      headerStyle: "bg-linear-to-br from-[#8C00FF] to-[#6C0CF2]",
       positions: ["UI/UX Design", "Front-end"],
       positionStyle: "bg-[#F2B705] dark:text-[#05000C]",
       img: "janai-amitaf",
@@ -506,7 +506,7 @@ export const projects = [
           "<strong>Armazenamento de informações</strong> sobre os projetos via <strong>banco de dados</strong> local",
         ],
         listStyle:
-          "bg-gradient-to-br from-[#F2B705] to-[#DB9406] dark:from-[#8C00FF] dark:to-[#6C0CF2]",
+          "bg-linear-to-br from-[#F2B705] to-[#DB9406] dark:from-[#8C00FF] dark:to-[#6C0CF2]",
       },
     },
     video: {

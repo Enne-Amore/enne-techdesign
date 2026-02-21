@@ -4,7 +4,7 @@ export default function ProjectSolution() {
   return (
     <section
       id={`solution-cnbpb`}
-      className={`w-full bg-gradient-to-b from-[#F2E530] to-[#FFCE31] flex flex-col justify-center items-center gap-10 px-8 pt-11 pb-16 shadow dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#F2E530,#FFCE31)] xl:flex-row-reverse xl:gap-100px xl:px-100px xl:py-70px`}
+      className={`w-full bg-linear-to-b from-[#F2E530] to-[#FFCE31] flex flex-col justify-center items-center gap-10 px-8 pt-11 pb-16 shadow dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#F2E530,#FFCE31)] xl:flex-row-reverse xl:gap-100px xl:px-100px xl:py-70px`}
     >
       <div className={`space-y-1`}>
         <h2

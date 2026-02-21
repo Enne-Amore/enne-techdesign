@@ -19,7 +19,7 @@ export default function ProjectTypography(
           {props.fonts.list.map((font, index) => (
             <li
               key={index}
-              className={`w-full bg-gradient-to-br ${props.fonts.listStyle} flex flex-col gap-5 px-8 py-6 rounded-4xl shadow xl:flex-row xl:justify-between xl:items-center xl:py-5 xl:px-9`}
+              className={`w-full bg-linear-to-br ${props.fonts.listStyle} flex flex-col gap-5 px-8 py-6 rounded-4xl shadow xl:flex-row xl:justify-between xl:items-center xl:py-5 xl:px-9`}
             >
               <h4
                 className={`${font.fontStyle} ${props.fonts.nameStyle} text-xl text-shadow-2xs xl:text-2xl`}
@@ -56,7 +56,7 @@ export default function ProjectTypography(
               {props.proportions.lists.map((proportion, index) => (
                 <li
                   key={index}
-                  className={`w-full bg-gradient-to-br ${props.proportions.listStyle} flex flex-col items-center gap-0 p-8 rounded-4xl shadow`}
+                  className={`w-full bg-linear-to-br ${props.proportions.listStyle} flex flex-col items-center gap-0 p-8 rounded-4xl shadow`}
                 >
                   <h5
                     className={`${props.proportions.tagStyle} text-base text-shadow-2xs xl:text-xl`}
@@ -97,7 +97,7 @@ export default function ProjectTypography(
               {props.proportions.lists.map((proportion, index) => (
                 <li
                   key={index}
-                  className={`w-full bg-gradient-to-br ${props.proportions.listStyle} flex flex-col items-center gap-0 p-8 rounded-4xl shadow`}
+                  className={`w-full bg-linear-to-br ${props.proportions.listStyle} flex flex-col items-center gap-0 p-8 rounded-4xl shadow`}
                 >
                   <h5
                     className={`${props.proportions.tagStyle} text-base text-shadow-2xs xl:text-xl`}

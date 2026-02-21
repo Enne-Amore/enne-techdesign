@@ -39,7 +39,7 @@ export default function About() {
       {/* content */}
       <article
         data-aos="fade-right"
-        className={`relative space-y-3.5 xl:space-y-2 xl:w-[612px]`}
+        className={`relative space-y-3.5 xl:space-y-2 xl:w-153`}
       >
         <SectionTitle
           label={`Sobre mim e minhas reflexões`}
@@ -62,7 +62,7 @@ export default function About() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={resume.ariaLabel}
-                className={`flex gap-1.5 items-center font-bold text-base text-shadow-2xs bg-dark-pink-100/30 border-1 border-dark-pink-100 px-6 py-2.5 rounded-4xl shadow-[0_0_2px] shadow-dark-pink-100 duration-300 ease-in-out hover:bg-dark-pink-100 hover:shadow-[0_0_5px] focus-visible:bg-dark-pink-100 focus-visible:shadow-[0_0_5px] active:bg-dark-pink-200 active:shadow-dark-pink-200 xl:text-lg`}
+                className={`flex gap-1.5 items-center font-bold text-base text-shadow-2xs bg-dark-pink-100/30 border border-dark-pink-100 px-6 py-2.5 rounded-4xl shadow-[0_0_2px] shadow-dark-pink-100 duration-300 ease-in-out hover:bg-dark-pink-100 hover:text-gray hover:shadow-[0_0_5px] focus-visible:bg-dark-pink-100 focus-visible:text-gray focus-visible:shadow-[0_0_5px] active:bg-dark-pink-200 active:shadow-dark-pink-200 xl:text-lg`}
               >
                 <span>
                   <FaFileLines className={`w-5 h-auto`} />
@@ -85,7 +85,7 @@ export default function About() {
           alt="Minha foto de perfil"
           width={280}
           height={280}
-          className={`filter drop-shadow xl:w-[360px]`}
+          className={`filter drop-shadow xl:w-90`}
         />
 
         <figcaption className={`flex flex-col items-center gap-2.5`}>
@@ -96,7 +96,7 @@ export default function About() {
           </span>
 
           <span
-            className={`font-medium text-gray text-xs text-shadow-2xs bg-gradient-to-br from-light-pink-200 to-light-pink-100 shadow px-2.5 py-1 rounded-4xl xl:text-base xl:px-3.5`}
+            className={`font-medium text-gray text-xs text-shadow-2xs bg-linear-to-br from-light-pink-200 to-light-pink-100 shadow px-2.5 py-1 rounded-4xl xl:text-base xl:px-3.5`}
           >
             Ê/Elu/-e
           </span>

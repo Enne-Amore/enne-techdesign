@@ -63,7 +63,7 @@
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  @apply w-[15px];
+  @apply w-3.75;
 }
 ::-webkit-scrollbar-track {
   @apply bg-white-100;

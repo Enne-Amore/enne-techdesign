@@ -18,7 +18,7 @@ export default function ProjectColors(
           className={`max-w-[360px] w-full border ${props.lists.containerStyle} rounded-4xl px-8 py-9 space-y-5 shadow xl:max-w-full xl:w-[380px]`}
         >
           <h4
-            className={`${props.lists.titleStyle} text-xl text-center text-shadow-2xs bg-gradient-to-br text-transparent bg-clip-text xl:text-2xl`}
+            className={`${props.lists.titleStyle} text-xl text-center text-shadow-2xs bg-linear-to-br text-transparent bg-clip-text xl:text-2xl`}
           >
             Principais
           </h4>
@@ -50,7 +50,7 @@ export default function ProjectColors(
           className={`max-w-[360px] w-full h-max border ${props.lists.containerStyle} rounded-4xl px-8 py-9 space-y-5 shadow xl:max-w-full xl:w-[380px]`}
         >
           <h4
-            className={`${props.lists.titleStyle} text-xl text-center text-shadow-2xs bg-gradient-to-br text-transparent bg-clip-text xl:text-2xl`}
+            className={`${props.lists.titleStyle} text-xl text-center text-shadow-2xs bg-linear-to-br text-transparent bg-clip-text xl:text-2xl`}
           >
             Neutras
           </h4>
