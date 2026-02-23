@@ -32,7 +32,7 @@ export default function SocialNetworks(props: { socialNetworkStyle: string }) {
   ];
 
   return (
-    <ul className={`flex gap-3`}>
+    <ul className={`flex gap-3.5`}>
       {socialNetworks.map((network, index) => (
         <li key={index}>
           <a
@@ -40,7 +40,7 @@ export default function SocialNetworks(props: { socialNetworkStyle: string }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={network.ariaLabel}
-            className={`flex content-center text-shadow-2xs border p-3 rounded-full shadow transition duration-300 ${props.socialNetworkStyle}`}
+            className={`flex content-center text-shadow-2xs border p-3 rounded-full shadow transition duration-300 ease-in-out ${props.socialNetworkStyle}`}
           >
             {network.icon}
           </a>

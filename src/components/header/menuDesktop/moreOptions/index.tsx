@@ -29,7 +29,7 @@ export default function MoreOptions() {
       </button>
 
       <ul
-        className={`absolute top-full -right-10/12 opacity-0 -translate-y-2 bg-radial from-light-purple to-dark-purple flex flex-col items-center rounded-4xl px-5 pt-0 pb-7 mt-1 shadow transition-all duration-200 z-50 group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:translate-y-0`}
+        className={`absolute top-full -right-10/12 hidden opacity-0 -translate-y-2 bg-radial from-light-purple to-dark-purple flex-col items-center rounded-4xl px-5 pt-0 pb-7 shadow transition-all duration-300 z-50 group-hover:flex group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:flex group-focus-within:opacity-100 group-focus-within:translate-y-0`}
         role="menu"
       >
         {moreLinks.map((link, index) => (
@@ -37,7 +37,7 @@ export default function MoreOptions() {
             <a
               href={link.url}
               aria-label={link.ariaLabel}
-              className={`text-2xl font-medium px-5 py-7 hover:text-light-pink-100 focus-visible:text-light-pink-100 active:text-light-pink-200`}
+              className={`text-2xl font-medium px-5 py-7 transition ease-in hover:text-light-pink-100 focus-visible:text-light-pink-100 active:text-light-pink-200`}
               role="menuitem"
             >
               {link.label}

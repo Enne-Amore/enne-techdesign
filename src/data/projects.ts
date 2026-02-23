@@ -4,9 +4,9 @@ export const projects = [
     card: {
       url: "/coletive-nao-binarie-paraiba",
       ariaLabel: "Ir à página sobre o projeto Coletive Não-Binárie da Paraíba",
-      imgMobile: "cnbpb-mobile.avif",
-      imgDesktop: "cnbpb-desktop.avif",
+      img: "cnbpb",
       alt: "Logo do Coletive Não-Binárie da Paraíba",
+      altHover: "Pré-visualização da página inicial do site do Coletive Não-Binárie da Paraíba",
       positions: ["UI/UX Design", "Front-end"],
       caption: "Landing Page",
     },
@@ -132,18 +132,19 @@ export const projects = [
               id: "1",
               name: "Geometos Rounded",
               role: "Títulos / Frases especiais",
-              fontStyle: "font-geometos-rounded",
+              fontStyle: "font-geometos-rounded -mb-0.5",
             },
             {
               id: "2",
               name: "Open Dyslexic",
               role: "Parágrafos / Legendas",
-              fontStyle: "font-open-dyslexic",
+              fontStyle: "font-open-dyslexic font-bold",
             },
             {
               id: "3",
               name: "Open Sans",
               role: "Opções / Links / Instruções",
+              fontStyle: "font-bold",
             },
           ],
           listStyle:
@@ -244,14 +245,14 @@ export const projects = [
           "<strong>Tela de carregamento</strong> inicial",
         ],
         listStyle:
-          "font-open-dyslexic bg-gradient-to-br from-[#FFCE31] to-[#F2E530] dark:from-[#713CA6] dark:to-[#6A4EA6]",
+          "font-open-dyslexic bg-linear-to-br from-[#FFCE31] to-[#F2E530] dark:from-[#713CA6] dark:to-[#6A4EA6]",
       },
     },
     video: {
       sectionStyle:
         "from-[#F2E530] to-[#FFCE31] dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#F2E530,#FFCE31)]",
       titleStyle:
-        "font-geometos-rounded bg-gradient-to-br text-transparent bg-clip-text from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
+        "font-geometos-rounded bg-linear-to-br text-transparent bg-clip-text from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
       src: "/assets/cnbpb-video.mp4",
     },
     footer: {
@@ -269,15 +270,15 @@ export const projects = [
           },
           {
             id: "2",
-            label: "Guia para linguagem neutra - Ophelia Cassiano",
-            url: "https://medium.com/guia-para-linguagem-neutra-pt-br",
-            ariaLabel: "Acesse o artigo Guia para Linguagem Neutra de Ophelia Cassiano no Medium",
-          },
-          {
-            id: "3",
             label: "Não-binárie - Orientando",
             url: "https://orientando.org/listas/lista-de-generos/nao-binarie",
             ariaLabel: "Acesse o artigo Não-binárie no site Orientando",
+          },
+          {
+            id: "3",
+            label: "Guia para linguagem neutra - Ophelia Cassiano",
+            url: "https://medium.com/guia-para-linguagem-neutra-pt-br",
+            ariaLabel: "Acesse o artigo Guia para Linguagem Neutra de Ophelia Cassiano no Medium",
           },
         ],
         linkStyle: "text-[#FFFFFD] hover:bg-[#FFFFFD]/15 active:bg-[#FFFFFD]/30",
@@ -290,14 +291,14 @@ export const projects = [
     card: {
       url: "/janai-amitaf-producoes",
       ariaLabel: "Ir à página sobre o projeto Janai Amitáf Produções",
-      imgMobile: "janai-amitaf-mobile.avif",
-      imgDesktop: "janai-amitaf-desktop.avif",
+      img: "janai-amitaf",
       alt: "Logo de Janai Amitáf Produções",
+      altHover: "Pré-visualização da página inicial do site de Janai Amitáf Produções",
       positions: ["UI/UX Design", "Front-end"],
       caption: "Portfólio Web",
     },
     header: {
-      headerStyle: "bg-gradient-to-br from-[#8C00FF] to-[#6C0CF2]",
+      headerStyle: "bg-linear-to-br from-[#8C00FF] to-[#6C0CF2]",
       positions: ["UI/UX Design", "Front-end"],
       positionStyle: "bg-[#F2B705] dark:text-[#05000C]",
       img: "janai-amitaf",
@@ -331,7 +332,7 @@ export const projects = [
     styleGuide: {
       id: "style-guide-janai-amitaf",
       explanation: {
-        titleStyle: "from-[#6C0CF2] to-[#8C00FF] dark:text-[#F2B705]",
+        titleStyle: "font-bold from-[#6C0CF2] to-[#8C00FF] dark:text-[#F2B705]",
         text: "Utilizei as principais <strong>cores</strong> que o artista usa em algumas de suas <strong>artes</strong>, como a própria <strong>logo</strong> dele e uma <strong>imagem de fumaça roxa e rosa com estrelas</strong>, que pode representar o ponto final de uma página. Já a <strong>fonte de texto</strong> usada foi conforme a <strong>preferência do cliente</strong>.",
         textStyle: "xl:w-[530px]",
         img: "janai-amitaf",
@@ -339,13 +340,13 @@ export const projects = [
       },
       colors: {
         titleStyle:
-          "text-[#05000C] bg-gradient-to-r from-[#F1ACF2] to-[#F1ACF2]/0 px-10 py-5 rounded-full dark:text-[#F8F3FF] dark:from-[#C522F2] dark:to-[#C522F2]/0",
+          "font-bold text-[#05000C] bg-gradient-to-r from-[#F1ACF2] to-[#F1ACF2]/0 px-9 py-5 rounded-full dark:text-[#F8F3FF] dark:from-[#C522F2] dark:to-[#C522F2]/0 xl:px-10",
           darkContrast: "dark:text-[#252228]",
           lightContrast: "text-[#FCFAFF]",
         lists: {
           containerStyle:
             "bg-[#F8F3FF]/30 border-[#05000C] dark:bg-[#090016]/10 dark:border-[#F8F3FF]",
-          titleStyle: "from-[#6C0CF2] to-[#8C00FF] dark:text-[#F2B705]",
+          titleStyle: "font-bold from-[#6C0CF2] to-[#8C00FF] dark:text-[#F2B705]",
           mainColors: [
             {
               id: "1",
@@ -408,13 +409,14 @@ export const projects = [
       },
       typography: {
         titleStyle:
-          "text-[#05000C] bg-gradient-to-r from-[#F1ACF2] to-[#F1ACF2]/0 px-10 py-5 rounded-full dark:text-[#F8F3FF] dark:from-[#C522F2] dark:to-[#C522F2]/0",
+          "font-bold text-[#05000C] bg-gradient-to-r from-[#F1ACF2] to-[#F1ACF2]/0 px-9 py-5 rounded-full dark:text-[#F8F3FF] dark:from-[#C522F2] dark:to-[#C522F2]/0 xl:px-10",
         fonts: {
           list: [
             {
               id: "1",
               name: "Bitter",
               role: "Títulos / Textos / Links",
+              fontStyle: "font-bold",
             },
           ],
           listStyle:
@@ -424,7 +426,7 @@ export const projects = [
         proportions: {
           containerStyle:
             "bg-[#F8F3FF]/30 border-[#05000C] dark:bg-[#252228]/30 dark:border-[#F8F3FF]",
-          titleStyle: "from-[#6C0CF2] to-[#8C00FF] dark:text-[#F2B705]",
+          titleStyle: "font-bold from-[#6C0CF2] to-[#8C00FF] dark:text-[#F2B705]",
           iconStyle: "text-[#6C0CF2] dark:text-[#F2B705]",
           lists: [
             {
@@ -465,14 +467,14 @@ export const projects = [
           ],
           listStyle:
             "from-[#F2B705] to-[#DB9406] dark:from-[#8C00FF] dark:to-[#6C0CF2]",
-          tagStyle: "text-[#6C0CF2] dark:text-[#F2B705]",
+          tagStyle: "font-bold text-[#6C0CF2] dark:text-[#F2B705]",
         },
       },
     },
     prototyping: {
       sectionStyle:
         "from-[#F2B705] to-[#DB9406] dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#F2B705,#DB9406)]",
-      titleStyle: "text-[#05000C] dark:text-[#F8F3FF]",
+      titleStyle: "font-bold text-[#05000C] dark:text-[#F8F3FF]",
       imgs: [
         {
           id: "1",
@@ -489,7 +491,7 @@ export const projects = [
     technologies: {
       id: "technologies-janai-amitaf",
       explanation: {
-        titleStyle: "from-[#6C0CF2] to-[#8C00FF] dark:text-[#F2B705]",
+        titleStyle: "font-bold from-[#6C0CF2] to-[#8C00FF] dark:text-[#F2B705]",
         text: "Como o site consiste em um <strong>portfólio</strong> artístico contendo <strong>várias páginas</strong> com algumas animações e funcionalidades essenciais, foi necessário utilizar a tríade avançada de <strong>Next.js, Tailwind CSS e Typescript</strong>.",
         textStyle: "xl:w-[515px]",
         img: "janai-amitaf",
@@ -497,20 +499,20 @@ export const projects = [
       },
       functions: {
         titleStyle:
-          "text-[#05000C] bg-gradient-to-r from-[#F1ACF2] to-[#F1ACF2]/0 px-10 py-5 rounded-full dark:text-[#F8F3FF] dark:from-[#C522F2] dark:to-[#C522F2]/0",
+          "font-bold text-[#05000C] bg-gradient-to-r from-[#F1ACF2] to-[#F1ACF2]/0 px-9 py-5 rounded-full dark:text-[#F8F3FF] dark:from-[#C522F2] dark:to-[#C522F2]/0 xl:px-10",
         list: [
           "<strong>Menu de informações</strong> extras abrível e fechável",
           "<strong>Menu de navegação</strong> horizontal entre páginas",
           "<strong>Armazenamento de informações</strong> sobre os projetos via <strong>banco de dados</strong> local",
         ],
         listStyle:
-          "bg-gradient-to-br from-[#F2B705] to-[#DB9406] dark:from-[#8C00FF] dark:to-[#6C0CF2]",
+          "bg-linear-to-br from-[#F2B705] to-[#DB9406] dark:from-[#8C00FF] dark:to-[#6C0CF2]",
       },
     },
     video: {
       sectionStyle:
         "from-[#E057F2] to-[#C522F2] dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#E057F2,#C522F2)]",
-      titleStyle: "text-[#05000C] dark:text-[#F8F3FF]",
+      titleStyle: "font-bold text-[#05000C] dark:text-[#F8F3FF]",
       src: "/assets/janai-amitaf-video.mp4",
     },
     footer: {

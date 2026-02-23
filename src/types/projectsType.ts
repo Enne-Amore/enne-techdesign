@@ -3,9 +3,9 @@ export interface ProjectsType {
   card: {
     url: string;
     ariaLabel: string;
-    imgMobile: string;
-    imgDesktop: string;
+    img: string;
     alt: string;
+    altHover: string;
     positions: string[];
     caption: string;
   };

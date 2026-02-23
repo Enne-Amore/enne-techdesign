@@ -4,7 +4,7 @@ export default function ProjectProblemn() {
   return (
     <section
       id={`problemn-cnbpb`}
-      className={`w-full bg-gradient-to-b from-[#6A4EA6] to-[#713CA6] flex flex-col items-center gap-8 px-8 py-11 shadow xl:gap-10 xl:px-100px xl:py-70px`}
+      className={`w-full bg-linear-to-b from-[#6A4EA6] to-[#713CA6] flex flex-col items-center gap-8 px-8 py-11 shadow xl:gap-10 xl:px-100px xl:py-70px`}
     >
       <h2
         className={`font-geometos-rounded text-[#F2E530] text-28px text-center text-shadow-2xs -mb-5 xl:text-32px`}

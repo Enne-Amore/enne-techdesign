@@ -10,7 +10,7 @@ export default function ProjectExplanation(
     >
       <div className={`space-y-1`}>
         <h2
-          className={`font-bold ${props.titleStyle} text-28px text-center text-shadow-2xs bg-gradient-to-r text-transparent bg-clip-text xl:text-32px`}
+          className={`${props.titleStyle} text-28px text-center text-shadow-2xs bg-gradient-to-r text-transparent bg-clip-text xl:text-32px`}
         >
           Guia de Estilo
         </h2>

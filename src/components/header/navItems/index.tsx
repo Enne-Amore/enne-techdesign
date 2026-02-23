@@ -57,8 +57,8 @@ export default function NavItems(props: { clickLinkMobile?: () => void }) {
                 onClick={props.clickLinkMobile}
                 className={`text-xl text-shadow-2xs py-3.5 rounded-4xl transition xl:text-2xl ${
                   link.isMain
-                    ? "bg-dark-pink-100 px-7 mt-3.5 font-bold shadow hover:bg-dark-pink-200 focus-visible:bg-dark-pink-200 active:bg-white-300 active:text-dark-pink-200 xl:mt-0 xl:ml-5"
-                    : "font-medium px-5 hover:text-light-pink-100 focus-visible:text-light-pink-100 active:text-light-pink-200"
+                    ? "bg-dark-pink-100 text-gray px-7 mt-3.5 font-bold shadow-[0_0_2px] shadow-dark-pink-100 duration-300 ease-in-out hover:bg-dark-pink-200 hover:shadow-[0_0_5px] hover:shadow-dark-pink-200 focus-visible:bg-dark-pink-200 focus-visible:shadow-[0_0_5px] focus-visible:shadow-dark-pink-200 active:bg-white-300 active:text-dark-pink-200 active:shadow-white-300 xl:mt-0 xl:ml-5"
+                    : "font-medium px-5 ease-in hover:text-light-pink-100 focus-visible:text-light-pink-100 active:text-light-pink-200"
                 }`}
                 role="menuitem"
               >

@@ -27,7 +27,7 @@ export default function About() {
   return (
     <section
       id="sobre"
-      className={`relative w-full px-9 pt-14 pb-24 flex flex-col justify-center items-center gap-14 xl:flex-row xl:gap-28 xl:py-20`}
+      className={`relative w-full px-9 pt-14 pb-24 flex flex-col justify-center items-center gap-14 scroll-mt-4 xl:flex-row xl:gap-28 xl:py-20 xl:scroll-mt-12`}
     >
       {/* background */}
       <SectionBackground
@@ -37,13 +37,18 @@ export default function About() {
       />
 
       {/* content */}
-      <article className={`relative space-y-3.5 xl:space-y-2 xl:w-[612px]`}>
+      <article
+        data-aos="fade-right"
+        className={`relative space-y-3.5 xl:space-y-2 xl:w-153`}
+      >
         <SectionTitle
           label={`Sobre mim e minhas reflexões`}
           style={`text-white-300 xl:w-[613px]`}
         />
 
-        <p className={`text-xl text-shadow-2xs leading-8 xl:text-2xl xl:leading-9`}>
+        <p
+          className={`text-xl text-shadow-2xs leading-8 xl:text-2xl xl:leading-9`}
+        >
           Trabalhar com <strong>Front-end</strong> e <strong>UI/UX Design</strong> é onde posso unir lógica e sensibilidade para criar <strong>experiências digitais acessíveis e cheias de significado</strong>. Valorizo muito a <strong>comunicação contínua</strong>, o <strong>trabalho em equipe</strong> e o <strong>aprendizado compartilhado</strong>, pois sei que boas soluções nascem de pessoas diversas que colaboram com empatia e escuta ativa. Vejo nas minhas vocações uma forma de <strong>transformar o digital em um espaço mais humano e acolhedor</strong>.
         </p>
 
@@ -57,7 +62,7 @@ export default function About() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={resume.ariaLabel}
-                className={`flex gap-1.5 items-center font-bold text-base text-shadow-2xs bg-dark-pink-100/30 border-1 border-dark-pink-100 px-6 py-2.5 rounded-4xl shadow transition duration-300 hover:bg-dark-pink-100 focus-visible:bg-dark-pink-100 active:bg-dark-pink-200 xl:text-lg`}
+                className={`flex gap-1.5 items-center font-bold text-base text-shadow-2xs bg-dark-pink-100/30 border border-dark-pink-100 px-6 py-2.5 rounded-4xl shadow-[0_0_2px] shadow-dark-pink-100 duration-300 ease-in-out hover:bg-dark-pink-100 hover:text-gray hover:shadow-[0_0_5px] focus-visible:bg-dark-pink-100 focus-visible:text-gray focus-visible:shadow-[0_0_5px] active:bg-dark-pink-200 active:shadow-dark-pink-200 xl:text-lg`}
               >
                 <span>
                   <FaFileLines className={`w-5 h-auto`} />
@@ -70,13 +75,17 @@ export default function About() {
         </ul>
       </article>
 
-      <figure className={`relative flex flex-col items-center gap-5`}>
+      <figure
+        data-aos="fade-left"
+        {...(window.innerWidth > 1280 ? { "data-aos-delay": "200" } : {})}
+        className={`relative flex flex-col items-center gap-5`}
+      >
         <Image
           src={`/assets/enne-jim-pessoa.png`}
           alt="Minha foto de perfil"
           width={280}
           height={280}
-          className={`filter drop-shadow xl:w-[360px]`}
+          className={`filter drop-shadow xl:w-90`}
         />
 
         <figcaption className={`flex flex-col items-center gap-2.5`}>
@@ -87,7 +96,7 @@ export default function About() {
           </span>
 
           <span
-            className={`font-medium text-gray text-xs text-shadow-2xs bg-gradient-to-br from-light-pink-200 to-light-pink-100 shadow px-2.5 py-1 rounded-4xl xl:text-base xl:px-3.5`}
+            className={`font-medium text-gray text-xs text-shadow-2xs bg-linear-to-br from-light-pink-200 to-light-pink-100 shadow px-2.5 py-1 rounded-4xl xl:text-base xl:px-3.5`}
           >
             Ê/Elu/-e
           </span>

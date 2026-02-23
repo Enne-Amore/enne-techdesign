@@ -7,6 +7,7 @@ export default function Hero() {
       className={`flex flex-col-reverse items-center gap-12 xl:w-[1078px] xl:flex-row xl:justify-between`}
     >
       <div
+        data-aos="fade-right"
         className={`flex flex-col items-center gap-8 xl:gap-5 xl:-translate-x-8`}
       >
         <h2
@@ -23,14 +24,14 @@ export default function Hero() {
           </span>
 
           <strong
-            className={`font-bold text-gray bg-gradient-to-br from-light-pink-200 to-light-pink-100 box-decoration-clone leading-[65px] px-7 pt-2 pb-3 rounded-full xl:bg-[url(/assets/hearts-desktop.png)] xl:bg-no-repeat xl:bg-position-[center_bottom] xl:bg-size-[auto_70px] xl:px-10 xl:py-3 xl:rounded-none`}
+            className={`font-bold text-gray bg-linear-to-br from-light-pink-200 to-light-pink-100 box-decoration-clone leading-[65px] px-7 pt-2 pb-3 rounded-full xl:bg-[url(/assets/hearts-desktop.png)] xl:bg-no-repeat xl:bg-position-[center_bottom] xl:bg-size-[auto_70px] xl:px-10 xl:py-3 xl:rounded-none`}
           >
             espaço digital com propósito e empatia
           </strong>
         </p>
       </div>
 
-      <figure>
+      <figure data-aos="fade-left">
         <Image
           src={`/assets/website-illustration.png`}
           alt=""

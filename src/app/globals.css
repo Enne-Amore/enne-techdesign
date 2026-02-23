@@ -58,12 +58,12 @@
   --spacing-16: 60px;
   --spacing-12: 50px;
   --spacing-8: 30px;
-  --animate-btnDown: downBtn 1s ease-in alternate infinite;
+  --animate-downProjectBtn: downProjectBtn 1s ease-in alternate infinite;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  @apply w-[15px];
+  @apply w-3.75;
 }
 ::-webkit-scrollbar-track {
   @apply bg-white-100;
@@ -147,7 +147,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes downBtn {
+@keyframes downProjectBtn {
   from {
     transform: translateY(10px);
   }

@@ -7,22 +7,22 @@ export default function ProjectTypography(
   return (
     <article className={`space-y-16 xl:space-y-70px`}>
       <h3
-        className={`font-bold ${props.titleStyle} text-2xl text-shadow-2xs xl:text-28px`}
+        className={`${props.titleStyle} text-2xl text-shadow-2xs xl:text-28px`}
       >
         Tipografia
       </h3>
 
       <div className={`flex flex-col justify-center items-center gap-12`}>
         <ul
-          className={`max-w-[360px] w-full space-y-8 px-2.5 xl:max-w-full xl:w-[710px] sm:px-0`}
+          className={`max-w-[360px] w-full space-y-8 px-3.5 xl:max-w-full xl:w-[710px] sm:px-0`}
         >
           {props.fonts.list.map((font, index) => (
             <li
               key={index}
-              className={`w-full bg-gradient-to-br ${props.fonts.listStyle} flex flex-col gap-5 p-8 rounded-4xl shadow xl:flex-row xl:justify-between xl:items-center xl:py-5 xl:px-9`}
+              className={`w-full bg-linear-to-br ${props.fonts.listStyle} flex flex-col gap-5 px-8 py-6 rounded-4xl shadow xl:flex-row xl:justify-between xl:items-center xl:py-5 xl:px-9`}
             >
               <h4
-                className={`font-bold ${font.fontStyle} ${props.fonts.nameStyle} text-xl text-shadow-2xs xl:text-2xl`}
+                className={`${font.fontStyle} ${props.fonts.nameStyle} text-xl text-shadow-2xs xl:text-2xl`}
               >
                 {font.name}
               </h4>
@@ -46,7 +46,7 @@ export default function ProjectTypography(
               />
 
               <span
-                className={`font-bold ${props.proportions.titleStyle} text-xl text-shadow-2xs bg-gradient-to-r text-transparent bg-clip-text translate-y-0.5 xl:text-2xl xl:translate-y-0`}
+                className={`${props.proportions.titleStyle} text-xl text-shadow-2xs bg-gradient-to-r text-transparent bg-clip-text translate-y-0.5 xl:text-2xl xl:translate-y-0`}
               >
                 Desktop
               </span>
@@ -56,10 +56,10 @@ export default function ProjectTypography(
               {props.proportions.lists.map((proportion, index) => (
                 <li
                   key={index}
-                  className={`w-full bg-gradient-to-br ${props.proportions.listStyle} flex flex-col items-center gap-0 p-8 rounded-4xl shadow`}
+                  className={`w-full bg-linear-to-br ${props.proportions.listStyle} flex flex-col items-center gap-0 p-8 rounded-4xl shadow`}
                 >
                   <h5
-                    className={`font-bold ${props.proportions.tagStyle} text-base text-shadow-2xs xl:text-xl`}
+                    className={`${props.proportions.tagStyle} text-base text-shadow-2xs xl:text-xl`}
                   >
                     {proportion.tag}
                   </h5>
@@ -87,7 +87,7 @@ export default function ProjectTypography(
               />
 
               <span
-                className={`font-bold ${props.proportions.titleStyle} text-xl text-shadow-2xs bg-gradient-to-r text-transparent bg-clip-text translate-y-0.5 xl:text-2xl xl:translate-y-0`}
+                className={`${props.proportions.titleStyle} text-xl text-shadow-2xs bg-gradient-to-r text-transparent bg-clip-text translate-y-0.5 xl:text-2xl xl:translate-y-0`}
               >
                 Mobile
               </span>
@@ -97,10 +97,10 @@ export default function ProjectTypography(
               {props.proportions.lists.map((proportion, index) => (
                 <li
                   key={index}
-                  className={`w-full bg-gradient-to-br ${props.proportions.listStyle} flex flex-col items-center gap-0 p-8 rounded-4xl shadow`}
+                  className={`w-full bg-linear-to-br ${props.proportions.listStyle} flex flex-col items-center gap-0 p-8 rounded-4xl shadow`}
                 >
                   <h5
-                    className={` font-bold ${props.proportions.tagStyle} text-base text-shadow-2xs xl:text-xl`}
+                    className={`${props.proportions.tagStyle} text-base text-shadow-2xs xl:text-xl`}
                   >
                     {proportion.tag}
                   </h5>

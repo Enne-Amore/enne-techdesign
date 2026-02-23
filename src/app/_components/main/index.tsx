@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect } from "react";
+import AOS from "aos";
 import About from "../about";
 import AcademicBackgrounds from "../academic-backgrounds";
 import Contacts from "../contacts";
@@ -5,9 +9,18 @@ import Hero from "../hero";
 import Projects from "../projects";
 
 export default function Main() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      offset: 100,
+    });
+  }, []);
+
   return (
     <main
-      className={`bg-white-100 flex flex-col items-center gap-70px pt-11 dark:bg-gray xl:gap-100px xl:pt-70px xl:pb-100px`}
+      className={`bg-white-100 flex flex-col items-center gap-70px pt-11 overflow-hidden dark:bg-gray xl:gap-100px xl:pt-70px xl:pb-100px`}
     >
       <Hero />
 

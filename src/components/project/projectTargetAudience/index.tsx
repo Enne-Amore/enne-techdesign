@@ -10,7 +10,7 @@ export default function ProjectTargetAudience() {
         className={`space-y-1 xl:pl-6`}
       >
         <h2
-          className={`font-geometos-rounded text-28px text-center text-shadow-2xs bg-gradient-to-r from-[#713CA6] to-[#6A4EA6] text-transparent bg-clip-text -ml-6 dark:from-[#F2E530] dark:to-[#ECE35A] xl:text-32px xl:-ml-8`}
+          className={`font-geometos-rounded text-28px text-center text-shadow-2xs bg-gradient-to-r from-[#713CA6] to-[#6A4EA6] text-transparent bg-clip-text -ml-5 dark:from-[#F2E530] dark:to-[#ECE35A] xl:text-32px xl:-ml-8`}
         >
           Público-Alvo
         </h2>
