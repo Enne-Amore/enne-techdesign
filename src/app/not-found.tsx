@@ -50,7 +50,7 @@ export default function NotFound() {
             <Link
               href="/"
               aria-label="Voltar à página inicial do site Enne TechDesign"
-              className={`bg-light-pink-100 text-gray flex items-center gap-2 rounded-4xl px-6 py-3 shadow-[0_0_2px] shadow-light-pink-100 duration-300 ease-in-out dark:bg-light-purple dark:text-white dark:shadow-light-purple hover:bg-light-pink-200 hover:shadow-[0_0_5px] hover:shadow-light-pink-200 dark:hover:bg-dark-purple dark:hover:shadow-dark-purple focus-visible:bg-light-pink-200 focus-visible:shadow-[0_0_5px] focus-visible:shadow-light-pink-200 dark:focus-visible:bg-dark-purple dark:focus-visible:shadow-dark-purple active:bg-white-300 active:text-dark-pink-200 active:shadow-white-300 dark:active:text-dark-purple`}
+              className={`bg-light-pink-100 text-black flex items-center gap-2 rounded-4xl px-6 py-3 shadow-[0_0_2px] shadow-light-pink-100 duration-300 ease-in-out dark:bg-light-purple dark:text-white-200 dark:shadow-light-purple hover:bg-light-pink-200 hover:shadow-[0_0_5px] hover:shadow-light-pink-200 dark:hover:bg-dark-purple dark:hover:shadow-dark-purple focus-visible:bg-light-pink-200 focus-visible:shadow-[0_0_5px] focus-visible:shadow-light-pink-200 dark:focus-visible:bg-dark-purple dark:focus-visible:shadow-dark-purple active:bg-white-300 active:text-dark-pink-200 active:shadow-white-300 dark:active:bg-white-300 dark:active:text-dark-purple`}
             >
               <FaHouse className={`w-6 h-auto`} />
 
@@ -65,7 +65,7 @@ export default function NotFound() {
               type="button"
               onClick={() => router.back()}
               aria-label="Voltar à página que você estava antes"
-              className={`bg-light-pink-100/30 text-gray border border-light-pink-100 flex items-center gap-2 rounded-4xl px-6 py-3 shadow-[0_0_2px] shadow-light-pink-100 duration-300 ease-in-out dark:bg-light-purple/300 dark:border-light-purple dark:shadow-light-purple hover:bg-light-pink-100 hover:shadow-[0_0_5px] dark:hover:bg-light-purple focus-visible:bg-light-pink-100 focus-visible:shadow-[0_0_5px] dark:focus-visible:bg-light-purple active:bg-light-pink-200 active:border-light-pink-200 active:shadow-light-piborder-light-pink-200 dark:active:bg-dark-purple dark:active:border-dark-purple dark:active:shadow-dark-purple`}
+              className={`bg-light-pink-100/30 text-gray border border-light-pink-100 flex items-center gap-2 rounded-4xl px-6 py-3 shadow-[0_0_2px] shadow-light-pink-100 cursor-pointer duration-300 ease-in-out dark:bg-light-purple/30 dark:text-white-100 dark:border-light-purple dark:shadow-light-purple hover:bg-light-pink-100 hover:shadow-[0_0_5px] dark:hover:bg-light-purple focus-visible:bg-light-pink-100 focus-visible:shadow-[0_0_5px] dark:focus-visible:bg-light-purple active:bg-light-pink-200 active:border-light-pink-200 active:shadow-light-pink-200 dark:active:bg-dark-purple dark:active:border-dark-purple dark:active:shadow-dark-purple`}
             >
               <FaAngleLeft className={`w-6 h-auto`} />
 

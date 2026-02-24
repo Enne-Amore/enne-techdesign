@@ -1,16 +1,16 @@
 "use client";
 
 import { useEffect } from "react";
-import AOS from "aos";
+import Aos from "aos";
+import Hero from "../hero";
+import Projects from "../projects";
 import About from "../about";
 import AcademicBackgrounds from "../academic-backgrounds";
 import Contacts from "../contacts";
-import Hero from "../hero";
-import Projects from "../projects";
 
 export default function Main() {
   useEffect(() => {
-    AOS.init({
+    Aos.init({
       once: true,
       duration: 1000,
       easing: "ease-out-cubic",

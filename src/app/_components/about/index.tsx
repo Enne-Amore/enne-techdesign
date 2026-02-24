@@ -77,7 +77,6 @@ export default function About() {
 
       <figure
         data-aos="fade-left"
-        {...(window.innerWidth > 1280 ? { "data-aos-delay": "200" } : {})}
         className={`relative flex flex-col items-center gap-5`}
       >
         <Image

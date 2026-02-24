@@ -3,7 +3,7 @@ import SocialNetworks from "@/components/socialNetworks";
 export default function SocialMedia() {
   return (
     <article
-      {...(window.innerWidth < 1280 ? { "data-aos": "fade-left" } : {})}
+      data-aos="fade-left"
       className={`relative flex flex-col items-center gap-5 mx-auto xl:w-105`}
     >
       <h3
