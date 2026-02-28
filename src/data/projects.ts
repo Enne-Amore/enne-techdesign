@@ -136,14 +136,8 @@ export const projects = [
             },
             {
               id: "2",
-              name: "Open Dyslexic",
-              role: "Parágrafos / Legendas",
-              fontStyle: "font-open-dyslexic font-bold",
-            },
-            {
-              id: "3",
-              name: "Open Sans",
-              role: "Opções / Links / Instruções",
+              name: "Nunito",
+              role: "Parágrafos / Links / Instruções",
               fontStyle: "font-bold",
             },
           ],

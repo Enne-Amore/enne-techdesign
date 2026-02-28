@@ -16,13 +16,8 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "open-dyslexic";
-  src: url(../fonts/cnbpb/open_dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
-  font-display: swap;
-}
-@font-face {
-  font-family: "open-dyslexic-bold";
-  src: url(../fonts/cnbpb/open_dyslexic/OpenDyslexicAlta-Bold.otf) format(opentype);
+  font-family: "nunito";
+  src: url(../fonts/cnbpb/nunito/Nunito-VariableFont-wght.ttf) format(truetype);
   font-display: swap;
 }
 @font-face {
@@ -44,10 +39,9 @@
   --color-light-pink-100: #FFD1E9;
   --color-light-pink-200: #FFC2E2;
   --font-lexia-readable: "lexia-readable";
-  --font-open-dyslexic: "open-dyslexic";
   --font-quicksand: var(--font-quicksand);
   --font-geometos-rounded: "geometos-rounded";
-  --font-open-sans: sans-serif;
+  --font-nunito: "nunito";
   --font-bitter: "bitter";
   --text-44px: 44px;
   --text-40px: 40px;

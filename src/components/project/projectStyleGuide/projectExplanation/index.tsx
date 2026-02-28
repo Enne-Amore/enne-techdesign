@@ -6,11 +6,11 @@ export default function ProjectExplanation(
 ) {
   return (
     <article
-      className={`flex flex-col justify-center items-center gap-9 xl:w-[1074px] xl:flex-row xl:justify-between`}
+      className={`flex flex-col justify-center items-center gap-9 xl:w-268.5 xl:flex-row xl:justify-between`}
     >
       <div className={`space-y-1`}>
         <h2
-          className={`${props.titleStyle} text-28px text-center text-shadow-2xs bg-gradient-to-r text-transparent bg-clip-text xl:text-32px`}
+          className={`${props.titleStyle} text-28px text-center bg-linear-to-r text-transparent bg-clip-text drop-shadow xl:text-32px`}
         >
           Guia de Estilo
         </h2>

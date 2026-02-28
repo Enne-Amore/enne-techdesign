@@ -14,7 +14,7 @@ export default function ProjectTypography(
 
       <div className={`flex flex-col justify-center items-center gap-12`}>
         <ul
-          className={`max-w-[360px] w-full space-y-8 px-3.5 xl:max-w-full xl:w-[710px] sm:px-0`}
+          className={`max-w-90 w-full space-y-8 px-3.5 xl:max-w-full xl:w-177.5 sm:px-0`}
         >
           {props.fonts.list.map((font, index) => (
             <li
@@ -35,24 +35,24 @@ export default function ProjectTypography(
         </ul>
 
         <ul
-          className={`flex flex-col gap-12 m-auto px-2.5 xl:w-[710px] xl:flex-row xl:justify-between sm:px-0`}
+          className={`flex flex-col gap-12 m-auto px-2.5 xl:w-177.5 xl:flex-row xl:justify-between sm:px-0`}
         >
           <li
-            className={`max-w-[360px] w-full ${props.proportions.listStyle} flex flex-col items-center gap-1 border rounded-4xl p-10 space-y-5 shadow xl:max-w-full xl:w-[290px]`}
+            className={`max-w-90 w-full ${props.proportions.listStyle} flex flex-col items-center gap-1 border rounded-4xl p-10 space-y-5 shadow xl:max-w-full xl:w-72.5`}
           >
             <h4 className={`flex items-center gap-1.5`}>
               <FaDesktop
-                className={`w-[26px] h-[26px] ${props.proportions.iconStyle} text-shadow-2xs xl:w-[30px] xl:h-[30px]`}
+                className={`w-6.5 h-6.5 ${props.proportions.iconStyle} text-shadow-2xs xl:w-8 xl:h-8`}
               />
 
               <span
-                className={`${props.proportions.titleStyle} text-xl text-shadow-2xs bg-gradient-to-r text-transparent bg-clip-text translate-y-0.5 xl:text-2xl xl:translate-y-0`}
+                className={`${props.proportions.titleStyle} text-xl bg-linear-to-r text-transparent bg-clip-text drop-shadow translate-y-0.5 xl:text-2xl xl:translate-y-0`}
               >
                 Desktop
               </span>
             </h4>
 
-            <ul className={`w-[180px] space-y-5 xl:w-[210px]`}>
+            <ul className={`w-45 space-y-5 xl:w-52.5`}>
               {props.proportions.lists.map((proportion, index) => (
                 <li
                   key={index}
@@ -79,21 +79,21 @@ export default function ProjectTypography(
           </li>
 
           <li
-            className={`max-w-[360px] w-full bg-[#FFFEF6]/30 flex flex-col items-center gap-1 border border-[#040008] rounded-4xl p-10 space-y-5 shadow dark:bg-[#242325]/30 dark:border-[#FFFEF6] xl:max-w-full xl:w-[290px]`}
+            className={`max-w-90 w-full bg-[#FFFEF6]/30 flex flex-col items-center gap-1 border border-[#040008] rounded-4xl p-10 space-y-5 shadow dark:bg-[#242325]/30 dark:border-[#FFFEF6] xl:max-w-full xl:w-72.5`}
           >
             <h4 className={`flex items-center gap-1.5`}>
               <FaMobileScreen
-                className={`w-[26px] h-[26px] ${props.proportions.iconStyle} text-shadow-2xs xl:w-[30px] xl:h-[30px]`}
+                className={`w-6.5 h-6.5 ${props.proportions.iconStyle} text-shadow-2xs xl:w-8 xl:h-8`}
               />
 
               <span
-                className={`${props.proportions.titleStyle} text-xl text-shadow-2xs bg-gradient-to-r text-transparent bg-clip-text translate-y-0.5 xl:text-2xl xl:translate-y-0`}
+                className={`${props.proportions.titleStyle} text-xl bg-linear-to-r text-transparent bg-clip-text drop-shadow translate-y-0.5 xl:text-2xl xl:translate-y-0`}
               >
                 Mobile
               </span>
             </h4>
 
-            <ul className={`w-[180px] space-y-5 xl:w-[210px]`}>
+            <ul className={`w-45 space-y-5 xl:w-52.5`}>
               {props.proportions.lists.map((proportion, index) => (
                 <li
                   key={index}

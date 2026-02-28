@@ -6,19 +6,19 @@ export default function ProjectColors(
   return (
     <article className={`space-y-16 xl:space-y-70px`}>
       <h3
-        className={`${props.titleStyle} text-2xl text-shadow-2xs bg-gradient-to-r xl:text-28px`}
+        className={`${props.titleStyle} text-2xl text-shadow-2xs bg-linear-to-r xl:text-28px`}
       >
         Cores
       </h3>
 
       <ul
-        className={`flex flex-col gap-12 m-auto px-2.5 xl:w-[834px] xl:flex-row xl:justify-between sm:px-0`}
+        className={`flex flex-col gap-12 m-auto px-2.5 xl:w-208.5 xl:flex-row xl:justify-between sm:px-0`}
       >
         <li
-          className={`max-w-[360px] w-full border ${props.lists.containerStyle} rounded-4xl px-8 py-9 space-y-5 shadow xl:max-w-full xl:w-[380px]`}
+          className={`max-w-90 w-full border ${props.lists.containerStyle} rounded-4xl px-8 py-9 space-y-5 shadow xl:max-w-full xl:w-95`}
         >
           <h4
-            className={`${props.lists.titleStyle} text-xl text-center text-shadow-2xs bg-linear-to-br text-transparent bg-clip-text xl:text-2xl`}
+            className={`${props.lists.titleStyle} text-xl text-center bg-linear-to-br text-transparent bg-clip-text drop-shadow xl:text-2xl`}
           >
             Principais
           </h4>
@@ -47,10 +47,10 @@ export default function ProjectColors(
         </li>
 
         <li
-          className={`max-w-[360px] w-full h-max border ${props.lists.containerStyle} rounded-4xl px-8 py-9 space-y-5 shadow xl:max-w-full xl:w-[380px]`}
+          className={`max-w-90 w-full h-max border ${props.lists.containerStyle} rounded-4xl px-8 py-9 space-y-5 shadow xl:max-w-full xl:w-95`}
         >
           <h4
-            className={`${props.lists.titleStyle} text-xl text-center text-shadow-2xs bg-linear-to-br text-transparent bg-clip-text xl:text-2xl`}
+            className={`${props.lists.titleStyle} text-xl text-center bg-linear-to-br text-transparent bg-clip-text drop-shadow xl:text-2xl`}
           >
             Neutras
           </h4>
