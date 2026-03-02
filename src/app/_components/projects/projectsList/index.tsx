@@ -22,14 +22,14 @@ export default function ProjectsList() {
               <picture>
                 <source
                   media="(min-width: 1280px)"
-                  srcSet={`assets/${card.img}-desktop.avif`}
+                  srcSet={`assets/${card.img}-card-desktop.avif`}
                   width={530}
                   height={330}
                   type="image/avif"
                 />
 
                 <Image
-                  src={`/assets/${card.img}-mobile.avif`}
+                  src={`/assets/${card.img}-card-mobile.avif`}
                   alt={card.alt}
                   width={280}
                   height={400}
@@ -63,14 +63,14 @@ export default function ProjectsList() {
               <picture>
                 <source
                   media="(min-width: 1280px)"
-                  srcSet={`assets/${card.img}-desktop-hover.png`}
+                  srcSet={`assets/${card.img}-card-desktop-hover.png`}
                   width={530}
                   height={330}
                   type="image/png"
                 />
 
                 <Image
-                  src={`/assets/${card.img}-mobile-hover.png`}
+                  src={`/assets/${card.img}-card-mobile-hover.png`}
                   alt={card.altHover}
                   width={330}
                   height={400}

@@ -58,15 +58,15 @@ export default function ProjectImpact() {
         <picture>
           <source
             media="(min-width: 1280px)"
-            srcSet={`/assets/cnbpb-telas-desktop.png`}
+            srcSet={`/assets/cnbpb-impact-desktop.svg`}
             width={410}
             height={465}
             type="image/png"
           />
 
           <Image
-            src={`/assets/cnbpb-telas-mobile.png`}
-            alt={`Panfleto do Coletive destacando um QR Code para o site oficial da organização`}
+            src={`/assets/cnbpb-impact-mobile.svg`}
+            alt={`Telas mobile de algumas seções do site`}
             width={276}
             height={319}
             className={`filter drop-shadow`}

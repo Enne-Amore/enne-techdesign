@@ -12,7 +12,7 @@ export default function ProjectDemoVideo(props: ProjectsType["video"]) {
       </h2>
 
       <div
-        className={`relative w-[320px] h-42.25 bg-[url(/assets/laptop-mockup.png)] bg-no-repeat bg-cover filter drop-shadow xl:w-200 xl:h-105.5`}
+        className={`relative w-[320px] h-42.25 bg-[url(/assets/laptop-mockup.png)] bg-no-repeat bg-cover filter drop-shadow xl:w-212.5 xl:h-112`}
       >
         <video
           width={240}
@@ -23,7 +23,7 @@ export default function ProjectDemoVideo(props: ProjectsType["video"]) {
           playsInline
           loop
           preload="none"
-          className={`absolute top-2.5 left-10 xl:top-5.25 xl:left-100px xl:w-150 xl:h-auto`}
+          className={`absolute top-2.5 left-10 xl:top-5.25 xl:left-100px xl:w-161.5 xl:h-auto`}
         >
           <source src={props.src} type="video/mp4" />
           

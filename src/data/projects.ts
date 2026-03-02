@@ -29,7 +29,7 @@ export const projects = [
     },
     accesses: {
       id: "accesses-cnbpb",
-      img: "/assets/cnbpb-home-page.png",
+      img: "cnbpb",
       alt: "Pré-visualização da página inicial do site do Coletive Não-Binárie da Paraíba",
       urlSite: "https://enne-amore.github.io/coletive-nb",
       ariaLabelSite: "Acessar o site do Coletive Não-Binárie da Paraíba",
@@ -207,12 +207,12 @@ export const projects = [
       imgs: [
         {
           id: "1",
-          img: "cnbpb-atividades.png",
+          img: "cnbpb-atividades.svg",
           alt: "Pré-visualização da seção de atividades do site",
         },
         {
           id: "2",
-          img: "cnbpb-membres.png",
+          img: "cnbpb-membres.svg",
           alt: "Pré-visualização da seção de membres do site",
         },
       ],
@@ -309,7 +309,7 @@ export const projects = [
     },
     accesses: {
       id: "accesses-janai-amitaf",
-      img: "/assets/janai-amitaf-home-page.png",
+      img: "janai-amitaf",
       alt: "Pré-visualização da página inicial do site de Janai Amitáf Produções",
       urlSite: "https://janai-amitaf.vercel.app",
       ariaLabelSite: "Acessar o site de Janai Amitáf Produções",
@@ -472,12 +472,12 @@ export const projects = [
       imgs: [
         {
           id: "1",
-          img: "janai-amitaf-projetos.png",
+          img: "janai-amitaf-projetos.svg",
           alt: "Pré-visualização da página de projetos do site",
         },
         {
           id: "2",
-          img: "janai-amitaf-servicos.png",
+          img: "janai-amitaf-servicos.svg",
           alt: "Pré-visualização da página de serviços do site",
         },
       ],

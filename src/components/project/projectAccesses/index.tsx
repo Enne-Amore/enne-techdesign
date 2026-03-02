@@ -10,7 +10,7 @@ export default function ProjectAccesses(props: ProjectsType["accesses"]) {
     >
       <figure>
         <Image
-          src={props.img}
+          src={`/assets/${props.img}-home-page.svg`}
           alt={props.alt}
           width={320}
           height={170}
