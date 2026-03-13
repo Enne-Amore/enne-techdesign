@@ -24,14 +24,14 @@ export default function ProjectSolution() {
         <picture>
           <source
             media="(min-width: 1280px)"
-            srcSet={`/assets/cnbpb-panfleto-desktop.png`}
+            srcSet={`/assets/cnbpb-panfleto-desktop.avif`}
             width={400}
             height={460}
             type="image/png"
           />
 
           <Image
-            src={`/assets/cnbpb-panfleto-mobile.png`}
+            src={`/assets/cnbpb-panfleto-mobile.avif`}
             alt={`Panfleto do Coletive destacando um QR Code para o site oficial da organização`}
             width={300}
             height={375}

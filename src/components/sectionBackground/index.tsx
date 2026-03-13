@@ -29,14 +29,14 @@ export default function SectionBackground(props: SectionBackgroundInterface) {
     >
       <source
         media="(min-width: 1280px)"
-        srcSet={`/assets/${props.src}-${isDark ? "dark-" : ""}background-desktop.png`}
+        srcSet={`/assets/${props.src}-${isDark ? "dark-" : ""}background-desktop.avif`}
         width={1280}
         height={props.desktopHeight}
         className={``}
       />
 
       <Image
-        src={`/assets/${props.src}-${isDark ? "dark-" : ""}background-mobile.png`}
+        src={`/assets/${props.src}-${isDark ? "dark-" : ""}background-mobile.avif`}
         alt={``}
         width={375}
         height={props.mobileHeight}

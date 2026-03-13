@@ -80,7 +80,7 @@ export default function About() {
         className={`relative flex flex-col items-center gap-5`}
       >
         <Image
-          src={`/assets/enne-jim-pessoa.png`}
+          src={`/assets/enne-jim-pessoa.avif`}
           alt="Minha foto de perfil"
           width={280}
           height={280}

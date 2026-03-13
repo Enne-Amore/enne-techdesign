@@ -12,7 +12,7 @@ export default function ProjectDemoVideo(props: ProjectsType["video"]) {
       </h2>
 
       <div
-        className={`relative w-[320px] h-42.25 bg-[url(/assets/laptop-mockup.png)] bg-no-repeat bg-cover filter drop-shadow xl:w-212.5 xl:h-112`}
+        className={`relative w-[320px] h-42.25 bg-[url(/assets/laptop-mockup.avif)] bg-no-repeat bg-cover filter drop-shadow xl:w-212.5 xl:h-112`}
       >
         <video
           width={240}

@@ -63,14 +63,14 @@ export default function ProjectsList() {
               <picture>
                 <source
                   media="(min-width: 1280px)"
-                  srcSet={`assets/${card.img}-card-desktop-hover.png`}
+                  srcSet={`assets/${card.img}-card-desktop-hover.avif`}
                   width={530}
                   height={330}
                   type="image/png"
                 />
 
                 <Image
-                  src={`/assets/${card.img}-card-mobile-hover.png`}
+                  src={`/assets/${card.img}-card-mobile-hover.avif`}
                   alt={card.altHover}
                   width={330}
                   height={400}
