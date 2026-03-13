@@ -36,6 +36,8 @@
    <img src="https://raw.githubusercontent.com/nuxt/modules/main/icons/headlessui.png" title="Headless UI" alt="Headless UI" width="40" height="40"/>
    <img src="https://raw.githubusercontent.com/react-icons/react-icons/master/react-icons.svg" title="React Icons" alt="React Icons" width="40" height="40"/>
    <img src="https://avatars.githubusercontent.com/u/139895814?v=4" title="Shadcn UI" alt="Shadcn UI" width="40" height="40"/>
+   <img src="https://bprogress.vercel.app/favicon.ico" title="BProgress" alt="BProgress" width="40" height="40"/>
+   <img src="https://felixluginbuhl.com/aos/logo.png" title="AOS Animate On Scroll" alt="AOS Animate On Scroll" width="35" height="40"/>
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" alt="Git" width="40" height="40"/>
    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png" title="Visual Studio Code" alt="Visual Studio Code" width="40" height="40"/>
    <img src="https://blog.greggant.com/images/posts/2019-04-25-figma/Figma.png" title="Figma" alt="Figma" width="40" height="40"/>
