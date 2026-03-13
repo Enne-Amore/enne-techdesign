@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer
       id="rodape"
-      className={`relative bg-dark-pink-200 flex flex-col items-center gap-7 pt-8 pb-5 -mt-2 xl:bg-white-100 xl:dark:bg-gray xl:flex-row xl:pt-9 xl:pb-8 xl:pl-10 xl:mt-auto`}
+      className={`relative bg-dark-pink-200 flex flex-col items-center gap-7 pt-8 pb-5 -mt-2 dark:bg-[linear-gradient(to_bottom,#28242659,#28242659),linear-gradient(to_bottom,#F229AC,#F229AC)] xl:bg-white-100 xl:dark:bg-linear-0 xl:dark:bg-gray xl:flex-row xl:pt-9 xl:pb-8 xl:pl-10 xl:mt-auto`}
     >
       {/* background */}
       <SectionBackground

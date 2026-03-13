@@ -1,3 +1,6 @@
+"use client"
+
+import { useEffect, useState } from "react";
 import MoreOptions from "../menuDesktop/moreOptions";
 
 export interface NavItemsInterface {
@@ -35,13 +38,19 @@ export default function NavItems(props: { clickLinkMobile?: () => void }) {
     },
   ];
 
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    setIsDesktop(window.innerWidth >= 1280);
+  }, []);
+
   return (
     <ul
       className={`flex flex-col items-center gap-1.5 xl:flex-row xl:gap-0`}
       role="menu"
     >
       {links.map((link, index) => {
-        if (index === links.length - 2) {
+        if (index === links.length - 2 && isDesktop) {
           return <MoreOptions key={index} />;
           
         } else {
