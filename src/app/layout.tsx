@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Quicksand } from "next/font/google";
-import { ThemeProvider } from "@/providers/theme-provider";
+import { ProgressProviders } from "@/providers/progressProvider";
+import { ThemeProvider } from "@/providers/themeProvider";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
@@ -95,14 +96,16 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className={`scroll-smooth`} suppressHydrationWarning>
       <body className={`${quicksand.variable} antialiased`}>
-        <ThemeProvider
-          attribute={"class"}
-          defaultTheme="system"
-          enableSystem
-          storageKey="theme"
-        >
-          {children}
-        </ThemeProvider>
+        <ProgressProviders>
+          <ThemeProvider
+            attribute={"class"}
+            defaultTheme="system"
+            enableSystem
+            storageKey="theme"
+          >
+            {children}
+          </ThemeProvider>
+        </ProgressProviders>
 
         <GoogleAnalytics gaId="G-FBBVDXR0FH" />
 

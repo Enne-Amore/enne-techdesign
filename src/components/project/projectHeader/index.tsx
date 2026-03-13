@@ -15,7 +15,7 @@ export default function ProjectHeader(props: ProjectsType["header"]) {
           className={`text-[#FFFFFD] text-shadow-2xs xl:p-3 xl:rounded-full xl:transition xl:hover:bg-white/15 xl:hover:shadow xl:focus-visible:bg-white/15 xl:focus-visible:shadow xl:active:bg-white/30`}
           rel="previous"
         >
-          <FaArrowLeft className={`w-[25px] h-auto xl:w-[30px]`} />
+          <FaArrowLeft className={`w-6.25 h-auto xl:w-8`} />
         </Link>
 
         <ul className={`flex flex-col items-end gap-2.5 xl:flex-row`}>
@@ -35,14 +35,14 @@ export default function ProjectHeader(props: ProjectsType["header"]) {
         <picture>
           <source
             media="(min-width: 1280px)"
-            srcSet={`/assets/${props.img}-project-header.png`}
+            srcSet={`/assets/${props.img}-project-header.avif`}
             width={Number(props.desktopWidth)}
             height={Number(props.desktopHeight)}
             type="image/png"
           />
 
           <Image
-            src={`/assets/${props.img}-project-header.png`}
+            src={`/assets/${props.img}-project-header.avif`}
             alt={props.alt}
             width={Number(props.mobileWidth)}
             height={Number(props.mobileHeight)}
@@ -62,7 +62,7 @@ export default function ProjectHeader(props: ProjectsType["header"]) {
         aria-label="Embarque ao case do projeto"
         className={`${props.downStyle} text-shadow-2xs transition animate-downProjectBtn`}
       >
-        <FaChevronDown className={`w-16 h-auto xl:w-[70px]`} />
+        <FaChevronDown className={`w-16 h-auto xl:w-70px`} />
       </a>
     </header>
   );

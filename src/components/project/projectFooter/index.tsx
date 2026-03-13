@@ -55,9 +55,9 @@ export default function ProjectFooter(props: ProjectsType["footer"]) {
                     rel="noopener noreferrer"
                     className={`font-medium ${props.researchSources?.linkStyle} text-base text-shadow-2xs flex items-center gap-2.5 px-4 py-2 rounded-4xl transition duration-300 xl:text-xl`}
                   >
-                    <span className={`w-[190px] text-right xl:w-max`}>{link.label}</span>
+                    <span className={`w-47.5 text-right xl:w-max`}>{link.label}</span>
 
-                    <FaUpRightFromSquare className={`w-[18px] h-[23px]`} />
+                    <FaUpRightFromSquare className={`w-4.5 h-5.75`} />
                   </a>
                 </li>
               ))}
@@ -67,7 +67,7 @@ export default function ProjectFooter(props: ProjectsType["footer"]) {
       </div>
 
       <p
-        className={`w-[235px] ${props.copyrightStyle} text-xs text-center text-shadow-2xs leading-5 xl:w-max xl:text-base`}
+        className={`${props.copyrightStyle} text-xs text-center text-shadow-2xs leading-5 xl:text-base`}
       >
         <strong>Enne TechDesign</strong> © 2026 | Vamos criar um site incrível!
       </p>

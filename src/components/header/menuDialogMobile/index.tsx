@@ -19,7 +19,7 @@ export default function MenuDialogMobile() {
   const [btn, setBtn] = useState<string>(`rotate-0`);
 
   return (
-    <nav className={`relative h-[54px] xl:hidden`}>
+    <nav className={`relative h-13.5 xl:hidden`}>
       <button
         type="button"
         aria-label="Abrir menu de navegação"

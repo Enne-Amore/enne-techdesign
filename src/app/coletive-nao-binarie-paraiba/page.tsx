@@ -16,7 +16,7 @@ export default function ColetiveNaoBinarieParaiba() {
   const data: ProjectsType = projects.find((project) => project.id === "1")!;
 
   return (
-    <div className={`font-open-sans bg-[#FFFFFD] text-[#242325] dark:bg-[#242325] dark:text-[#FFFFFD]`}>
+    <div className={`font-nunito bg-[#FFFFFD] text-[#242325] dark:bg-[#242325] dark:text-[#FFFFFD]`}>
       <ProjectHeader
         headerStyle={data.header.headerStyle}
         positions={data.header.positions}

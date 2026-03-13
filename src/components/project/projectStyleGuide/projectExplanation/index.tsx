@@ -6,11 +6,11 @@ export default function ProjectExplanation(
 ) {
   return (
     <article
-      className={`flex flex-col justify-center items-center gap-9 xl:w-[1074px] xl:flex-row xl:justify-between`}
+      className={`flex flex-col justify-center items-center gap-9 xl:w-268.5 xl:flex-row xl:justify-between`}
     >
       <div className={`space-y-1`}>
         <h2
-          className={`${props.titleStyle} text-28px text-center text-shadow-2xs bg-gradient-to-r text-transparent bg-clip-text xl:text-32px`}
+          className={`${props.titleStyle} text-28px text-center bg-linear-to-r text-transparent bg-clip-text drop-shadow xl:text-32px`}
         >
           Guia de Estilo
         </h2>
@@ -25,14 +25,14 @@ export default function ProjectExplanation(
         <picture>
           <source
             media="(min-width: 1280px)"
-            srcSet={`/assets/${props.img}-style-guide-desktop.png`}
+            srcSet={`/assets/${props.img}-style-guide-desktop.avif`}
             width={450}
             height={338}
             type="image/png"
           />
 
           <Image
-            src={`/assets/${props.img}-style-guide-mobile.png`}
+            src={`/assets/${props.img}-style-guide-mobile.avif`}
             alt={props.alt}
             width={300}
             height={226}

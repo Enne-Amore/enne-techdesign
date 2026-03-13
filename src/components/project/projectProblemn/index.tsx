@@ -13,7 +13,7 @@ export default function ProjectProblemn() {
       </h2>
 
       <div
-        className={`max-w-[720px] font-open-dyslexic text-[#FFFFFD] text-xl text-shadow-2xs leading-9 xl:text-2xl xl:leading-10`}
+        className={`max-w-180 font-open-dyslexic text-[#FFFFFD] text-xl text-shadow-2xs leading-9 xl:text-2xl xl:leading-10`}
       >
         <p>
           As pessoas que fazem parte da não-binariedade passam por diversos <strong>problemas que derivam do binarismo de gênero</strong>, um pensamento errôneo de que existe apenas dois gêneros, feminino e masculino, além disso já ser naturalizado pela sociedade. Dessa forma, é possível citar algumas
@@ -36,7 +36,7 @@ export default function ProjectProblemn() {
       </div>
 
       <div
-        className={`flex flex-col items-center gap-8 xl:flex-row xl:w-[1074px] xl:justify-between`}
+        className={`flex flex-col items-center gap-8 xl:flex-row xl:w-268.5 xl:justify-between`}
       >
         <figure>
           <picture>
@@ -59,14 +59,14 @@ export default function ProjectProblemn() {
         </figure>
 
         <p
-          className={`max-w-[550px] font-open-dyslexic text-[#FFFFFD] text-xl text-shadow-2xs leading-9 xl:text-2xl xl:leading-10`}
+          className={`max-w-137.5 font-open-dyslexic text-[#FFFFFD] text-xl text-shadow-2xs leading-9 xl:text-2xl xl:leading-10`}
         >
           Com isso, o Coletive Não-Binárie da Paraíba deseja avançar nas causas não-binárias estatualmente, como <strong>mapear não-bináries paraibanes</strong>, <strong>conscientizar a população</strong> acerca das dificuldades enfrentadas pela comunidade e <strong>promover a conquista e a proteção de direitos</strong>.
         </p>
       </div>
 
       <p
-        className={`max-w-[720px] font-open-dyslexic text-[#FFFFFD] text-xl text-shadow-2xs leading-9 -mt-2 xl:text-2xl xl:leading-10 xl:mt-auto`}
+        className={`max-w-180 font-open-dyslexic text-[#FFFFFD] text-xl text-shadow-2xs leading-9 -mt-2 xl:text-2xl xl:leading-10 xl:mt-auto`}
       >
         A <strong>divulgação do coletive</strong> para a população é um fator fundamental para ajudar o movimento não-binário, porém a diretoria da organização passa por um <strong>desafio de conseguir obter recursos financeiros para produzir materiais de comunicação ao público</strong>, como banners, panfletos e cartazes, os quais também são mais trabalhosos de serem disseminados pelos lugares presencialmente.
       </p>

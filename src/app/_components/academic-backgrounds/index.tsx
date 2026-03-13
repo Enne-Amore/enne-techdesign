@@ -5,7 +5,7 @@ export default function AcademicBackgrounds() {
   return (
     <section
       id="formacoes"
-      className={`relative w-[320px] flex flex-col items-center gap-12 xl:w-269.5 xl:gap-70px xl:scroll-mt-20`}
+      className={`relative w-[320px] flex flex-col items-center gap-12 scroll-mt-14 xl:w-269.5 xl:gap-70px xl:scroll-mt-20`}
     >
       <SectionTitle
         label={`Formações acadêmicas nas quais carrego comigo em minha jornada`}

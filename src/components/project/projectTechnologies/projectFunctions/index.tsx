@@ -12,16 +12,16 @@ export default function ProjectFunctions(
       </h3>
 
       <ul
-        className={`w-full flex flex-col justify-center items-center m-auto gap-8 px-3.5 xl:max-w-full xl:w-[834px] xl:gap-10 sm:px-0`}
+        className={`w-full flex flex-col justify-center items-center m-auto gap-8 px-3.5 xl:max-w-full xl:w-208.5 xl:gap-10 sm:px-0`}
       >
         {props.list.map((item, index) => (
           <li
             key={index}
-            className={`w-full ${props.listStyle} px-8 py-6 rounded-4xl shadow xl:max-w-[450px] xl:px-9 xl:py-5 xl:odd:-translate-x-32 xl:even:translate-x-32`}
+            className={`w-full ${props.listStyle} px-8 py-6 rounded-4xl shadow xl:max-w-112.5 xl:px-9 xl:py-5 xl:odd:-translate-x-32 xl:even:translate-x-32`}
           >
             <p
               dangerouslySetInnerHTML={{ __html: item }}
-              className={`w-fit text-xl text-center text-shadow-2xs leading-9 xl:leading-10 xl:text-2xl`}
+              className={`w-fit text-xl text-center text-shadow-2xs leading-9 mx-auto xl:leading-10 xl:text-2xl`}
             ></p>
           </li>
         ))}
