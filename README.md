@@ -86,7 +86,7 @@
  No terminal, rode o seguinte comando:
  
  ```bash
- git clone https://github.com/Enne-Amore/enne-techdesign.git
+ git clone https://github.com/ennetechdesign/enne-techdesign.git
  ```
  
  2. **Entre no diretório do projeto:**

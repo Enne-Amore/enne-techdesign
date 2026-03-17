@@ -31,12 +31,12 @@ export const projects = [
       id: "accesses-cnbpb",
       img: "cnbpb",
       alt: "Pré-visualização da página inicial do site do Coletive Não-Binárie da Paraíba",
-      urlSite: "https://enne-amore.github.io/coletive-nb",
+      urlSite: "https://ennetechdesign.github.io/coletive-nb",
       ariaLabelSite: "Acessar o site do Coletive Não-Binárie da Paraíba",
       urlFigma:
         "https://www.figma.com/design/xZtI8B7srcvORsyTzPAQGh/Coletive-N%C3%A3o-Bin%C3%A1rie---Website?node-id=104-138&t=PwmYZV613xbKoKlq-1",
       ariaLabelFigma: "Acessar o protótipo do projeto no Figma",
-      urlGitHub: "https://github.com/Enne-Amore/coletive-nb",
+      urlGitHub: "https://github.com/ennetechdesign/coletive-nb",
       ariaLabelGitHub: "Acessar o repositório do projeto no GitHub",
       urlMainStyle:
         "bg-[#F2E530] text-[#040008] hover:bg-[#F2C029] focus-visible:bg-[#F2C029] active:bg-[#FFFEF6] active:text-[#F2C029]",
@@ -316,7 +316,7 @@ export const projects = [
       urlFigma:
         "https://www.figma.com/design/4til0EO4BXEqckMqyEIK4V/Alta-fidelidade?node-id=0-1&t=1EIllootjdIzgu05-1",
       ariaLabelFigma: "Acessar o protótipo do projeto no Figma",
-      urlGitHub: "https://github.com/Enne-Amore/janai-amitaf",
+      urlGitHub: "https://github.com/ennetechdesign/janai-amitaf",
       ariaLabelGitHub: "Acessar o repositório do projeto no GitHub",
       urlMainStyle:
         "bg-[#F2B705] text-[#05000C] hover:bg-[#DB9406] focus-visible:bg-[#DB9406] active:bg-[#F8F3FF] active:text-[#DB9406]",

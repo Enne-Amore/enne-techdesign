@@ -20,7 +20,7 @@ export default function SocialNetworks(props: { socialNetworkStyle: string }) {
       icon: <FaLinkedinIn className={`w-6 h-auto`} />,
     },
     {
-      url: "https://github.com/Enne-Amore",
+      url: "https://github.com/ennetechdesign",
       ariaLabel: "Ir ao meu perfil no GitHub",
       icon: <FaGithub className={`w-6 h-auto`} />,
     },
