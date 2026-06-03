@@ -88,19 +88,20 @@ body {
 }
 #problemn-cnbpb .font-open-dyslexic strong,
 #footer-cnbpb .font-open-dyslexic strong {
-  color: #F2E530;
+  @apply text-[#F2E530]
 }
 #solution-cnbpb .font-open-dyslexic strong,
 #style-guide-cnbpb .font-open-dyslexic strong,
 #technologies-cnbpb .font-open-dyslexic strong {
-  color: #713CA6;
+  @apply text-[#713CA6]
 }
+#problemn-janai-amitaf strong,
 #style-guide-janai-amitaf strong,
 #technologies-janai-amitaf strong {
-  color: #6C0CF2;
+  @apply text-[#6C0CF2]
 }
 #footer-janai-amitaf strong {
-  color: #F2B705;
+  @apply text-[#F2B705]
 }
 
 /* Dark mode */
@@ -118,6 +119,7 @@ body {
 .dark #technologies-cnbpb .font-open-dyslexic strong {
   @apply text-[#F2E530];
 }
+.dark #problemn-janai-amitaf strong,
 .dark #style-guide-janai-amitaf strong,
 .dark #technologies-janai-amitaf strong {
   @apply text-[#F2B705];

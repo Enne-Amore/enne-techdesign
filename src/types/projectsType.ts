@@ -36,6 +36,26 @@ export interface ProjectsType {
     urlMainStyle: string;
     urlSecondaryStyle?: string;
   };
+  problemn: {
+    id: string;
+    sectionStyle: string;
+    titleStyle: string;
+    textStyle: string;
+    line1: {
+      text: string;
+      containerStyle?: string,
+      list?: string[];
+      img?: string;
+      alt?: string;
+    };
+    line2?: {
+      text: string;
+      containerStyle: string,
+      img?: string;
+      alt?: string;
+    };
+    conclusion: string;
+  }
   styleGuide: {
     id: string;
     explanation: {

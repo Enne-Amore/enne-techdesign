@@ -2,6 +2,7 @@ import { ProjectsType } from "@/types/projectsType";
 import { projects } from "@/data/projects";
 import ProjectHeader from "@/components/project/projectHeader";
 import ProjectAccesses from "@/components/project/projectAccesses";
+import ProjectProblemn from "@/components/project/projectProblemn";
 import ProjectStyleGuide from "@/components/project/projectStyleGuide";
 import ProjectScreenPrototyping from "@/components/project/projectScreenPrototyping";
 import ProjectTechnologies from "@/components/project/projectTechnologies";
@@ -45,14 +46,23 @@ export default function JanaiAmitafProducoes() {
           urlMainStyle={data.accesses.urlMainStyle}
           urlSecondaryStyle={data.accesses.urlSecondaryStyle}
         />
-        
+
+        <ProjectProblemn
+          id={data.problemn.id}
+          sectionStyle={data.problemn.sectionStyle}
+          titleStyle={data.problemn.titleStyle}
+          textStyle={data.problemn.textStyle}
+          line1={data.problemn.line1}
+          conclusion={data.problemn.conclusion}
+        />
+
         <ProjectStyleGuide
           id={data.styleGuide.id}
           explanation={data.styleGuide.explanation}
           colors={data.styleGuide.colors}
           typography={data.styleGuide.typography}
         />
-        
+
         <ProjectScreenPrototyping
           sectionStyle={data.prototyping.sectionStyle}
           titleStyle={data.prototyping.titleStyle}
@@ -71,7 +81,7 @@ export default function JanaiAmitafProducoes() {
           src={data.video.src}
         />
       </main>
-      
+
       <ProjectFooter
         id={data.footer.id}
         footerStyle={data.footer.footerStyle}

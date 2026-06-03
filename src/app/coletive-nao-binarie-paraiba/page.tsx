@@ -50,7 +50,15 @@ export default function ColetiveNaoBinarieParaiba() {
           urlSecondaryStyle={data.accesses.urlSecondaryStyle}
         />
 
-        <ProjectProblemn />
+        <ProjectProblemn
+          id={data.problemn.id}
+          sectionStyle={data.problemn.sectionStyle}
+          titleStyle={data.problemn.titleStyle}
+          textStyle={data.problemn.textStyle}
+          line1={data.problemn.line1}
+          line2={data.problemn.line2}
+          conclusion={data.problemn.conclusion}
+        />
 
         <ProjectTargetAudience />
 

@@ -43,6 +43,28 @@ export const projects = [
       urlSecondaryStyle:
         "bg-[#F2E530]/20 border-2 border-[#F2E530] text-[#040008] dark:text-[#FFFFFD] dark:hover:text-[#040008] dark:focus-visible:text-[#040008] hover:bg-[#F2E530] focus-visible:bg-[#F2E530] active:border-[#F2C029] active:bg-[#F2C029]",
     },
+    problemn: {
+      id: "problemn-cnbpb",
+      sectionStyle: "from-[#6A4EA6] to-[#713CA6]",
+      titleStyle: "font-geometos-rounded text-[#F2E530]",
+      textStyle: "font-open-dyslexic text-[#FFFFFD] leading-9 xl:leading-10",
+      line1: {
+        text: "As pessoas que fazem parte da não-binariedade passam por diversos <strong>problemas que derivam do binarismo de gênero</strong>, um pensamento errôneo de que existe apenas dois gêneros, feminino e masculino, além disso já ser naturalizado pela sociedade. Dessa forma, é possível citar algumas questões difíceis, por exemplo:",
+        containerStyle: "max-w-180",
+        list: [
+          "Exclusão social",
+          "Escassez de visibilidade e de representatividade",
+          "Ausência de direitos acessados e protegidos",
+        ],
+      },
+      line2: {
+        text: "Com isso, o Coletive Não-Binárie da Paraíba deseja avançar nas causas não-binárias estatualmente, como <strong>mapear não-bináries paraibanes</strong>, <strong>conscientizar a população</strong> acerca das dificuldades enfrentadas pela comunidade e <strong>promover a conquista e a proteção de direitos</strong>.",
+        containerStyle: "flex flex-col items-center gap-8 xl:flex-row-reverse xl:w-268.5 xl:justify-between",
+        img: "cnbpb-membres-unides",
+        alt: "Todo o Coletive unido em um encontro de não-bináries",
+      },
+      conclusion: "A <strong>divulgação do coletive</strong> para a população é um fator fundamental para ajudar o movimento não-binário, porém a diretoria da organização passa por um <strong>desafio de conseguir obter recursos financeiros para produzir materiais de comunicação ao público</strong>, como banners, panfletos e cartazes, os quais também são mais trabalhosos de serem disseminados pelos lugares presencialmente.",
+    },
     styleGuide: {
       id: "style-guide-cnbpb",
       explanation: {
@@ -322,6 +344,19 @@ export const projects = [
         "bg-[#F2B705] text-[#05000C] hover:bg-[#DB9406] focus-visible:bg-[#DB9406] active:bg-[#F8F3FF] active:text-[#DB9406]",
       urlSecondaryStyle:
         "bg-[#F2B705]/20 border-2 border-[#F2B705] text-[#05000C] dark:text-[#FCFAFF] dark:hover:text-[#05000C] dark:focus-visible:text-[#05000C] hover:bg-[#F2B705] focus-visible:bg-[#F2B705] active:border-[#DB9406] active:bg-[#DB9406]",
+    },
+    problemn: {
+      id: "problemn-janai-amitaf",
+      sectionStyle: "from-[#E057F2] to-[#C522F2] dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#E057F2,#C522F2)]",
+      titleStyle: "font-bold text-[#05000C] dark:text-[#F8F3FF]",
+      textStyle: "leading-9 xl:leading-10",
+      line1: {
+        text: "O artista, que atua com estórias, ilustrações e editoração, não possuía uma presença digital estruturada que comunicasse de forma clara e profissional a diversidade de seus trabalhos. <strong>Seus projetos estavam dispersos e sem uma organização estratégica</strong>, dificultando que recrutadores e possíveis clientes compreendessem rapidamente suas habilidades, estilo e principais entregas.",
+        containerStyle: "flex flex-col items-center gap-8 xl:flex-row-reverse xl:w-268.5 xl:justify-between",
+        img: "janai-amitaf-problemn",
+        alt: "Autoretrado de Janai Amitáf",
+      },
+      conclusion: "Além disso, <strong>não havia um canal direto e intuitivo para contato ou solicitação de serviços</strong>, o que criava barreiras na conversão de interesse em oportunidades reais.",
     },
     styleGuide: {
       id: "style-guide-janai-amitaf",
