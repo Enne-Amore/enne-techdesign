@@ -10,6 +10,7 @@ export const projects = [
       positions: ["UI/UX Design", "Front-end"],
       caption: "Landing Page",
     },
+    bodyStyle: "font-nunito bg-[#FFFFFD] text-[#242325] dark:bg-[#242325] dark:text-[#FFFFFD]",
     header: {
       headerStyle: "bg-[#030007]",
       positions: ["UI/UX Design", "Front-end"],
@@ -361,6 +362,7 @@ export const projects = [
       positions: ["UI/UX Design", "Front-end"],
       caption: "Portfólio Web",
     },
+    bodyStyle: "font-bitter bg-[#FCFAFF] text-[#232027] dark:bg-[#232027] dark:text-[#FCFAFF]",
     header: {
       headerStyle: "bg-linear-to-br from-[#8C00FF] to-[#6C0CF2]",
       positions: ["UI/UX Design", "Front-end"],

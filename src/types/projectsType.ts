@@ -9,6 +9,7 @@ export interface ProjectsType {
     positions: string[];
     caption: string;
   };
+  bodyStyle: string;
   header: {
     headerStyle: string;
     positions: string[];
