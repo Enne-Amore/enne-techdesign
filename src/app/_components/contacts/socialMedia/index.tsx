@@ -17,7 +17,7 @@ export default function SocialMedia() {
       </h3>
 
       <SocialNetworks
-        socialNetworkStyle={`bg-white-200 text-light-purple border-light-purple shadow-[0_0_2px] shadow-light-purple dark:bg-white-200/10 dark:text-light-pink-100 dark:border-light-pink-100 dark:shadow-light-pink-100 hover:bg-light-purple hover:text-white-200 hover:shadow-[0_0_5px] dark:hover:bg-light-pink-100 dark:hover:text-gray focus-visible:bg-light-purple focus-visible:text-white-200 focus-visible:shadow-[0_0_5px] dark:focus-visible:bg-light-pink-100 dark:focus-visible:text-gray active:bg-dark-purple active:shadow-dark-purple dark:active:bg-light-pink-200 dark:active:shadow-light-pink-200`}
+        socialNetworkStyle={`bg-light-purple/30 text-white-100 border-light-purple shadow-[0_0_2px] shadow-light-purple dark:bg-white-200/10 dark:text-light-pink-100 dark:border-light-pink-100 dark:shadow-light-pink-100 hover:bg-light-purple hover:text-white-200 hover:shadow-[0_0_5px] dark:hover:bg-light-pink-100 dark:hover:text-gray focus-visible:bg-light-purple focus-visible:text-white-200 focus-visible:shadow-[0_0_5px] dark:focus-visible:bg-light-pink-100 dark:focus-visible:text-gray active:bg-dark-purple active:shadow-dark-purple dark:active:bg-light-pink-200 dark:active:shadow-light-pink-200`}
       />
     </article>
   );
