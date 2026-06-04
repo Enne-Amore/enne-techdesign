@@ -19,7 +19,7 @@ export default function ProjectProblemn(props: ProjectsType["problemn"]) {
         >
           <p
             dangerouslySetInnerHTML={{ __html: props.line1.text }}
-            className={`${props.textStyle} text-xl text-shadow-2xs xl:text-2xl`}
+            className={`${props.line1.textWidth} ${props.textStyle} text-xl text-shadow-2xs xl:text-2xl`}
           ></p>
 
           {props.line1.img && (
@@ -27,17 +27,17 @@ export default function ProjectProblemn(props: ProjectsType["problemn"]) {
               <picture>
                 <source
                   media="(min-width: 1280px)"
-                  srcSet={`/assets/${props.line1.img}.png`}
-                  width={450}
-                  height={338}
-                  type="image/png"
+                  srcSet={`/assets/${props.line1.img}.avif`}
+                  width={Number(props.line1.desktopWidth)}
+                  height={Number(props.line1.desktopHeight)}
+                  type="image/avif"
                 />
 
                 <Image
-                  src={`/assets/${props.line1.img}.png`}
+                  src={`/assets/${props.line1.img}.avif`}
                   alt={`${props.line1.alt}`}
-                  width={300}
-                  height={225}
+                  width={Number(props.line1.mobileWidth)}
+                  height={Number(props.line1.mobileHeight)}
                   className={`filter drop-shadow`}
                 />
               </picture>
@@ -62,7 +62,7 @@ export default function ProjectProblemn(props: ProjectsType["problemn"]) {
         >
           <p
             dangerouslySetInnerHTML={{ __html: props.line2.text }}
-            className={`max-w-137.5 ${props.textStyle} text-xl text-shadow-2xs xl:text-2xl`}
+            className={`${props.line2.textWidth} ${props.textStyle} text-xl text-shadow-2xs xl:text-2xl`}
           ></p>
 
           {props.line2.img && (
@@ -70,17 +70,17 @@ export default function ProjectProblemn(props: ProjectsType["problemn"]) {
               <picture>
                 <source
                   media="(min-width: 1280px)"
-                  srcSet={`/assets/${props.line2.img}.png`}
-                  width={450}
-                  height={338}
-                  type="image/png"
+                  srcSet={`/assets/${props.line2.img}.avif`}
+                  width={Number(props.line2.desktopWidth)}
+                  height={Number(props.line2.desktopHeight)}
+                  type="image/avif"
                 />
 
                 <Image
-                  src={`/assets/${props.line2.img}.png`}
+                  src={`/assets/${props.line2.img}.avif`}
                   alt={`${props.line2.alt}`}
-                  width={300}
-                  height={225}
+                  width={Number(props.line2.mobileWidth)}
+                  height={Number(props.line2.mobileHeight)}
                   className={`filter drop-shadow`}
                 />
               </picture>

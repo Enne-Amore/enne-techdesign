@@ -44,18 +44,40 @@ export interface ProjectsType {
     line1: {
       text: string;
       containerStyle?: string,
+      textWidth?: string;
       list?: string[];
       img?: string;
       alt?: string;
+      mobileWidth?: string;
+      mobileHeight?: string;
+      desktopWidth?: string;
+      desktopHeight?: string;
     };
     line2?: {
       text: string;
-      containerStyle: string,
+      containerStyle?: string,
+      textWidth?: string;
       img?: string;
       alt?: string;
+      mobileWidth?: string;
+      mobileHeight?: string;
+      desktopWidth?: string;
+      desktopHeight?: string;
     };
     conclusion: string;
   }
+  targetAudience: {
+    id: string;
+    titleStyle: string;
+    textStyle: string;
+    list: string[];
+    img: string;
+    alt: string;
+    mobileWidth: string;
+    mobileHeight: string;
+    desktopWidth: string;
+    desktopHeight: string;
+  };
   styleGuide: {
     id: string;
     explanation: {

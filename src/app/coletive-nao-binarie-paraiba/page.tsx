@@ -60,7 +60,18 @@ export default function ColetiveNaoBinarieParaiba() {
           conclusion={data.problemn.conclusion}
         />
 
-        <ProjectTargetAudience />
+        <ProjectTargetAudience
+          id={data.targetAudience.id}
+          titleStyle={data.targetAudience.titleStyle}
+          textStyle={data.targetAudience.textStyle}
+          list={data.targetAudience.list}
+          img={data.targetAudience.img}
+          alt={data.targetAudience.alt}
+          mobileWidth={data.targetAudience.mobileWidth}
+          mobileHeight={data.targetAudience.mobileHeight}
+          desktopWidth={data.targetAudience.desktopWidth}
+          desktopHeight={data.targetAudience.desktopHeight}
+        />
 
         <ProjectSolution />
 
