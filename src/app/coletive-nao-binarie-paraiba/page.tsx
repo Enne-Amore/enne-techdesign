@@ -73,7 +73,19 @@ export default function ColetiveNaoBinarieParaiba() {
           desktopHeight={data.targetAudience.desktopHeight}
         />
 
-        <ProjectSolution />
+        <ProjectSolution
+          id={data.solution.id}
+          sectionStyle={data.solution.sectionStyle}
+          titleStyle={data.solution.titleStyle}
+          text={data.solution.text}
+          textStyle={data.solution.textStyle}
+          img={data.solution.img}
+          alt={data.solution.alt}
+          mobileWidth={data.solution.mobileWidth}
+          mobileHeight={data.solution.mobileHeight}
+          desktopWidth={data.solution.desktopWidth}
+          desktopHeight={data.solution.desktopHeight}
+        />
 
         <ProjectStyleGuide
           id={data.styleGuide.id}

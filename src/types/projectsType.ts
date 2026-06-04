@@ -78,6 +78,20 @@ export interface ProjectsType {
     desktopWidth: string;
     desktopHeight: string;
   };
+  solution: {
+    id: string;
+    sectionStyle: string;
+    titleStyle: string;
+    text: string;
+    textStyle: string;
+    list?: string[];
+    img: string;
+    alt: string;
+    mobileWidth: string;
+    mobileHeight: string;
+    desktopWidth: string;
+    desktopHeight: string;
+  };
   styleGuide: {
     id: string;
     explanation: {

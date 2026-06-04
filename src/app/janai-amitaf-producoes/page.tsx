@@ -4,6 +4,7 @@ import ProjectHeader from "@/components/project/projectHeader";
 import ProjectAccesses from "@/components/project/projectAccesses";
 import ProjectProblemn from "@/components/project/projectProblemn";
 import ProjectTargetAudience from "@/components/project/projectTargetAudience";
+import ProjectSolution from "@/components/project/projectSolution";
 import ProjectStyleGuide from "@/components/project/projectStyleGuide";
 import ProjectScreenPrototyping from "@/components/project/projectScreenPrototyping";
 import ProjectTechnologies from "@/components/project/projectTechnologies";
@@ -68,6 +69,21 @@ export default function JanaiAmitafProducoes() {
           mobileHeight={data.targetAudience.mobileHeight}
           desktopWidth={data.targetAudience.desktopWidth}
           desktopHeight={data.targetAudience.desktopHeight}
+        />
+        
+        <ProjectSolution
+          id={data.solution.id}
+          sectionStyle={data.solution.sectionStyle}
+          titleStyle={data.solution.titleStyle}
+          text={data.solution.text}
+          textStyle={data.solution.textStyle}
+          list={data.solution.list}
+          img={data.solution.img}
+          alt={data.solution.alt}
+          mobileWidth={data.solution.mobileWidth}
+          mobileHeight={data.solution.mobileHeight}
+          desktopWidth={data.solution.desktopWidth}
+          desktopHeight={data.solution.desktopHeight}
         />
 
         <ProjectStyleGuide
