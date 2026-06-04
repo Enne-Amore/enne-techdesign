@@ -9,6 +9,7 @@ import ProjectStyleGuide from "@/components/project/projectStyleGuide";
 import ProjectScreenPrototyping from "@/components/project/projectScreenPrototyping";
 import ProjectTechnologies from "@/components/project/projectTechnologies";
 import ProjectDemoVideo from "@/components/project/projectDemoVideo";
+import ProjectImpact from "@/components/project/projectImpact";
 import ProjectFooter from "@/components/project/projectFooter";
 
 export default function JanaiAmitafProducoes() {
@@ -33,7 +34,7 @@ export default function JanaiAmitafProducoes() {
 
       <main
         id="main"
-        className={`flex flex-col items-center gap-20 pt-20 xl:gap-28 xl:pt-28`}
+        className={`flex flex-col items-center gap-20 py-20 xl:gap-28 xl:py-28`}
       >
         <ProjectAccesses
           id={data.accesses.id}
@@ -109,6 +110,15 @@ export default function JanaiAmitafProducoes() {
           sectionStyle={data.video.sectionStyle}
           titleStyle={data.video.titleStyle}
           src={data.video.src}
+        />
+        
+        <ProjectImpact
+          id={data.impact.id}
+          titleStyle={data.impact.titleStyle}
+          textStyle={data.impact.textStyle}
+          list={data.impact.list}
+          img={data.impact.img}
+          alt={data.impact.alt}
         />
       </main>
 

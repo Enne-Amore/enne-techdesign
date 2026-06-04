@@ -179,6 +179,14 @@ export interface ProjectsType {
     titleStyle: string;
     src: string;
   };
+  impact: {
+    id: string;
+    titleStyle: string;
+    textStyle: string;
+    list: string[];
+    img: string;
+    alt: string;
+  };
   footer: {
     id: string;
     footerStyle: string;

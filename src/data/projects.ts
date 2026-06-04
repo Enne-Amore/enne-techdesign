@@ -47,7 +47,7 @@ export const projects = [
       id: "problemn-cnbpb",
       sectionStyle: "from-[#6A4EA6] to-[#713CA6]",
       titleStyle: "font-geometos-rounded text-[#F2E530]",
-      textStyle: "font-open-dyslexic text-[#FFFFFD] leading-9 xl:leading-10",
+      textStyle: "text-[#FFFFFD] leading-9 xl:leading-10",
       line1: {
         text: "As pessoas que fazem parte da não-binariedade passam por diversos <strong>problemas que derivam do binarismo de gênero</strong>, um pensamento errôneo de que existe apenas dois gêneros, feminino e masculino, além disso já ser naturalizado pela sociedade. Dessa forma, é possível citar algumas questões difíceis, por exemplo:",
         containerStyle: "max-w-180",
@@ -73,7 +73,7 @@ export const projects = [
     targetAudience: {
       id: "target-audience-cnbpb",
       titleStyle: "font-geometos-rounded from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
-      textStyle: "font-open-dyslexic",
+      textStyle: "w-57.5 xl:w-67.5",
       list: [
         "Comunidade não-binária",
         "Residentes da Paraíba",
@@ -90,7 +90,7 @@ export const projects = [
       sectionStyle: "from-[#F2E530] to-[#FFCE31] dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#F2E530,#FFCE31)]",
       titleStyle: "font-geometos-rounded bg-linear-to-r from-[#713CA6] to-[#6A4EA6] text-transparent bg-clip-text drop-shadow dark:from-[#F2E530] dark:to-[#ECE35A]",
       text: "Necessitei construir um <strong>website</strong> em forma de <strong>landing page</strong>, seguindo o conceito de Mobile-First, que centralizasse tudo sobre o <strong>Coletive Não-Binárie da Paraíba</strong> em um único espaço virtual com a finalidade de <strong>facilitar o compartilhamento e a absorção de informações</strong> sobre o movimento social, como seus objetivos e atividades, e que contenha <strong>um botão principal</strong> de redirecionamento para o formulário de <strong>mapeamento da comunidade</strong>.",
-      textStyle: "font-open-dyslexic",
+      textStyle: "xl:w-[580px]",
       img: "cnbpb-panfleto",
       alt: "Panfleto do Coletive destacando um QR Code para o site oficial da organização",
       mobileWidth: "300",
@@ -104,7 +104,7 @@ export const projects = [
         titleStyle:
           "font-geometos-rounded from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
         text: "Utilizei a <strong>logo da organização</strong> como base somada à própria <strong>bandeira não-binária</strong>, a qual representa a comunidade, com o intuito de <strong>definir as cores e as fontes</strong> do site. Desse modo, a <strong>identidade do movimento social continua consistente</strong>.",
-        textStyle: "font-open-dyslexic xl:w-[530px]",
+        textStyle: "xl:w-[530px]",
         img: "cnbpb",
         alt: "Logo completa do Coletive Não-Binárie da Paraíba",
       },
@@ -278,7 +278,7 @@ export const projects = [
         titleStyle:
           "font-geometos-rounded from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
         text: "Como o site consiste em uma <strong>Landing Page simples e informativa</strong> de apenas uma página com algumas animações e funcionalidades essenciais, bastou somente utilizar a tríade básica das linguagens <strong>HTML5, CSS3 e Javascript</strong>.",
-        textStyle: "font-open-dyslexic xl:w-[487px]",
+        textStyle: "xl:w-[487px]",
         img: "cnbpb",
         alt: "Logo de cada tecnologia utilizada: HTML5, CSS3 e Javascript",
       },
@@ -294,7 +294,7 @@ export const projects = [
           "<strong>Tela de carregamento</strong> inicial",
         ],
         listStyle:
-          "font-open-dyslexic bg-linear-to-br from-[#FFCE31] to-[#F2E530] dark:from-[#713CA6] dark:to-[#6A4EA6]",
+          "bg-linear-to-br from-[#FFCE31] to-[#F2E530] dark:from-[#713CA6] dark:to-[#6A4EA6]",
       },
     },
     video: {
@@ -303,6 +303,21 @@ export const projects = [
       titleStyle:
         "font-geometos-rounded bg-linear-to-br text-transparent bg-clip-text from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
       src: "/assets/cnbpb-video.mp4",
+    },
+    impact: {
+      id: "impact-cnbpb",
+      titleStyle: "font-geometos-rounded from-[#713CA6] to-[#6A4EA6] dark:from-[#F2E530] dark:to-[#ECE35A]",
+      textStyle: "xl:w-122.5",
+      list: [
+        "Intuitividade em apresentar informações",
+        "Instigação em chamar o público-alvo para ser mapeado",
+        "Otimização de comunicação e de mobilização",
+        "Credibilidade e profissionalismo",
+        "Alcance maior de conscientização",
+        "Agilidade para atualização de informações",
+      ],
+      img: "cnbpb",
+      alt: "Telas mobile de algumas seções do site",
     },
     footer: {
       id: "footer-cnbpb",
@@ -332,7 +347,7 @@ export const projects = [
         ],
         linkStyle: "text-[#FFFFFD] hover:bg-[#FFFFFD]/15 active:bg-[#FFFFFD]/30",
       },
-      copyrightStyle: "font-open-dyslexic text-[#FFFFFD]",
+      copyrightStyle: "text-[#FFFFFD]",
     },
   },
   {
@@ -399,7 +414,7 @@ export const projects = [
     targetAudience: {
       id: "target-audience-janai-amitaf",
       titleStyle: "font-bold from-[#6C0CF2] to-[#8C00FF] dark:text-[#F2B705]",
-      textStyle: "leading-8",
+      textStyle: "w-57.5 xl:w-67.5",
       list: [
         "Empresas e agências",
         "Clientes potenciais",
@@ -616,6 +631,19 @@ export const projects = [
         "from-[#E057F2] to-[#C522F2] dark:bg-[linear-gradient(to_bottom,#242325B3,#242325B3),linear-gradient(to_bottom,#E057F2,#C522F2)]",
       titleStyle: "font-bold text-[#05000C] dark:text-[#F8F3FF]",
       src: "/assets/janai-amitaf-video.mp4",
+    },
+    impact: {
+      id: "impact-janai-amitaf",
+      titleStyle: "font-bold from-[#6C0CF2] to-[#8C00FF] dark:text-[#F2B705]",
+      textStyle: "xl:w-130",
+      list: [
+        "Mais clareza na apresentação das habilidades do artista",
+        "Fácil navegação e entendimento dos trabalhos",
+        "Caminhos mais diretos para contato profissional",
+        "Presença digital mais forte como um todo",
+      ],
+      img: "janai-amitaf",
+      alt: "Telas mobile de algumas páginas secundárias do site",
     },
     footer: {
       id: "footer-janai-amitaf",

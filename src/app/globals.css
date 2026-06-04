@@ -86,13 +86,13 @@ body {
   -webkit-text-fill-color: transparent;
   text-shadow: 4px 4px 4px #2824260D, 4px 4px 4px #FFD1E908;
 }
-#problemn-cnbpb .font-open-dyslexic strong,
-#footer-cnbpb .font-open-dyslexic strong {
+#problemn-cnbpb strong,
+#footer-cnbpb strong {
   @apply text-[#F2E530]
 }
-#solution-cnbpb .font-open-dyslexic strong,
-#style-guide-cnbpb .font-open-dyslexic strong,
-#technologies-cnbpb .font-open-dyslexic strong {
+#solution-cnbpb strong,
+#style-guide-cnbpb strong,
+#technologies-cnbpb strong {
   @apply text-[#713CA6]
 }
 #problemn-janai-amitaf strong,
@@ -115,9 +115,9 @@ body {
 .dark ::-webkit-scrollbar-thumb:hover {
   @apply bg-light-pink-200;
 }
-.dark #solution-cnbpb .font-open-dyslexic strong,
-.dark #style-guide-cnbpb .font-open-dyslexic strong,
-.dark #technologies-cnbpb .font-open-dyslexic strong {
+.dark #solution-cnbpb strong,
+.dark #style-guide-cnbpb strong,
+.dark #technologies-cnbpb strong {
   @apply text-[#F2E530];
 }
 .dark #problemn-janai-amitaf strong,

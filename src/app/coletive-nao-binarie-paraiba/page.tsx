@@ -112,7 +112,14 @@ export default function ColetiveNaoBinarieParaiba() {
           src={data.video.src}
         />
 
-        <ProjectImpact />
+        <ProjectImpact
+          id={data.impact.id}
+          titleStyle={data.impact.titleStyle}
+          textStyle={data.impact.textStyle}
+          list={data.impact.list}
+          img={data.impact.img}
+          alt={data.impact.alt}
+        />
       </main>
 
       <ProjectFooter

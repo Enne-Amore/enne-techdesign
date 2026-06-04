@@ -17,7 +17,7 @@ export default function ProjectTargetAudience(props: ProjectsType["targetAudienc
         </h2>
 
         <ul
-          className={`w-57.5 list-['⭐'] list-outside space-y-3 xl:w-67.5`}
+          className={`list-['⭐'] list-outside space-y-3`}
         >
           {props.list.map((item, index) => (
             <li
