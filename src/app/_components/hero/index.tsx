@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className={`flex flex-col-reverse items-center gap-12 xl:w-269.5 xl:flex-row xl:justify-between`}
+      className={`flex flex-col-reverse items-center gap-12 scroll-mt-14 xl:w-269.5 xl:flex-row xl:justify-between xl:pb-3 xl:scroll-mt-40`}
     >
       <div
         data-aos="fade-right"

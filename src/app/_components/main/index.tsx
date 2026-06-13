@@ -20,7 +20,7 @@ export default function Main() {
 
   return (
     <main
-      className={`bg-white-100 flex flex-col items-center gap-70px pt-11 overflow-hidden dark:bg-gray xl:gap-100px xl:pt-70px xl:pb-100px`}
+      className={`bg-white-100 flex flex-col items-center gap-70px pt-20 overflow-hidden dark:bg-gray xl:gap-100px xl:pt-28 xl:pb-100px`}
     >
       <Hero />
 
