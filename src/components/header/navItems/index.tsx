@@ -1,14 +1,17 @@
-"use client"
-
-import { useEffect, useState } from "react";
-import MoreOptions from "../menuDesktop/moreOptions";
+import { ReactElement } from "react";
+import {
+  FaCircleUser,
+  FaGraduationCap,
+  FaMessage,
+  FaSplotch,
+} from "react-icons/fa6";
 
 export interface NavItemsInterface {
   url: string;
   label: string;
   ariaLabel: string;
+  icon: ReactElement;
   isMain?: boolean;
-  isDesktop?: boolean;
 }
 
 export default function NavItems(props: { clickLinkMobile?: () => void }) {
@@ -18,65 +21,56 @@ export default function NavItems(props: { clickLinkMobile?: () => void }) {
       url: "#projetos",
       ariaLabel: "Ir à seção de projetos",
       label: "Projetos",
+      icon: <FaSplotch />,
     },
     {
       url: "#sobre",
       ariaLabel: "Ir à seção sobre mim",
       label: "Sobre Mim",
+      icon: <FaCircleUser />,
     },
     {
       url: "#formacoes",
       ariaLabel: "Ir à seção de formações",
       label: "Formações",
-      isDesktop: true,
+      icon: <FaGraduationCap />,
     },
     {
       url: "#contatos",
       ariaLabel: "Ir à seção de contatos",
       label: "Contate-me",
+      icon: <FaMessage className={`-mb-1`} />,
       isMain: true,
     },
   ];
-
-  const [isDesktop, setIsDesktop] = useState(false);
-
-  useEffect(() => {
-    setIsDesktop(window.innerWidth >= 1280);
-  }, []);
 
   return (
     <ul
       className={`flex flex-col items-center gap-1.5 xl:flex-row xl:gap-0`}
       role="menu"
     >
-      {links.map((link, index) => {
-        if (index === links.length - 2 && isDesktop) {
-          return <MoreOptions key={index} />;
-          
-        } else {
-          return (
-            <li
-              key={index}
-              className={`py-3.5 ${link.isMain ? "mt-3.5 xl:mt-0" : ""} ${link.isDesktop ? "xl:hidden" : ""}`}
-              role="none"
-            >
-              <a
-                href={link.url}
-                aria-label={link.ariaLabel}
-                onClick={props.clickLinkMobile}
-                className={`text-xl text-shadow-2xs py-3.5 rounded-4xl transition xl:text-2xl ${
-                  link.isMain
-                    ? "bg-dark-pink-100 text-gray px-7 mt-3.5 font-bold shadow-[0_0_2px] shadow-dark-pink-100 duration-300 ease-in-out hover:bg-dark-pink-200 hover:shadow-[0_0_5px] hover:shadow-dark-pink-200 focus-visible:bg-dark-pink-200 focus-visible:shadow-[0_0_5px] focus-visible:shadow-dark-pink-200 active:bg-white-300 active:text-dark-pink-200 active:shadow-white-300 xl:mt-0 xl:ml-5"
-                    : "font-medium px-5 ease-in hover:text-light-pink-100 focus-visible:text-light-pink-100 active:text-light-pink-200"
-                }`}
-                role="menuitem"
-              >
-                {link.label}
-              </a>
-            </li>
-          );
-        }
-      })}
+      {links.map((link, index) => (
+        <li
+          key={index}
+          role="none"
+        >
+          <a
+            href={link.url}
+            aria-label={link.ariaLabel}
+            onClick={props.clickLinkMobile}
+            className={`text-xl text-shadow-2xs flex items-center gap-2 py-3.5 rounded-4xl transition xl:text-2xl xl:gap-2.5 ${
+              link.isMain
+                ? "bg-light-purple text-white-100 px-7 mt-3.5 font-bold shadow-[0_0_2px] shadow-light-purple duration-300 ease-in-out dark:bg-light-pink-100 dark:text-gray dark:shadow-light-pink-100 hover:bg-dark-purple hover:shadow-[0_0_5px] hover:shadow-dark-purple focus-visible:bg-dark-purple focus-visible:shadow-[0_0_5px] focus-visible:shadow-dark-purple active:bg-white-300 active:text-dark-purple active:shadow-white-300 dark:hover:bg-light-pink-200 dark:hover:shadow-light-pink-200 dark:focus-visible:bg-light-pink-200 dark:focus-visible:shadow-light-pink-200 dark:active:text-light-pink-200 dark:active:bg-white-300 dark:active:shadow-white-300 xl:mt-0 xl:ml-5"
+                : "font-medium text-gray px-5 ease-in dark:text-white-100 hover:text-light-purple focus-visible:text-light-purple active:text-dark-purple dark:hover:text-light-pink-100 dark:focus-visible:text-light-pink-100 dark:active:text-light-pink-200"
+            }`}
+            role="menuitem"
+          >
+            {link.icon}
+
+            {link.label}
+          </a>
+        </li>
+      ))}
     </ul>
   );
 }

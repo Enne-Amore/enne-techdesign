@@ -9,6 +9,7 @@ export interface ProjectsType {
     positions: string[];
     caption: string;
   };
+  bodyStyle: string;
   header: {
     headerStyle: string;
     positions: string[];
@@ -35,6 +36,62 @@ export interface ProjectsType {
     ariaLabelGitHub?: string;
     urlMainStyle: string;
     urlSecondaryStyle?: string;
+  };
+  problemn: {
+    id: string;
+    sectionStyle: string;
+    titleStyle: string;
+    textStyle: string;
+    line1: {
+      text: string;
+      containerStyle?: string,
+      textWidth?: string;
+      list?: string[];
+      img?: string;
+      alt?: string;
+      mobileWidth?: string;
+      mobileHeight?: string;
+      desktopWidth?: string;
+      desktopHeight?: string;
+    };
+    line2?: {
+      text: string;
+      containerStyle?: string,
+      textWidth?: string;
+      img?: string;
+      alt?: string;
+      mobileWidth?: string;
+      mobileHeight?: string;
+      desktopWidth?: string;
+      desktopHeight?: string;
+    };
+    conclusion: string;
+  }
+  targetAudience: {
+    id: string;
+    titleStyle: string;
+    textStyle: string;
+    list: string[];
+    img: string;
+    alt: string;
+    mobileWidth: string;
+    mobileHeight: string;
+    desktopWidth: string;
+    desktopHeight: string;
+  };
+  solution: {
+    id: string;
+    sectionStyle: string;
+    titleStyle: string;
+    text: string;
+    textStyle: string;
+    list?: string[];
+    img: string;
+    alt: string;
+    mobileWidth: string;
+    mobileHeight: string;
+    desktopWidth: string;
+    desktopHeight: string;
   };
   styleGuide: {
     id: string;
@@ -122,6 +179,14 @@ export interface ProjectsType {
     sectionStyle: string;
     titleStyle: string;
     src: string;
+  };
+  impact: {
+    id: string;
+    titleStyle: string;
+    textStyle: string;
+    list: string[];
+    img: string;
+    alt: string;
   };
   footer: {
     id: string;

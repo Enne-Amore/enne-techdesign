@@ -13,12 +13,12 @@ export default function ColorTheme() {
 
   return (
     <div
-      className={`flex items-center mt-9 rounded-4xl shadow xl:mt-0`}
+      className={`relative flex items-center rounded-4xl shadow`}
       role="radiogroup"
       aria-label="Escolha de tema de cores"
     >
       <div
-        className={`text-light-pink-100 bg-white-100/2 border-2 border-light-pink-100 rounded-l-4xl has-checked:bg-light-pink-100 has-checked:text-gray`}
+        className={`text-light-pink-100 bg-white-100/5 border-2 rounded-l-4xl has-checked:bg-dark-pink-100 has-checked:text-gray has-checked:border-dark-pink-100`}
       >
         <input
           type="radio"
@@ -34,7 +34,7 @@ export default function ColorTheme() {
           htmlFor="light"
           title="Tema claro"
           aria-label="Alterar tema de cores para claro"
-          className={`flex content-center text-xl text-shadow-2xs pt-3 pb-3.5 pr-4 pl-5.5 rounded-l-4xl cursor-pointer duration-200 hover:bg-white-100/10`}
+          className={`flex content-center text-lg text-shadow-2xs pt-2.5 pb-3 pr-3 pl-4.5 rounded-l-4xl cursor-pointer duration-200 hover:bg-light-pink-100/5 xl:text-xl xl:pt-3 xl:pb-3.5 xl:pr-4 xl:pl-5.5`}
           tabIndex={0}
           onKeyDown={(tecla) => {
             if (tecla.key == "Enter") {
@@ -47,7 +47,7 @@ export default function ColorTheme() {
       </div>
 
       <div
-        className={`text-dark-pink-100 bg-white-100/2 border-2 border-dark-pink-100 rounded-r-4xl has-checked:bg-dark-pink-100 has-checked:text-white-100`}
+        className={`text-light-purple bg-white-100/5 border-2 rounded-r-4xl has-checked:bg-dark-pink-100 has-checked:text-gray has-checked:border-dark-pink-100`}
       >
         <input
           type="radio"
@@ -63,7 +63,7 @@ export default function ColorTheme() {
           htmlFor="dark"
           title="Tema escuro"
           aria-label="Alterar tema de cores para escuro"
-          className={`flex content-center text-xl text-shadow-2xs pt-3 pb-3.5 pl-4 pr-5.5 rounded-r-4xl cursor-pointer duration-200 hover:bg-white-100/10`}
+          className={`flex content-center text-lg text-shadow-2xs pt-2.5 pb-3 pl-3 pr-4.5 rounded-r-4xl cursor-pointer duration-200 hover:bg-light-purple/5 xl:text-xl xl:pt-3 xl:pb-3.5 xl:pl-4 xl:pr-5.5`}
           tabIndex={0}
           onKeyDown={(tecla) => {
             if (tecla.key == "Enter") {

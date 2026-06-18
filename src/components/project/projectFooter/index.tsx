@@ -20,6 +20,7 @@ export default function ProjectFooter(props: ProjectsType["footer"]) {
             href="/"
             aria-label="Voltar à página inicial clicando na logo do portfólio"
             rel="previous"
+            className={`rounded-4xl`}
           >
             <figure className={`flex items-center gap-2.5`}>
               <Image

@@ -6,9 +6,9 @@ import {
   DialogPanel,
   DialogTitle,
 } from "@headlessui/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 import NavItems from "@/components/header/navItems";
-import ColorTheme from "../colorTheme";
 import Image from "next/image";
 
 export default function MenuDialogMobile() {
@@ -17,6 +17,14 @@ export default function MenuDialogMobile() {
 
   // Button movement when clicked
   const [btn, setBtn] = useState<string>(`rotate-0`);
+
+  // Icon color
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
 
   return (
     <nav className={`relative h-13.5 xl:hidden`}>
@@ -29,7 +37,7 @@ export default function MenuDialogMobile() {
         }}
       >
         <Image
-          src={`assets/menu-icon.svg`}
+          src={`assets/menu-icon-${theme === "light" ? "light" : "dark"}.svg`}
           alt={`Ícone de menu de navegação`}
           width={62}
           height={54}
@@ -53,17 +61,17 @@ export default function MenuDialogMobile() {
         <div className={`fixed inset-0 flex w-screen justify-end`}>
           <DialogPanel
             transition
-            className={`bg-radial from-light-purple to-dark-purple p-8 flex flex-col items-center transition duration-300 ease-out delay-75 data-closed:translate-x-4 data-closed:opacity-0`}
+            className={`bg-radial from-light-pink-100 to-light-pink-200 p-8 flex flex-col items-center transition duration-300 ease-out delay-75 data-closed:translate-x-4 data-closed:opacity-0 dark:from-light-purple dark:to-dark-purple`}
           >
             <DialogTitle
-              className={`font-lexia-readable text-28px text-shadow-2xs`}
+              className={`font-lexia-readable text-gray text-28px text-shadow-2xs dark:text-white-100`}
               as="h2"
             >
-              Navegação
+              Seções
             </DialogTitle>
 
             <hr
-              className={`w-full rounded border-3 border-white mt-2 mb-3.5 shadow`}
+              className={`w-full rounded border-3 border-gray mt-2 mb-3.5 shadow dark:border-white-100`}
             />
 
             <NavItems
@@ -72,8 +80,6 @@ export default function MenuDialogMobile() {
                 setBtn(`rotate-0`);
               }}
             />
-
-            <ColorTheme />
           </DialogPanel>
         </div>
       </Dialog>
