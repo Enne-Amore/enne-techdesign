@@ -19,7 +19,7 @@ export default function MenuDialogMobile() {
   const [btn, setBtn] = useState<string>(`rotate-0`);
 
   // Icon color
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
@@ -37,7 +37,7 @@ export default function MenuDialogMobile() {
         }}
       >
         <Image
-          src={`assets/menu-icon-${theme === "light" ? "light" : "dark"}.svg`}
+          src={`assets/menu-icon-${resolvedTheme === "light" ? "light" : "dark"}.svg`}
           alt={`Ícone de menu de navegação`}
           width={62}
           height={54}
@@ -58,16 +58,16 @@ export default function MenuDialogMobile() {
           className={`fixed inset-0 bg-gray/60 transition duration-200 ease-out delay-75 data-closed:opacity-0`}
         />
 
-        <div className={`fixed inset-0 flex w-screen justify-end`}>
+        <div className={`fixed inset-0 w-screen h-max flex justify-end`}>
           <DialogPanel
             transition
-            className={`bg-radial from-light-pink-100 to-light-pink-200 p-8 flex flex-col items-center transition duration-300 ease-out delay-75 data-closed:translate-x-4 data-closed:opacity-0 dark:from-light-purple dark:to-dark-purple`}
+            className={`bg-radial from-light-pink-100 to-light-pink-200 p-8 pb-10 flex flex-col items-center rounded-bl-4xl transition duration-300 ease-out delay-75 data-closed:translate-x-4 data-closed:opacity-0 dark:from-light-purple dark:to-dark-purple`}
           >
             <DialogTitle
-              className={`font-lexia-readable text-gray text-28px text-shadow-2xs dark:text-white-100`}
+              className={`font-bold text-gray text-28px text-shadow-2xs dark:text-white-100`}
               as="h2"
             >
-              Seções
+              Seções da página
             </DialogTitle>
 
             <hr

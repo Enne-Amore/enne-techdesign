@@ -32,7 +32,7 @@ export default function Header() {
         />
 
         <h1
-          className={`w-66.5 font-lexia-readable bg-linear-to-br from-black to-gray bg-clip-text text-transparent text-5xl text-center leading-14 filter drop-shadow dark:from-light-pink-200 dark:to-light-pink-100 sm:w-fit xl:text-8xl xl:leading-relaxed`}
+          className={`w-66.5 font-bold bg-linear-to-br from-black to-gray bg-clip-text text-transparent text-5xl text-center leading-14 filter drop-shadow dark:from-light-pink-200 dark:to-light-pink-100 sm:w-fit xl:text-8xl xl:leading-relaxed`}
         >
           Enne TechDesign
         </h1>

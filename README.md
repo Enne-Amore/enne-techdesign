@@ -134,9 +134,6 @@
 
 ## 🔤 Fontes Tipográficas
 
- - **Lexia Readable**  
-   Exemplo de uso:  
-   `font-family: "lexia-readable";` ou `font-lexia-readable`
  - **Quicksand**  
    Exemplo de uso:  
    `font-family: var(--font-quicksand);` ou `font-quicksand`
