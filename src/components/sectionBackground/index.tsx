@@ -14,14 +14,14 @@ interface SectionBackgroundInterface {
 }
 
 export default function SectionBackground(props: SectionBackgroundInterface) {
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
 
   if (!mounted) return null;
 
-  const isDark = props.darkMode && theme === "dark";
+  const isDark = props.darkMode && resolvedTheme === "dark";
 
   return (
     <picture
@@ -32,17 +32,18 @@ export default function SectionBackground(props: SectionBackgroundInterface) {
         srcSet={`/assets/${props.src}-${isDark ? "dark-" : ""}background-desktop.avif`}
         width={1280}
         height={props.desktopHeight}
-        className={``}
       />
 
       <Image
+        key={resolvedTheme}
         src={`/assets/${props.src}-${isDark ? "dark-" : ""}background-mobile.avif`}
         alt={``}
         width={375}
         height={props.mobileHeight}
         aria-hidden="true"
         className={`w-full h-full ${props.noShadow ? "" : "filter drop-shadow"}`}
-        {...(props.priority ? { priority: true, loading: "eager" } : {})}
+        priority={props.priority ? true : false}
+        loading={props.priority ? "eager" : "lazy"}
       />
     </picture>
   );
