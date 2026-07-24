@@ -6,24 +6,19 @@
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
-  font-family: "lexia-readable";
-  src: url(../fonts/home-page/lexia_readable/LexieReadable-Bold.ttf) format(truetype);
-  font-display: swap;
-}
-@font-face {
   font-family: "geometos-rounded";
-  src: url(../fonts/cnbpb/geometos-rounded/geometos-rounded.ttf) format(truetype);
+  src: url(../fonts/geometos-rounded/geometos-rounded.ttf) format(truetype);
   font-display: swap;
 }
 @font-face {
   font-family: "nunito";
-  src: url(../fonts/cnbpb/nunito/Nunito-VariableFont-wght.ttf) format(truetype);
+  src: url(../fonts/nunito/Nunito-VariableFont-wght.ttf) format(truetype);
   font-display: swap;
 }
 @font-face {
   font-family: "bitter";
   font-display: swap;
-  src: url(../fonts/janai-amitaf/bitter/Bitter-VariableFont_wght.ttf) format(truetype);
+  src: url(../fonts/bitter/Bitter-VariableFont_wght.ttf) format(truetype);
 }
 
 @theme inline {
@@ -38,7 +33,6 @@
   --color-dark-pink-200: #F229AC;
   --color-light-pink-100: #FFD1E9;
   --color-light-pink-200: #FFC2E2;
-  --font-lexia-readable: "lexia-readable";
   --font-quicksand: var(--font-quicksand);
   --font-geometos-rounded: "geometos-rounded";
   --font-nunito: "nunito";

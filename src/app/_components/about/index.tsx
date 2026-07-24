@@ -43,7 +43,7 @@ export default function About() {
       >
         <SectionTitle
           label={`Sobre mim e minhas reflexões`}
-          style={`text-white-300 xl:w-[613px]`}
+          style={`text-white-300 xl:w-max`}
         />
 
         <p
@@ -89,7 +89,7 @@ export default function About() {
 
         <figcaption className={`flex flex-col items-center gap-2.5`}>
           <span
-            className={`font-lexia-readable text-white-200 text-2xl text-shadow-2xs xl:text-28px`}
+            className={`text-white-200 text-2xl text-shadow-2xs xl:text-28px`}
           >
             Enne Jim Pessoa
           </span>

@@ -42,7 +42,7 @@ export default function AcademicBackgroundsList() {
             className={`bg-linear-to-br from-light-pink-200 to-light-pink-100 flex flex-col gap-1.5 shadow px-8 py-6 rounded-4xl dark:from-dark-purple dark:to-light-purple`}
           >
             <h3
-              className={`font-lexia-readable bg-linear-to-br from-dark-purple to-light-purple bg-clip-text text-transparent text-xl drop-shadow dark:from-light-pink-200 dark:to-light-pink-100 xl:text-2xl`}
+              className={`font-bold bg-linear-to-br from-dark-purple to-light-purple bg-clip-text text-transparent text-xl drop-shadow dark:from-light-pink-200 dark:to-light-pink-100 xl:text-2xl`}
             >
               {background.course} - {background.degree}
             </h3>

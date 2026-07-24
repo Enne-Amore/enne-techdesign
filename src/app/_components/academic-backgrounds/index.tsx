@@ -9,7 +9,7 @@ export default function AcademicBackgrounds() {
     >
       <SectionTitle
         label={`Formações acadêmicas nas quais carrego comigo em minha jornada`}
-        style={`bg-gradient-to-br from-dark-purple to-light-purple bg-clip-text text-transparent dark:from-light-pink-200 dark:to-light-pink-100 xl:w-[683px]`}
+        style={`bg-gradient-to-br from-dark-purple to-light-purple bg-clip-text text-transparent dark:from-light-pink-200 dark:to-light-pink-100 xl:w-[723px]`}
         animation
       />
 

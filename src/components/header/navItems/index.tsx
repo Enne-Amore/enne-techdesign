@@ -38,7 +38,7 @@ export default function NavItems(props: { clickLinkMobile?: () => void }) {
     {
       url: "#contatos",
       ariaLabel: "Ir à seção de contatos",
-      label: "Contate-me",
+      label: "Vamos conversar",
       icon: <FaMessage className={`-mb-1`} />,
       isMain: true,
     },

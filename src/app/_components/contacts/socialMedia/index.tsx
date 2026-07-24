@@ -7,7 +7,7 @@ export default function SocialMedia() {
       className={`relative flex flex-col items-center gap-5 mx-auto xl:w-105`}
     >
       <h3
-        className={`text-gray text-28px text-center text-shadow-2xs leading-10 font-lexia-readable flex flex-col items-center gap-6 dark:text-white-200 xl:w-146 xl:text-32px xl:leading-11 xl:flex-row xl:justify-between`}
+        className={`font-bold text-gray text-28px text-center text-shadow-2xs leading-10 flex flex-col items-center gap-6 dark:text-white-200 xl:w-146 xl:text-32px xl:leading-11 xl:flex-row xl:justify-between`}
       >
         <span>♡︎</span>
 

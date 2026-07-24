@@ -20,7 +20,7 @@ export default function Projects() {
       {/* content */}
       <SectionTitle
         label={`Projetos em que tive o maior prazer do mundo em desenvolver`}
-        style={`relative bg-clip-text text-transparent bg-linear-to-br from-dark-purple to-light-purple dark:from-light-pink-200 dark:to-light-pink-100 xl:w-[723px]`}
+        style={`relative bg-clip-text text-transparent bg-linear-to-br from-dark-purple to-light-purple dark:from-light-pink-200 dark:to-light-pink-100 xl:w-[744px]`}
         animation
       />
 

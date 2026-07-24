@@ -12,7 +12,7 @@ export default function Form() {
     >
       <SectionTitle
         label={`Será uma alegria enorme te ajudar com o que precisa!`}
-        style={`text-black dark:text-white-300 xl:w-[584px]`}
+        style={`text-black dark:text-white-300 xl:w-[600px]`}
       />
 
       <div className={`flex flex-col items-center gap-2`}>
@@ -33,7 +33,7 @@ export default function Form() {
         >
           <FaWpforms className={`w-7 h-auto`} />
 
-          <span>Contate-me</span>
+          <span>Vamos conversar</span>
         </PopupButton>
 
         <span className={`text-gray text-sm text-shadow-2xs dark:text-white-100 xl:text-base`}>

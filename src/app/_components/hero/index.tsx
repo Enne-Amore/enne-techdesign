@@ -11,7 +11,7 @@ export default function Hero() {
         className={`flex flex-col items-center gap-8 xl:gap-5 xl:-translate-x-8`}
       >
         <h2
-          className={`w-55.25 font-lexia-readable text-black text-44px text-center text-shadow-2xs leading-16 flex flex-col items-center dark:text-white-300 xl:w-full xl:text-5xl`}
+          className={`w-55.25 font-bold text-black text-44px text-center text-shadow-2xs leading-16 flex flex-col items-center dark:text-white-300 xl:w-full xl:text-5xl`}
         >
           Tecnologia & Design
         </h2>
